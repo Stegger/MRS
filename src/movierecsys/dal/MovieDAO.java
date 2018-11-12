@@ -10,15 +10,11 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
-import java.nio.charset.Charset;
-import java.nio.charset.MalformedInputException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.StandardOpenOption;
 import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.List;
-import java.util.stream.Stream;
 import movierecsys.be.Movie;
 
 /**
@@ -77,7 +73,10 @@ public class MovieDAO
         int id = Integer.parseInt(arrMovie[0]);
         int year = Integer.parseInt(arrMovie[1]);
         String title = arrMovie[2];
-
+        // Add if commas in title, includes the rest of the string
+        for (int i = 3; i < arrMovie.length; i++) {
+            title += "," + arrMovie[i];
+        }
         Movie mov = new Movie(id, year, title);
         return mov;
     }
@@ -121,7 +120,7 @@ public class MovieDAO
      *
      * @param movie The movie to delete.
      */
-    private void deleteMovie(Movie movie)
+    public void deleteMovie(Movie movie)
     {
         //TODO Delete movie
     }
@@ -132,7 +131,7 @@ public class MovieDAO
      *
      * @param movie The updated movie.
      */
-    private void updateMovie(Movie movie)
+    public void updateMovie(Movie movie)
     {
         //TODO Update movies
     }
@@ -143,7 +142,7 @@ public class MovieDAO
      * @param id ID of the movie.
      * @return A Movie object.
      */
-    private Movie getMovie(int id)
+    public Movie getMovie(int id)
     {
         //TODO Get one Movie
         return null;
