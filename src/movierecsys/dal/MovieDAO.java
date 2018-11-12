@@ -10,6 +10,7 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import java.nio.charset.Charset;
 import java.nio.charset.MalformedInputException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -101,23 +102,25 @@ public class MovieDAO
     private int getNextAvailableMovieID() throws IOException
     {
         Path path = new File(MOVIE_SOURCE).toPath();
-        Stream<String> stream = Files.lines(path);
+        Stream<String> stream = Files.lines(path, Charset.defaultCharset());
         String highIdLine = stream.max(new Comparator<String>()
         {
             @Override
             public int compare(String o1, String o2)
             {
                 int id1, id2;
+                String[] arrOne = o1.split(",");
+                String[] arrTwo = o2.split(",");
                 try
                 {
-                    id1 = Integer.parseInt(o1.split(",")[0]);
+                    id1 = Integer.parseInt(arrOne[0]);
                 } catch (NumberFormatException nfe)
                 {
                     id1 = -1;
                 }
                 try
                 {
-                    id2 = Integer.parseInt(o2.split(",")[0]);;
+                    id2 = Integer.parseInt(arrTwo[0]);;
                 } catch (NumberFormatException mfe) 
                 {
                     id2 = -1;
