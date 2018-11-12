@@ -34,6 +34,7 @@ public class MovieDAO
      * Gets a list of all movies in the persistence storage.
      *
      * @return List of movies.
+     * @throws java.io.IOException 
      */
     public List<Movie> getAllMovies() throws IOException
     {
@@ -41,18 +42,21 @@ public class MovieDAO
         String source = "data/movie_titles.txt";
         File file = new File(source);
 
-        try (BufferedReader reader = new BufferedReader(new FileReader(file)))
+        try (BufferedReader reader = new BufferedReader(new FileReader(file))) //Using a try with resources!
         {
             String line;
             while ((line = reader.readLine()) != null)
             {
-                try
+                if (!line.isEmpty())
                 {
-                    Movie mov = stringArrayToMovie(line);
-                    allMovies.add(mov);
-                } catch (Exception ex)
-                {
-                    //Do nothing. Optimally we would log the error.
+                    try
+                    {
+                        Movie mov = stringArrayToMovie(line);
+                        allMovies.add(mov);
+                    } catch (Exception ex)
+                    {
+                        //Do nothing. Optimally we would log the error.
+                    }
                 }
             }
         }
@@ -61,6 +65,7 @@ public class MovieDAO
 
     /**
      * Reads a movie from the comma separated line.
+     *
      * @param line the comma separated line.
      * @return The representing Movie object.
      * @throws NumberFormatException
@@ -98,6 +103,12 @@ public class MovieDAO
         return new Movie(id, releaseYear, title);
     }
 
+    /**
+     * Examines all stored movies and returns the next available highest ID.
+     *
+     * @return
+     * @throws IOException
+     */
     private int getNextAvailableMovieID() throws IOException
     {
         List<Movie> allMovies = getAllMovies();
