@@ -52,7 +52,7 @@ public class MovieDAO
                     allMovies.add(mov);
                 } catch (Exception ex)
                 {
-                    //Do nothing
+                    //Do nothing. Optimally we would log the error.
                 }
             }
         }
@@ -60,15 +60,14 @@ public class MovieDAO
     }
 
     /**
-     * Reads a movie from a , s
-     *
-     * @param t
-     * @return
+     * Reads a movie from the comma separated line.
+     * @param line the comma separated line.
+     * @return The representing Movie object.
      * @throws NumberFormatException
      */
-    private Movie stringArrayToMovie(String t)
+    private Movie stringArrayToMovie(String line)
     {
-        String[] arrMovie = t.split(",");
+        String[] arrMovie = line.split(",");
 
         int id = Integer.parseInt(arrMovie[0]);
         int year = Integer.parseInt(arrMovie[1]);
