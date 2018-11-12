@@ -14,7 +14,7 @@ import movierecsys.be.User;
  *
  * @author pgn
  */
-public interface OwsLogicFacade
+public interface MRSOwsLogicFacade
 {
 
     /**
