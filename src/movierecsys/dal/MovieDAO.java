@@ -101,34 +101,9 @@ public class MovieDAO
 
     private int getNextAvailableMovieID() throws IOException
     {
-        Path path = new File(MOVIE_SOURCE).toPath();
-        Stream<String> stream = Files.lines(path, Charset.defaultCharset());
-        String highIdLine = stream.max(new Comparator<String>()
-        {
-            @Override
-            public int compare(String o1, String o2)
-            {
-                int id1, id2;
-                String[] arrOne = o1.split(",");
-                String[] arrTwo = o2.split(",");
-                try
-                {
-                    id1 = Integer.parseInt(arrOne[0]);
-                } catch (NumberFormatException nfe)
-                {
-                    id1 = -1;
-                }
-                try
-                {
-                    id2 = Integer.parseInt(arrTwo[0]);;
-                } catch (NumberFormatException mfe) 
-                {
-                    id2 = -1;
-                }
-                return Integer.compare(id1, id2);
-            }
-        }).get();
-        return Integer.parseInt(highIdLine.split(",")[0]) + 1;
+        List<Movie> allMovies = getAllMovies();
+        int highId = allMovies.get(allMovies.size() - 1).getId();
+        return highId + 1;
     }
 
     /**
