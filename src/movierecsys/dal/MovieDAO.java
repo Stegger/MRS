@@ -17,6 +17,7 @@ import java.nio.file.Path;
 import java.nio.file.StandardCopyOption;
 import java.nio.file.StandardOpenOption;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
@@ -79,7 +80,10 @@ public class MovieDAO
         int id = Integer.parseInt(arrMovie[0]);
         int year = Integer.parseInt(arrMovie[1]);
         String title = arrMovie[2];
-
+        // Add if commas in title, includes the rest of the string
+        for (int i = 3; i < arrMovie.length; i++) {
+            title += "," + arrMovie[i];
+        }
         Movie mov = new Movie(id, year, title);
         return mov;
     }
@@ -123,7 +127,7 @@ public class MovieDAO
      *
      * @param movie The movie to delete.
      */
-    private void deleteMovie(Movie movie)
+    public void deleteMovie(Movie movie)
     {
 
     }
@@ -159,7 +163,7 @@ public class MovieDAO
      * @param id ID of the movie.
      * @return A Movie object.
      */
-    private Movie getMovie(int id)
+    public Movie getMovie(int id)
     {
         //TODO Get one Movie
         return null;
