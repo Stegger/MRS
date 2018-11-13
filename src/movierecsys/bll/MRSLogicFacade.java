@@ -9,12 +9,13 @@ import java.util.List;
 import movierecsys.be.Movie;
 import movierecsys.be.Rating;
 import movierecsys.be.User;
+import movierecsys.bll.exception.MovieRecSysException;
 
 /**
  *
  * @author pgn
  */
-public interface MRSOwsLogicFacade
+public interface MRSLogicFacade
 {
 
     /**
@@ -24,6 +25,8 @@ public interface MRSOwsLogicFacade
      */
     List<Rating> getRecommendedMovies(User user);
 
+    List<Movie> getAllMovies() throws MovieRecSysException; 
+    
     /**
      * Gets a list of all movies sorted by their rating.
      * @return A list of movies.

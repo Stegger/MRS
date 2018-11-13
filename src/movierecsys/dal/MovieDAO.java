@@ -9,16 +9,18 @@ import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
-import java.nio.charset.Charset;
-import java.nio.charset.MalformedInputException;
+import java.nio.file.CopyOption;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.nio.file.StandardCopyOption;
 import java.nio.file.StandardOpenOption;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
-import java.util.stream.Stream;
+import java.util.function.Predicate;
 import movierecsys.be.Movie;
 
 /**
@@ -41,7 +43,7 @@ public class MovieDAO
         List<Movie> allMovies = new ArrayList<>();
         String source = "data/movie_titles.txt";
         File file = new File(source);
-
+        
         try (BufferedReader reader = new BufferedReader(new FileReader(file))) //Using a try with resources!
         {
             String line;
@@ -123,18 +125,32 @@ public class MovieDAO
      */
     private void deleteMovie(Movie movie)
     {
-        //TODO Delete movie
+        
     }
 
     /**
      * Updates the movie in the persistence storage to reflect the values in the
-     * given Movie object.
+     * given Movie object. 
      *
      * @param movie The updated movie.
      */
-    private void updateMovie(Movie movie)
+    public void updateMovie(Movie movie) throws IOException
     {
-        //TODO Update movies
+        File tmp = new File("data/tmp_movies.txt");
+        List<Movie> allMovies = getAllMovies();
+        allMovies.removeIf((Movie t) -> t.getId() == movie.getId());
+        allMovies.add(movie);
+        Collections.sort(allMovies, (Movie o1, Movie o2) -> Integer.compare(o1.getId(), o2.getId()));
+        try(BufferedWriter bw = new BufferedWriter(new FileWriter(tmp)))
+        {
+            for (Movie mov : allMovies)
+            {
+                bw.write(mov.getId()+","+mov.getYear()+","+mov.getTitle());
+                bw.newLine();
+            }
+        }
+        Files.copy(tmp.toPath(), new File(MOVIE_SOURCE).toPath(), StandardCopyOption.REPLACE_EXISTING);
+        Files.delete(tmp.toPath());
     }
 
     /**

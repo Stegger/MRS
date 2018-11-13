@@ -69,7 +69,7 @@
 69,2003,WWE: Armageddon 2003
 70,1999,Tai Chi: The 24 Forms
 71,1995,Maya Lin: A Strong Clear Vision
-72,1974,At Home Among Strangers, A Stranger Among His Own
+72,1974,At Home Among Strangers
 73,1954,Davy Crockett: 50th Anniversary Double Feature
 74,1999,6ixtynin9
 75,1997,Grind
@@ -261,7 +261,7 @@
 261,1948,The Big Clock
 262,1974,Herbie Rides Again
 263,2001,Dragon Ball: Tournament Saga
-264,2002,Angelina Ballerina: Lights, Camera, Action!
+264,2002,Angelina Ballerina: Lights
 265,2002,The Jeff Corwin Experience: Costa Rica and the Amazon
 266,2000,Saudade Do Futuro
 267,1994,Touched by an Angel: Season 1
@@ -347,7 +347,7 @@
 347,1989,Iceman Cometh
 348,1988,The Last Temptation of Christ
 349,1978,The Swarm
-350,1993,Dr. Quinn, Medicine Woman: Season 3
+350,1993,Dr. Quinn
 351,1969,Guns of the Magnificent Seven
 352,1997,Pick a Card
 353,2002,Life or Something Like It
@@ -363,7 +363,7 @@
 363,2002,Stark Raving Mad
 364,2004,Billy Blanks: Tae Bo: Contact 2
 365,1989,R.E.M.: Tourfilm
-366,2004,Still, We Believe: The Boston Red Sox Movie
+366,2004,Still
 367,2003,Spun
 368,1986,The Best of Designing Women
 369,2000,Playing Mona Lisa
@@ -391,7 +391,7 @@
 391,1967,The Monkees: Season 2
 392,1993,Danielle Steel's Heartbeat
 393,1998,The Replacement Killers
-394,1916,20,000 Leagues Under the Sea
+394,1916,20
 395,1935,Captain Blood
 396,2001,Arjuna: Complete Collection
 397,1946,A Night in Casablanca
@@ -463,7 +463,7 @@
 463,1962,The Twilight Zone: Vol. 12
 464,1987,The Return of Ruben Blades
 465,1995,Coolie No.1
-466,1990,Doogie Howser, M.D.: Season 2
+466,1990,Doogie Howser
 467,1941,Topper Returns
 468,2003,The Matrix: Revolutions
 469,1998,First Night of My Life: 2000 Seen By...
@@ -579,7 +579,7 @@
 579,1973,The Autobiography of Miss Jane Pittman
 580,1971,THX 1138: Special Edition
 581,1993,Black Jack: The Movie
-582,1986,Jo Jo Dancer, Your Life is Calling
+582,1986,Jo Jo Dancer
 583,1959,Third Man on the Mountain
 584,1998,The Curve
 585,1995,My Family
@@ -597,7 +597,7 @@
 597,1977,The Brady Bunch Variety Hour
 598,1973,Bobby Darin: Mack is Back
 599,1989,Sea of Love
-600,1966,What's Up, Tiger Lily?
+600,1966,What's Up
 601,1992,The Smiths: The Complete Picture
 602,2000,Tokyo Raiders
 603,1997,Burn Up Excess: Vol. 1: To Serve and Protect
@@ -667,9 +667,9 @@
 667,1965,Gilligan's Island: Season 2
 668,2004,Saturday Night Live: The Best of Will Ferrell 2
 669,1986,Real Kung Fu of Shaolin
-670,2002,He Loves Me, He Loves Me Not
+670,2002,He Loves Me
 671,1989,The Winter People
-672,1991,He Said, She Said
+672,1991,He Said
 673,1999,Fight Club: Bonus Material
 674,1988,Hellbound: Hellraiser II
 675,2004,Rugrats All Grown Up: O' Brother!
@@ -726,7 +726,7 @@
 726,1990,The Haunting of Morella
 727,1959,Carlton-Browne of the F.O.
 728,1977,Abigail's Party
-729,2000,Fast Food, Fast Women
+729,2000,Fast Food
 730,1988,Bagdad Cafe
 731,1997,Mr. Magoo
 732,2005,11:14
@@ -773,7 +773,7 @@
 773,2001,He Died with a Felafel in His Hand
 774,2003,Foyle's War: Set 2
 775,1999,Man Ray: Prophet of the Avant Garde
-776,1953,Dr. Seuss's The 5,000 Fingers of Dr. T
+776,1953,Dr. Seuss's The 5
 777,1944,Sherlock Holmes and the Spider Woman
 778,2003,A Touch of Frost: Seasons 7 & 8
 779,2000,Loving Jezebel
@@ -824,14 +824,14 @@
 824,1977,A Piece of the Action
 825,1983,Bill Cosby: Himself
 826,1998,Goosebumps: Cry of the Cat
-827,1994,C'est La Vie, Mon Cheri
+827,1994,C'est La Vie
 828,1991,Atlantis
 829,1995,Serial Mom
 830,1994,Return to a Better Tomorrow
 831,1987,Mannequin
 832,2003,Tupac: Resurrection
 833,1996,White Squall
-834,1999,Niagara: Miracles, Myths & Magic: IMAX
+834,1999,Niagara: Miracles
 835,1994,Cirque du Soleil: A Baroque Odyssey
 836,1991,Incident at Oglala: The Leonard Peltier Story
 837,1972,All in the Family: Season 3
@@ -888,7 +888,7 @@
 888,2001,Discovering Australia
 889,2004,Reno 911: Season 2
 890,1999,Harsh Realm: The Complete Series
-891,2003,Zakk Wylde's Black Label Society: Boozed, Broozed & Broken-Boned
+891,2003,Zakk Wylde's Black Label Society: Boozed
 892,1965,The Bedford Incident
 893,2003,Blue's Clues: Classic Clues
 894,1999,The Muse
@@ -910,7 +910,7 @@
 910,1940,Santa Fe Trail
 911,1939,Buck Rogers
 912,2002,Angelina Ballerina: Friends Forever
-913,1979,Dead Kennedys: In God We Trust, Inc.
+913,1979,Dead Kennedys: In God We Trust
 914,1996,R.E.M.: Road Movie
 915,2001,Haven
 916,1994,Earth 2: The Complete Series
@@ -941,7 +941,7 @@
 941,1998,Screw Loose
 942,1994,The Pagemaster
 943,2004,Dave Chappelle: For What It's Worth
-944,1975,Brother, Can You Spare a Dime?
+944,1975,Brother
 945,1952,The Duel at Silver Creek
 946,2002,Sex and the Teenage Mind
 947,1965,The Cincinnati Kid
@@ -970,7 +970,7 @@
 970,2004,Yesterday Once More
 971,2002,Unprecedented: The 2000 Presidential Election
 972,2003,Ben Harper: Live at the Hollywood Bowl
-973,1994,Dr. Martin Luther King, Jr.: A Historical Perspective
+973,1994,Dr. Martin Luther King
 974,1941,The Devil and Daniel Webster
 975,1997,Convict 762
 976,2003,Tom and Jerry: Paws for a Holiday
@@ -1007,12 +1007,12 @@
 1007,1996,America's Dream
 1008,1996,Ken Burns' The West
 1009,1997,Judaai
-1010,2004,Sesame Street: Sing, Hoot & Howl
+1010,2004,Sesame Street: Sing
 1011,1983,All the Right Moves
 1012,1960,13 Ghosts
 1013,2005,My Scene Goes Hollywood: The Movie
 1014,1993,Pretty Boy
-1015,1996,Dr. Quinn, Medicine Woman: Season 5
+1015,1996,Dr. Quinn
 1016,1976,The Killer Inside Me
 1017,1955,I Love Lucy: Season 5
 1018,1960,Le Petit Soldat
@@ -1055,7 +1055,7 @@
 1055,1977,The Duellists
 1056,1962,The War Lover
 1057,1989,Doctor Who: Ghost Light
-1058,1972,Play it Again, Sam
+1058,1972,Play it Again
 1059,2000,Extreme Bloopers: Sports Gone Wrong
 1060,2005,King's Ransom
 1061,2004,Spider-Man vs. Doc Ock
@@ -1092,7 +1092,7 @@
 1092,1996,Thin Line Between Love & Hate
 1093,1980,The Leg Fighters
 1094,2002,Nicholas Nickleby
-1095,2004,Vendetta: No Conscience, No Mercy
+1095,2004,Vendetta: No Conscience
 1096,1989,Harlem Nights
 1097,2005,Winning Strategies: Texas Hold 'Em Poker with Mike Caro
 1098,1965,The Battle of Algiers
@@ -1167,7 +1167,7 @@
 1167,1999,La Buche
 1168,2004,Rodney Dangerfield: No Respect: The Ultimate Collection
 1169,1997,Bjork: Shepherds Bush Empire
-1170,1997,Truth or Consequences, N.M.
+1170,1997,Truth or Consequences
 1171,2001,RoboCop: Crash and Burn
 1172,1998,Krippendorf's Tribe
 1173,1999,Walking with Dinosaurs
@@ -1207,7 +1207,7 @@
 1207,1962,Experiment in Terror
 1208,1963,The Twilight Zone: Vol. 15
 1209,1976,Swashbuckler
-1210,1981,Zorro, The Gay Blade
+1210,1981,Zorro
 1211,2004,Modigliani
 1212,1988,Red Dwarf: Series 2: Bonus Material
 1213,1999,VeggieTales: Madame Blueberry
@@ -1283,7 +1283,7 @@
 1283,2001,Inch' Allah Dimanche
 1284,2000,Foul King
 1285,2001,Phase IV
-1286,1997,Welcome Back, Mr. McDonald
+1286,1997,Welcome Back
 1287,1977,Breaker Breaker
 1288,2004,10 Minute Solution: Pilates
 1289,1990,Look Who's Talking Too
@@ -1517,7 +1517,7 @@
 1517,1999,Celebrities: Caught on Camera
 1518,1995,Casper
 1519,1981,Inseminoid
-1520,2003,Suze Orman: The Laws of Money, Lessons of Life
+1520,2003,Suze Orman: The Laws of Money
 1521,1955,The Trouble With Harry
 1522,1968,Teorema
 1523,1981,Dynasty: Season 1
@@ -1556,7 +1556,7 @@
 1556,1932,A Farewell to Arms
 1557,2002,Dolls
 1558,1990,Rocky V
-1559,1998,AFI's 100 Years, 100 Movies
+1559,1998,AFI's 100 Years
 1560,2004,Disney Princess Stories: Vol. 1: A Gift From the Heart
 1561,2003,American Wedding
 1562,2005,Chupacabra Terror
@@ -1626,7 +1626,7 @@
 1626,1998,Suze Orman: 9 Steps to Financial Freedom
 1627,1940,The Shop Around the Corner
 1628,1982,The Barchester Chronicles
-1629,1997,Sesame Street: 1-2-3, Count with Me
+1629,1997,Sesame Street: 1-2-3
 1630,1976,The New Avengers: Season 1
 1631,1970,On a Clear Day You Can See Forever
 1632,2004,Mean Creek
@@ -1644,18 +1644,18 @@
 1644,2003,Tom Dowd and the Language of Music
 1645,2003,The In-Laws
 1646,1983,The Dead Zone
-1647,2002,Eric Clapton: One More Car, One More Rider
+1647,2002,Eric Clapton: One More Car
 1648,1990,The Death of the Incredible Hulk
 1649,1978,Shalimar
 1650,1980,Nine to Five
 1651,1977,The People That Time Forgot
 1652,1961,The Twilight Zone: Vol. 37
 1653,2005,Spike & Mike's Sick & Twisted Festival of Animation: Caught in the Act
-1654,1996,I Love You, I Love You Not
+1654,1996,I Love You
 1655,1988,Talk Radio
 1656,1998,Two Girls and a Guy
 1657,1995,Forbidden Games
-1658,1986,Yes, Prime Minister: The Complete Collection
+1658,1986,Yes
 1659,1993,Grumpy Old Men
 1660,2000,SpongeBob SquarePants: Season 2
 1661,1976,The Bad News Bears
@@ -1671,7 +1671,7 @@
 1671,2000,El Grito
 1672,2002,Mujhse Dosti Karoge
 1673,1991,Defending Your Life
-1674,2003,Kiss Me, Kate
+1674,2003,Kiss Me
 1675,1996,Oasis: There and Then
 1676,2000,MTV Cribs: Hip-Hop
 1677,1963,The Sadist
@@ -1742,14 +1742,14 @@
 1742,2003,High Life
 1743,1979,The Warriors
 1744,1984,Beverly Hills Cop
-1745,2001,Love Me, Love My Money
+1745,2001,Love Me
 1746,1994,Bob Roberts
 1747,1969,Hello Down There
 1748,2004,Happily Ever After: Fairy Tales for Every Child
 1749,1947,Angel and the Badman
 1750,1962,Beast From Haunted Cave/The Brain That Wouldn't Die
 1751,1998,L'Ennui
-1752,2000,It's Me, the Thief
+1752,2000,It's Me
 1753,2004,Making Marines
 1754,1984,Sixteen Candles
 1755,1989,Prom Night III / Prom Night IV: Double Feature
@@ -2104,7 +2104,7 @@
 2104,1989,Kickboxer
 2105,1977,Starsky & Hutch: Season 3
 2106,1995,Bon Jovi: Live From London
-2107,1981,Earth, Wind & Fire in Concert
+2107,1981,Earth
 2108,1997,VeggieTales Classics: Larry-Boy & The Fib from Outer Space
 2109,1982,Grease 2
 2110,1979,Alien Quadrilogy: Bonus Material
@@ -2173,9 +2173,9 @@
 2173,1998,BASEketball
 2174,1996,The Ghost and the Darkness
 2175,1996,Memories
-2176,2000,VeggieTales: Esther, the Girl Who Became Queen
+2176,2000,VeggieTales: Esther
 2177,1996,Extreme Measures
-2178,1998,Lock, Stock and Two Smoking Barrels
+2178,1998,Lock
 2179,1982,Qurbani
 2180,1999,Rogue Trader
 2181,1988,A Better Tomorrow II
@@ -2358,7 +2358,7 @@
 2358,1966,The Wild Angels
 2359,1981,La Chevre
 2360,1952,Singin' in the Rain
-2361,2002,Sex, Secrets, and Lies
+2361,2002,Sex
 2362,1994,White
 2363,2002,Widespread Panic: The Earth Will Swallow You
 2364,2002,Na Tum Jaano Na Hum
@@ -2407,7 +2407,7 @@
 2407,1996,Larger Than Life
 2408,1936,My Man Godfrey
 2409,1976,Robin and Marian
-2410,1998,Dancer, Texas
+2410,1998,Dancer
 2411,2004,The Life & Death of Peter Sellers
 2412,2004,Harry Potter and the Prisoner of Azkaban: Bonus Material
 2413,1995,Streets of Laredo
@@ -2425,12 +2425,12 @@
 2425,1998,The Swan Princess: Mystery of the Enchanted Treasure
 2426,2004,Dark Harvest 2: The Maize
 2427,1983,Philip Marlowe Private Eye
-2428,1990,Shanghai, Shanghai
+2428,1990,Shanghai
 2429,1997,Close to You: Remembering the Carpenters
 2430,1979,Alien: Collector's Edition
 2431,2000,Nuremberg
 2432,2003,29 Palms
-2433,2000,Harvey Birdman, Attorney at Law: Vol. 1
+2433,2000,Harvey Birdman
 2434,2003,The Tai Chi Master
 2435,1986,Critters
 2436,1993,Fist of the Red Dragon
@@ -2459,7 +2459,7 @@
 2459,1967,Son of Godzilla
 2460,1983,Cujo
 2461,2000,Deep in the Woods
-2462,1987,Planes, Trains and Automobiles
+2462,1987,Planes
 2463,2004,The Incredibles: Bonus Material
 2464,1999,Trekkies
 2465,1984,This Is Spinal Tap
@@ -2595,7 +2595,7 @@
 2595,1993,The Vanishing
 2596,1999,Travel the World by Train: Asia
 2597,1963,The Day of the Triffids
-2598,2005,Baby Einstein: On the Go: Riding, Sailing and Soaring
+2598,2005,Baby Einstein: On the Go: Riding
 2599,1959,Black Orpheus
 2600,2000,The Calling
 2601,1978,Best of The Muppet Show: Peter Sellers / John Cleese / Dudley Moore
@@ -2622,10 +2622,10 @@
 2622,1985,Runaway Train
 2623,1997,Mandragora
 2624,1998,Babe Ruth
-2625,2002,Dragon Tales: Yes, We Can!
+2625,2002,Dragon Tales: Yes
 2626,2002,The Next Big Thing
 2627,2000,Ringu 0
-2628,1999,Now and Then, Here and There: Vol. 1: Discord and Doom
+2628,1999,Now and Then
 2629,1998,Highlander: The Raven
 2630,1998,Great Expectations (Masterpiece Theatre)
 2631,1967,The President's Analyst
@@ -2688,7 +2688,7 @@
 2688,1994,The Memoirs of Sherlock Holmes
 2689,2002,Minority Report: Bonus Material
 2690,2000,The Emperor's New Groove
-2691,2003,Empires: The Medici, Godfathers of the Renaissance
+2691,2003,Empires: The Medici
 2692,2000,Love Hina
 2693,1965,How to Stuff a Wild Bikini
 2694,2001,Jackie's Back
@@ -2719,7 +2719,7 @@
 2719,1996,The Politician's Wife
 2720,1992,Return to the Lost World
 2721,1983,Love Letters
-2722,2001,A Girl, 3 Guys and a Gun
+2722,2001,A Girl
 2723,2004,New Fist of the North Star
 2724,1995,The Incredibly True Adventure of 2 Girls in Love
 2725,2005,The Locker
@@ -2769,7 +2769,7 @@
 2769,2003,Cirque du Soleil: Varekai
 2770,2000,Niea 7
 2771,1984,Top Secret!
-2772,1968,Where Angels Go, Trouble Follows
+2772,1968,Where Angels Go
 2773,1973,Cleopatra Jones
 2774,1979,Yes: Live in Philadelphia
 2775,2002,Friday After Next
@@ -2793,7 +2793,7 @@
 2793,2003,Bob the Builder: Teamwork
 2794,1957,The Curse of Frankenstein
 2795,2001,The X-Files: Season 9
-2796,1934,Imitation of Life: Double Feature (1934, 1959)
+2796,1934,Imitation of Life: Double Feature (1934
 2797,2003,Life of Buddha
 2798,1969,The Computer Wore Tennis Shoes
 2799,2005,Johnny Cash: Ridin' the Rails: The Great American Train Story
@@ -2827,7 +2827,7 @@
 2827,1988,Depeche Mode: 101
 2828,1999,Judgment Day
 2829,1970,Angels / Getting into Heaven: Double Feature
-2830,2005,Secrets of Angels, Demons & Masons
+2830,2005,Secrets of Angels
 2831,1958,Indiscreet
 2832,2001,When Good Ghouls Go Bad
 2833,2004,Blue's Clues: Blue's Room Snacktime Playdate
@@ -2851,7 +2851,7 @@
 2851,1993,Falling Down
 2852,1940,The Three Stooges: Nutty but Nice
 2853,1982,Silent Rage
-2854,1989,I, Madman
+2854,1989,I
 2855,1994,L'Enfer
 2856,2004,The Holy Girl
 2857,1965,The Spy Who Came In from the Cold
@@ -2875,7 +2875,7 @@
 2875,1966,The Saint
 2876,1997,Addicted to Love
 2877,2001,Love Undercover
-2878,2002,Now and Then, Here and There: Vol. 2: Flight and Fall
+2878,2002,Now and Then
 2879,2004,Boz Scaggs: Greatest Hits Live
 2880,1975,The Wind and the Lion
 2881,2002,Zig Zag: Special Edition
@@ -2886,7 +2886,7 @@
 2886,1987,Grateful Dead: View from the Vault 4
 2887,1972,Koshish
 2888,2000,Sex & Mrs. X
-2889,1997,Fast, Cheap & Out of Control
+2889,1997,Fast
 2890,1959,Sleeping Beauty: Special Edition
 2891,2000,Metroland
 2892,2003,Power Rangers: Ninja Storm
@@ -2944,7 +2944,7 @@
 2944,1994,Hoop Dreams
 2945,1979,10
 2946,2004,Mary Magdalene: The Hidden Apostle
-2947,2005,Rugrats All Grown Up: Dude, Where's My Horse?
+2947,2005,Rugrats All Grown Up: Dude
 2948,1998,Razor Blade Smile
 2949,1998,Polish Wedding
 2950,1957,Dr. Seuss' The Cat in the Hat
@@ -3020,7 +3020,7 @@
 3020,1965,Hogan's Heroes: Season 1
 3021,2003,House of the Dead
 3022,1958,Wanted: Dead or Alive: Season 1
-3023,1973,Upstairs, Downstairs: Season 3
+3023,1973,Upstairs
 3024,2001,In Praise of Love
 3025,2000,Ah! My Goddess: The Movie
 3026,1981,The Four Seasons
@@ -3080,7 +3080,7 @@
 3080,1966,Duel at Diablo
 3081,1972,Sanford and Son: Season 4
 3082,1985,Murphy's Romance
-3083,1978,Dirty Tiger, Crazy Frog
+3083,1978,Dirty Tiger
 3084,1975,Rollerball
 3085,2000,Little Nicky
 3086,1994,The Road to Wellville
@@ -3137,7 +3137,7 @@
 3137,1915,Les Vampires
 3138,2004,Blade: Trinity
 3139,1962,Zatoichi
-3140,1980,Fist of Fear, Touch of Death
+3140,1980,Fist of Fear
 3141,1997,Curtain Call
 3142,2005,Ma Mere
 3143,2004,King Solomon's Mines
@@ -3160,7 +3160,7 @@
 3160,2000,The Man Who Cried
 3161,2001,Scary Movie 2
 3162,2004,Hardcore
-3163,1980,Yes, Minister: Complete Collection
+3163,1980,Yes
 3164,1937,Stella Dallas
 3165,1988,Dirty Rotten Scoundrels
 3166,1945,Charlie Chan: The Shanghai Cobra
@@ -3224,7 +3224,7 @@
 3224,1930,All Quiet on the Western Front
 3225,1987,A Nightmare on Elm Street 3: Dream Warriors
 3226,1938,Bringing Up Baby
-3227,1989,Enemies, A Love Story
+3227,1989,Enemies
 3228,1990,Heart Condition
 3229,2002,Dinotopia
 3230,1951,The Best of the Red Skelton Show
@@ -3235,7 +3235,7 @@
 3235,1979,The Real Andy Kaufman
 3236,1989,976-Evil
 3237,1996,Plump Fiction
-3238,2000,Rage: 20 Years of Punk Rock, West Coast Style
+3238,2000,Rage: 20 Years of Punk Rock
 3239,2001,The Princess Diaries (Fullscreen)
 3240,1952,Bend of the River
 3241,1999,Suze Orman: The Courage to be Rich
@@ -3287,7 +3287,7 @@
 3287,2003,Terminator 3: Rise of the Machines: Bonus Material
 3288,1978,Wonder Woman: Season 3
 3289,2001,My Louisiana Sky
-3290,1974,The Godfather, Part II
+3290,1974,The Godfather
 3291,2004,Howard Zinn: You Can't Be Neutral on a Moving Train
 3292,1956,The Great Locomotive Chase
 3293,2002,Waydowntown
@@ -3425,8 +3425,8 @@
 3425,1990,GoodFellas: Special Edition: Bonus Material
 3426,1938,Flash Gordon's Trip to Mars
 3427,2002,Men in Black II
-3428,2004,Warren Miller: Bloopers, Blunders and Bailouts
-3429,1996,Goodbye South, Goodbye
+3428,2004,Warren Miller: Bloopers
+3429,1996,Goodbye South
 3430,2005,Tenjho Tenge
 3431,2001,Green Day: International Supervideos!
 3432,1964,The Moon-Spinners
@@ -3437,7 +3437,7 @@
 3437,1994,The Stand
 3438,1997,Sharpe 12: Sharpe's Revenge
 3439,1986,Tampopo
-3440,1970,Hi, Mom!
+3440,1970,Hi
 3441,2005,Kicking & Screaming
 3442,2002,Samurai Jack: Season 2
 3443,1976,Stay Hungry
@@ -3506,7 +3506,7 @@
 3506,2002,24 Hour Party People
 3507,1993,Extreme Justice
 3508,1990,Die Fledermaus: Strauss: Royal Opera
-3509,2002,U2: Go Home: Live From Slane Castle, Ireland
+3509,2002,U2: Go Home: Live From Slane Castle
 3510,1996,Hard Eight
 3511,1998,The Best of MusikLaden: Vols. 1 & 2
 3512,1998,GTO: Great Teacher Onizuka: Set 1
@@ -3558,7 +3558,7 @@
 3558,2000,Catherine Cookson's: The Secret
 3559,2003,Cowboys & Angels
 3560,1992,The Mambo Kings
-3561,2001,I Spit on Your Corpse, I Piss on Your Grave
+3561,2001,I Spit on Your Corpse
 3562,1962,No Man Is an Island
 3563,1989,Earth Girls Are Easy
 3564,1998,Humanite
@@ -3566,7 +3566,7 @@
 3566,1993,Outrage
 3567,2004,Starship Troopers 2: Hero of the Federation
 3568,1985,Come and See
-3569,1964,Hush...Hush, Sweet Charlotte
+3569,1964,Hush...Hush
 3570,2003,Scooby-Doo and the Monster of Mexico
 3571,1999,200 Cigarettes
 3572,2001,Aftermath: The Remnants of War
@@ -3588,11 +3588,11 @@
 3588,1967,Zatoichi the Outlaw
 3589,1999,Mr. Bill Goes Hollywood / Mr. Bill Does Vegas
 3590,1963,Jason and the Argonauts
-3591,2003,Be Good, Smile Pretty
+3591,2003,Be Good
 3592,2001,The North Face Expeditions: Everest and Bonus Footage
 3593,1988,My Neighbor Totoro
 3594,1990,The Old Man and the Sea
-3595,1988,Elvira, Mistress of the Dark
+3595,1988,Elvira
 3596,1999,The Grandfather
 3597,1994,Pumpkinhead 2: Blood Wings
 3598,1972,The Seduction of Mimi
@@ -3631,7 +3631,7 @@
 3631,1993,Nemesis
 3632,1996,Darkdrive
 3633,2003,Linkin Park: Live in Texas
-3634,1988,Bright Lights, Big City
+3634,1988,Bright Lights
 3635,1994,Carmen Miranda: Bananas Is My Business
 3636,2005,The Work of Director Mark Romanek
 3637,1996,Ed McBain's 87th Precinct
@@ -3877,7 +3877,7 @@
 3877,1996,The Lottery
 3878,2001,Public Enemy: Live from the House of Blues
 3879,1995,Ghost in the Shell
-3880,1966,The Russians Are Coming, The Russians Are Coming
+3880,1966,The Russians Are Coming
 3881,2004,The Lost Skeleton of Cadavra
 3882,1999,Molly
 3883,1997,Charles Mingus: Triumph of the Underdog
@@ -3930,7 +3930,7 @@
 3930,2000,Militia
 3931,1990,A Cry in the Wild
 3932,1996,Cosmic Voyage: IMAX
-3933,2001,S.W.A.T.: L.A., Las Vegas, and Detroit
+3933,2001,S.W.A.T.: L.A.
 3934,2002,The Original Latin Kings of Comedy
 3935,1968,Yellow Submarine
 3936,1999,End of Days
@@ -4002,7 +4002,7 @@
 4002,2004,Cosplay Complex
 4003,1999,Deal of a Lifetime
 4004,1930,The Blue Angel
-4005,1993,Dr. Quinn, Medicine Woman: Season 2
+4005,1993,Dr. Quinn
 4006,2003,Sesame Street: Cookie Monster's Best Bites
 4007,1989,Cyborg
 4008,2002,David Blaine: Fearless
@@ -4026,7 +4026,7 @@
 4026,1993,Money for Nothing
 4027,1988,Police Academy 5: Assignment - Miami Beach
 4028,2004,Russell Simmons Presents Def Poetry: Season 2
-4029,1952,Come Back, Little Sheba
+4029,1952,Come Back
 4030,1961,Wild in the Country
 4031,1995,Mortal Kombat: The Movie
 4032,1992,Young Duke Series: The Fugitive
@@ -4056,7 +4056,7 @@
 4056,2001,Planet of the Apes
 4057,2000,Sharks: Great White / Ultimate Guide to Sharks
 4058,1952,The Best of the Abbott and Costello Comedy Hour
-4059,1976,Ilsa, Harem Keeper of the Oil Sheiks
+4059,1976,Ilsa
 4060,1990,The Long Walk Home
 4061,1964,Soft Skin
 4062,1997,Battle Athletes: Vol. 2: Ready
@@ -4102,7 +4102,7 @@
 4102,1983,Testament
 4103,1983,My Tutor
 4104,1945,Charlie Chan: The Jade Mask
-4105,2002,Ranma 1/2: Ranma Forever: Vol. 8: Someday, Somehow
+4105,2002,Ranma 1/2: Ranma Forever: Vol. 8: Someday
 4106,2001,The Invisible Circus
 4107,1938,The Childhood of Maxim Gorky
 4108,1960,Steamroller and the Violin
@@ -4122,7 +4122,7 @@
 4122,1986,Parting Glances
 4123,1998,Patch Adams
 4124,1975,Hard Times
-4125,1999,Mary, Mother of Jesus
+4125,1999,Mary
 4126,1996,Vice Girls
 4127,1994,The Flintstones
 4128,1930,Under the Roofs of Paris
@@ -4150,7 +4150,7 @@
 4150,2000,Trading Spaces
 4151,1974,Oliver Twist
 4152,1999,Terror Firmer: Special Edition
-4153,1981,Tarzan, the Ape Man
+4153,1981,Tarzan
 4154,1995,301/302
 4155,2000,East/West
 4156,1973,Wattstax
@@ -4165,7 +4165,7 @@
 4165,2003,The Bone Snatcher
 4166,1987,Hollywood Shuffle
 4167,2002,Mickey's House of Villains
-4168,1995,VeggieTales Classics: Rack, Shack and Benny
+4168,1995,VeggieTales Classics: Rack
 4169,2003,Darna Mana Hai
 4170,2001,Spiders II
 4171,1996,Mars Attacks!
@@ -4265,7 +4265,7 @@
 4265,2002,National Geographic: Vietnam's Unseen War: Pictures from the Other Side
 4266,2004,The Passion of the Christ
 4267,2001,The Sleeping Dictionary
-4268,1993,Double, Double, Toil and Trouble
+4268,1993,Double
 4269,2002,Swimfan
 4270,1990,Opportunity Knocks
 4271,1996,Bound
@@ -4322,7 +4322,7 @@
 4322,1998,City of Glass
 4323,1997,On Guard
 4324,2003,Net Games
-4325,1979,John McLaughlin, Larry Coryell and Paco De Lucia: Meeting of the Spirits
+4325,1979,John McLaughlin
 4326,1995,Ed Sullivan: Rock 'n' Roll Revolution
 4327,1992,Emily Bronte's Wuthering Heights
 4328,1972,The Ruling Class
@@ -4332,7 +4332,7 @@
 4332,1996,Sugar: Howling of Angel
 4333,1979,The BRD Trilogy: The Marriage of Maria Braun
 4334,1998,Point Blank
-4335,2004,Jimmy Timmy Power Hour: Jimmy Neutron, Boy Genius / The Fairly Oddparents
+4335,2004,Jimmy Timmy Power Hour: Jimmy Neutron
 4336,2001,Manic
 4337,1998,I've Been Waiting for You
 4338,2003,Hazaaron Khwaishein Aisi
@@ -4385,7 +4385,6 @@
 4385,1994,Sharpe 5: Sharpe's Honour
 4386,1985,The Return of the Living Dead
 4387,2005,Nobody Knows
-4388,NULL,Ancient Civilizations: Rome and Pompeii
 4389,2003,A Man Apart
 4390,2000,Get Your Stuff
 4391,1999,Natalie Merchant: Live in Concert
@@ -4430,10 +4429,10 @@
 4430,1996,Shanghai Grand
 4431,2005,Disney's Learning Adventures: Mickey's Around the World in 80 Days: Seeing the World
 4432,2003,The Italian Job
-4433,2004,Drive Well, Sleep Carefully: On the Road with Death Cab for Cutie
+4433,2004,Drive Well
 4434,1981,Happy Birthday to Me
 4435,1988,Hatchet for the Honeymoon
-4436,2003,Modern Warfare: The Six Day War, Yom Kippur War
+4436,2003,Modern Warfare: The Six Day War
 4437,1998,Mari-Cookie and the Killer Tarantula
 4438,1990,The Two Jakes
 4439,1999,Gimme Power
@@ -4441,7 +4440,7 @@
 4441,1996,The Last Supper
 4442,2000,Up at the Villa
 4443,1989,City Hunter: .357 Magnum
-4444,2000,Best of Travels in Europe with Rick Steves: Greece, Turkey, Israel & Egypt
+4444,2000,Best of Travels in Europe with Rick Steves: Greece
 4445,2004,Thomas & Friends: The Early Years
 4446,2000,Nothin' 2 Lose
 4447,2003,Thomas & Friends: Best of Gordon
@@ -4515,7 +4514,7 @@
 4515,1986,Extremities
 4516,1999,Saturday Night Live: Christmas
 4517,1997,Mimic
-4518,1964,The Beatles: Washington D.C. Feb. 11th, 1964
+4518,1964,The Beatles: Washington D.C. Feb. 11th
 4519,2003,Out for a Kill
 4520,1995,Grumpier Old Men
 4521,2002,Wire in the Blood: Justice Painted Blind
@@ -4547,7 +4546,7 @@
 4547,1947,The Three Stooges Double Feature
 4548,1963,The Cardinal
 4549,2003,ABBA: Gold: Greatest Hits
-4550,2000,Walker, Texas Ranger: The Final Season
+4550,2000,Walker
 4551,2000,Snatch: Bonus Material
 4552,1976,Laverne & Shirley: Season 1
 4553,1942,The Three Caballeros
@@ -4605,7 +4604,7 @@
 4605,2004,Pride Fighting Championships: Final Conflict 2004
 4606,2003,Scrapped Princess
 4607,1948,Melody Time
-4608,2002,Clifford: Look Out, Clifford! / Big Fun in the Sun
+4608,2002,Clifford: Look Out
 4609,1967,Bob Dylan: Don't Look Back
 4610,2004,Ralphie May: Just Correct
 4611,1999,The Biggest Lil' Star in Hollywood
@@ -4648,7 +4647,7 @@
 4648,1960,Rocky & Bullwinkle & Friends: Season 2
 4649,1980,The Jazz Singer
 4650,2004,Navy Seals: BUDs Class 234
-4651,1939,Goodbye, Mr. Chips
+4651,1939,Goodbye
 4652,1995,Kids
 4653,1984,The Burning Bed
 4654,1991,Carnal Crimes
@@ -4791,7 +4790,6 @@
 4791,1940,Pinocchio
 4792,1973,It's Alive
 4793,1973,Breezy
-4794,NULL,Ancient Civilizations: Land of the Pharaohs
 4795,1996,Sexy and Dangerous
 4796,2003,MTV Pilates
 4797,2005,Gallagher: The Smashing Watermelon Collection
@@ -4930,7 +4928,7 @@
 4930,2000,Bedrooms and Hallways
 4931,2004,Catwoman
 4932,1997,The Saint
-4933,1996,Pretty Village, Pretty Flame
+4933,1996,Pretty Village
 4934,1995,Danielle Steel's Vanished
 4935,1998,VH1 Divas Live
 4936,1998,My Giant
@@ -4979,7 +4977,7 @@
 4979,2002,Star Trek: Enterprise: Season 2
 4980,2000,Dead or Alive 2
 4981,1979,Dracula
-4982,1990,Skinny Tiger, Fatty Dragon
+4982,1990,Skinny Tiger
 4983,2004,Sarah McLachlan: Afterglow Live
 4984,1995,Hiroshima
 4985,1999,Lost & Found
@@ -4990,7 +4988,7 @@
 4990,1979,Taxi: Season 2
 4991,2005,Barbie and the Magic of Pegasus
 4992,1999,Kathy Smith: Kickboxing Workout
-4993,2004,Chicago with Earth, Wind & Fire: Live at the Greek Theatre
+4993,2004,Chicago with Earth
 4994,2002,Snapshots
 4995,2002,Crossroads
 4996,2000,Gone in 60 Seconds
@@ -5084,7 +5082,7 @@
 5084,1981,Escape from New York
 5085,2003,Seabiscuit
 5086,2000,In the Weeds
-5087,1999,Mystery, Alaska
+5087,1999,Mystery
 5088,1987,Dirty Dancing: Bonus Material
 5089,2002,Fushigi Yugi: The Mysterious Play: Eikoden
 5090,1983,The Survivors
@@ -5220,7 +5218,7 @@
 5220,2000,Drowning Mona
 5221,1978,The Big Sleep
 5222,2004,Highlander: Unholy Alliance
-5223,1999,Girl, Interrupted
+5223,1999,Girl
 5224,2003,Bus 174
 5225,1997,The Nazis: A Warning from History
 5226,1998,Rushmore
@@ -5331,7 +5329,7 @@
 5331,2001,Project Arms
 5332,1999,Aladdin and the Adventure of All Time
 5333,2002,Big Fat Liar
-5334,2003,Elmo's World: Families, Mail & Bath Time
+5334,2003,Elmo's World: Families
 5335,1938,Caught in the Draft / Give Me a Sailor: Double Feature
 5336,1994,The Inkwell
 5337,1978,Tales of the Unexpected: Set 1
@@ -5401,7 +5399,7 @@
 5401,2004,Dodgeball: A True Underdog Story
 5402,1978,Days of Heaven
 5403,1999,Light It Up
-5404,2005,Usher: Rhythm City: Vol. 1: Money, Power, Respect
+5404,2005,Usher: Rhythm City: Vol. 1: Money
 5405,2002,The Business of Fancydancing
 5406,1987,Married... with Children: Season 1
 5407,1998,Still Breathing
@@ -5482,7 +5480,7 @@
 5482,1989,Gundam 0080: War in the Pocket
 5483,2002,Naked Weapon
 5484,2000,Har dil jo Pyar karega...
-5485,2000,Chuck Jones: Extremes and in Betweens, a Life in Animation
+5485,2000,Chuck Jones: Extremes and in Betweens
 5486,1977,Raid on Entebbe
 5487,1993,Twenty Bucks
 5488,1977,Kentucky Fried Movie
@@ -5493,7 +5491,7 @@
 5493,1993,Sommersby
 5494,1979,Connections 2
 5495,2001,Just Can't Get Enough
-5496,2004,I, Robot
+5496,2004,I
 5497,1944,Memphis Belle
 5498,1968,Never a Dull Moment
 5499,1986,Soul Man
@@ -5541,7 +5539,7 @@
 5541,1995,Die Hard: With a Vengeance: Bonus Material
 5542,1987,Making Mr. Right
 5543,1957,20 Million Miles to Earth
-5544,1989,See No Evil, Hear No Evil
+5544,1989,See No Evil
 5545,2002,Bad Company
 5546,1953,The Blue Gardenia
 5547,1965,Village of the Giants
@@ -5550,9 +5548,9 @@
 5550,1998,Fogi Is a Bastard
 5551,2002,The Year That Trembled
 5552,2005,Mobile Suit Gundam SEED the Movie 2: The Far-Away Dawn
-5553,2000,Best of Travels in Europe with Rick Steves: Germany, Austria & Switzerland
+5553,2000,Best of Travels in Europe with Rick Steves: Germany
 5554,1945,They Were Expendable
-5555,1990,Earth, Wind & Fire: Live in Japan
+5555,1990,Earth
 5556,1991,Silk Stalkings: Season 1
 5557,1990,Q & A
 5558,1993,Sesame Street's 25th Birthday: A Musical Celebration
@@ -5621,7 +5619,7 @@
 5621,1994,Naked Gun 33 1/3: The Final Insult
 5622,1958,Plan 9 from Outer Space
 5623,2003,Daredevil: Bonus Material
-5624,1999,Sexo, Pudor y Lagrimas
+5624,1999,Sexo
 5625,1999,At First Sight
 5626,2000,Cyndi Lauper: Twelve Deadly Cyns ...  and Then Some
 5627,1955,All That Heaven Allows
@@ -5689,7 +5687,7 @@
 5689,1982,Forced Vengeance
 5690,2002,National Geographic: Through the Lens
 5691,1941,Deanna Durbin: It Started with Eve / Can't Help Singing
-5692,2000,Dude, Where's My Car?
+5692,2000,Dude
 5693,1977,Doctor Who: The Talons of Weng-Chiang
 5694,1992,In the Soup
 5695,2003,Bad Santa
@@ -5711,7 +5709,7 @@
 5711,1995,New Jersey Drive
 5712,1999,The Hunchback of Notre Dame
 5713,2000,Backlash
-5714,1974,Upstairs, Downstairs: Season 4
+5714,1974,Upstairs
 5715,2004,Phil of the Future: Gadgets and Gizmos
 5716,2003,Devil's Pond
 5717,2001,Recording the Producers: A Musical Romp with Mel Brooks
@@ -5775,7 +5773,7 @@
 5775,1992,Scent of a Woman
 5776,2002,Eternal Blood
 5777,1980,Foxes
-5778,1990,The Godfather, Part III
+5778,1990,The Godfather
 5779,1999,The Terrorist
 5780,1978,Muqaddar Ka Sikandar
 5781,2003,Anatomy 2
@@ -5909,12 +5907,12 @@
 5909,2004,Code 46
 5910,2001,Good Rockin' Tonight: The Legacy of Sun Records
 5911,2001,Rudyland
-5912,1990,I, the Worst of All
+5912,1990,I
 5913,1994,Snowy River: The McGregor Saga "The Race"
 5914,1971,Brother John
 5915,1987,Slaughterhouse
 5916,2002,Geobreeders: Breakthrough
-5917,1980,Tinker, Tailor, Soldier, Spy
+5917,1980,Tinker
 5918,2003,Samay
 5919,1984,V: The Final Battle
 5920,1981,Eyewitness
@@ -5963,7 +5961,7 @@
 5963,1925,The Gold Rush
 5964,1990,Ghayal
 5965,2004,They Are Among Us
-5966,1997,Other Voices, Other Rooms
+5966,1997,Other Voices
 5967,2003,The Lizzie McGuire Movie
 5968,2004,Dora the Explorer: Dora's Halloween
 5969,1984,Huey Lewis and the News: Rockpalast Live
@@ -5973,7 +5971,7 @@
 5973,2000,Teletubbies: The Magic Pumpkin and Other Stories
 5974,1957,The Bridge on the River Kwai: Bonus Material
 5975,1979,Ripping Yarns
-5976,2003,Baby Songs: ABC, 123, Colors & Shapes
+5976,2003,Baby Songs: ABC
 5977,1998,Why Do Fools Fall in Love
 5978,2001,Cancer Warrior: Nova
 5979,1999,Speed of Life
@@ -6107,8 +6105,8 @@
 6107,1982,Dragon Lord
 6108,2004,Neil Gaiman's A Short Film About John Bolton
 6109,2000,The Long Run
-6110,1963,It's a Mad, Mad, Mad, Mad World
-6111,1968,Don't Raise the Bridge, Lower the River
+6110,1963,It's a Mad
+6111,1968,Don't Raise the Bridge
 6112,1958,Slippery When Wet
 6113,1998,Living Out Loud
 6114,2000,Antitrust
@@ -6278,7 +6276,7 @@
 6278,1980,The Watcher in the Woods
 6279,2001,Crunch: The Perfect Yoga Workout
 6280,2003,Sting: Inside the Songs of "Sacred Love"
-6281,1994,The Adventures of Priscilla, Queen of the Desert
+6281,1994,The Adventures of Priscilla
 6282,1981,Madman
 6283,1960,The Twilight Zone: Vol. 18
 6284,1992,The Babe
@@ -6371,7 +6369,7 @@
 6371,1963,The Thrill of It All!
 6372,1989,Best of the Best
 6373,1956,Moby Dick
-6374,2002,South Park: Ghouls, Ghosts and Underpants Gnomes
+6374,2002,South Park: Ghouls
 6375,1977,What's Happening!!: Season 2
 6376,2001,Lajja
 6377,2001,Michael Jackson: Dangerous: The Short Films
@@ -6389,7 +6387,7 @@
 6389,2004,Colonial House
 6390,1996,Saved by the Bell: The New Class: Season 4
 6391,2001,The Enemy
-6392,1965,I Spy: Vol. 20: So Long, Patrick Henry
+6392,1965,I Spy: Vol. 20: So Long
 6393,1997,Task Force
 6394,1994,Baby's Day Out
 6395,2001,Mutant X: Season 1
@@ -6405,7 +6403,7 @@
 6405,2002,H
 6406,2004,Fighting Spirit
 6407,2002,Bela Fleck and the Flecktones: Live at the Quick
-6408,1987,Good Morning, Vietnam
+6408,1987,Good Morning
 6409,2003,Bulgarian Lovers
 6410,2002,Dave Mason: Live at Sunrise
 6411,2001,Ripper: Letter from Hell
@@ -6469,7 +6467,7 @@
 6469,2004,Paul Rodriguez's Latin All-Stars of Comedy: Vol. 1
 6470,1998,Homegrown
 6471,1998,Hero Never Dies
-6472,1993,Van Halen Live: Right Here, Right Now
+6472,1993,Van Halen Live: Right Here
 6473,2002,Cherish
 6474,1985,Basic Training
 6475,2004,Spanglish
@@ -6480,7 +6478,7 @@
 6480,2001,Ten Tiny Love Stories
 6481,2000,Beat
 6482,1984,Gremlins
-6483,2001,Smokey Joe's Café
+6483,2001,Smokey Joe's Cafï¿½
 6484,1994,Poirot: Hercule Poirot's Christmas
 6485,2001,Crossfire Trail
 6486,1994,The Madness of King George
@@ -6512,7 +6510,7 @@
 6512,1949,Adam's Rib
 6513,1989,A Tale of Springtime
 6514,2002,Red Green's Duct Tape Forever
-6515,1997,Honey, We Shrunk Ourselves
+6515,1997,Honey
 6516,1991,Body Parts
 6517,1996,Raja Hindustani
 6518,2005,Smile
@@ -6522,7 +6520,7 @@
 6522,2001,Trailer Park Boys: Seasons 1 & 2
 6523,1986,Wildcats
 6524,1986,Lucas
-6525,1994,Paris, France
+6525,1994,Paris
 6526,1999,The Loss of Sexual Innocence
 6527,2002,Rana's Wedding
 6528,1998,Oz: Season 2
@@ -6577,7 +6575,7 @@
 6577,1998,Roaring Glory Warbirds: Vought F4U Corsair
 6578,1990,Delta Force 2: Operation Stranglehold
 6579,1959,Warlock
-6580,1989,Get Smart, Again!
+6580,1989,Get Smart
 6581,1989,Tridev
 6582,1996,The Rich Man's Wife
 6583,1993,Saviour of the Soul
@@ -6693,7 +6691,7 @@
 6693,1993,Blue
 6694,1999,H.K. Triad
 6695,2002,Globe Trekker: Destination China
-6696,1976,Quincy, M.E.: Seasons 1 & 2
+6696,1976,Quincy
 6697,1998,Smoke Signals
 6698,2003,Cher: The Farewell Tour
 6699,1972,Fat City
@@ -6769,12 +6767,12 @@
 6769,1987,Jackson Pollock
 6770,1997,Witchcraft IX: Bitter Flesh
 6771,1998,Urban Legend
-6772,1993,Ciao, Professore!
+6772,1993,Ciao
 6773,2000,Tony Hawk's Trick Tips: Vol. 1: Skateboarding Basics
 6774,2000,Island of the Dead
 6775,1970,Tora! Tora! Tora!
 6776,2003,Kingpin
-6777,1998,Sublime: Stories, Tales, Lies, Exaggeration
+6777,1998,Sublime: Stories
 6778,1998,Tarzan and the Lost City
 6779,1999,Man of the Century
 6780,1997,Brooklyn South: The Complete Series
@@ -6921,7 +6919,7 @@
 6921,2002,Black Sabbath: The Black Sabbath Story
 6922,2000,Hellraiser IV: Bloodline
 6923,1994,Color of Night
-6924,2000,It's the Pied Piper, Charlie Brown
+6924,2000,It's the Pied Piper
 6925,2005,Dalai Lama: The Soul of Tibet
 6926,1999,Neo Ranga
 6927,1969,The Italian Job
@@ -7093,7 +7091,7 @@
 7093,1995,Jeff Buckley: Live in Chicago
 7094,2005,Tales from the Crypt: From Comic Books to Television
 7095,1995,Violet's Visit
-7096,2001,On Any Sunday: Motocross, Malcolm and More
+7096,2001,On Any Sunday: Motocross
 7097,2005,Raging Sharks
 7098,1984,Next of Kin
 7099,2003,Kelly Clarkson: Miss Independent
@@ -7113,7 +7111,7 @@
 7113,2004,Happy Lesson
 7114,2002,Discovering the Real World of Harry Potter
 7115,2003,Chevelle: Live from the Norva
-7116,2004,ABC News Presents: Jesus, Mary and Da Vinci
+7116,2004,ABC News Presents: Jesus
 7117,1938,The Lady Vanishes
 7118,1962,The Beverly Hillbillies Vol. 1: 10 Classic Episodes
 7119,2003,Andromeda: Season 4
@@ -7210,7 +7208,7 @@
 7210,1987,Metallica: Cliff 'Em All
 7211,1985,Area 88 Act #1: The Blue Skies of Betrayal
 7212,1995,Slayers: The Motion Picture
-7213,1999,I, Zombie
+7213,1999,I
 7214,1978,Petey Wheatstraw
 7215,1976,Two Minute Warning
 7216,1988,Care Bears: Festival of Fun
@@ -7238,7 +7236,6 @@
 7238,2003,Prozac Nation
 7239,1968,The Lion in Winter
 7240,1987,Beverly Hills Cop II
-7241,NULL,Ancient Civilizations: Athens and Greece
 7242,1997,Love Jones
 7243,2003,My Sister's Keeper
 7244,2004,History of Rock 'N' Roll
@@ -7375,7 +7372,7 @@
 7375,1974,School of the Holy Beast
 7376,2001,Beyblade
 7377,2001,Billy Connolly: Live: The Greatest Hits
-7378,2002,Jamie Foxx Unleashed: Lost, Stolen and Leaked!
+7378,2002,Jamie Foxx Unleashed: Lost
 7379,1981,Diva
 7380,2001,The String Cheese Incident: Evolution
 7381,1997,Flubber
@@ -7471,7 +7468,7 @@
 7471,1974,QB VII
 7472,2002,Safe Conduct
 7473,1983,The Best of He-Man and the Masters of the Universe
-7474,2000,South of Heaven, West of Hell
+7474,2000,South of Heaven
 7475,1988,Running on Empty
 7476,1974,Space Battleship Yamato: The Movie
 7477,2002,Hunting Humans
@@ -7527,7 +7524,7 @@
 7527,1979,The World of Drunken Master
 7528,2003,Denise Austin: Shrink Your Female Fat Zones
 7529,1994,Sharpe 3: Sharpe's Company
-7530,2003,Good Times, Bed Times
+7530,2003,Good Times
 7531,1999,Evgeny Kissin: The Gift of Music
 7532,2003,National Lampoon's Gold Diggers
 7533,1999,East Is East
@@ -7650,7 +7647,7 @@
 7650,1997,The Matchmaker
 7651,2000,Isn't She Great
 7652,1978,Best of The Muppet Show: Mark Hamill / Paul Simon / Raquel Welch
-7653,2003,CKY: Infiltrate, Destroy, Rebuild: The Video Album
+7653,2003,CKY: Infiltrate
 7654,1896,Lumiere Brothers' First Films
 7655,1996,The Best Bits of Mr. Bean
 7656,1999,George Michael: Ladies & Gentlemen: The Best of George Michael
@@ -7764,7 +7761,7 @@
 7764,1996,Evil Ed
 7765,2000,Saturday Night Live: The Best of Steve Martin
 7766,2002,Endangered Species
-7767,2000,O Brother, Where Art Thou?
+7767,2000,O Brother
 7768,2003,The Berenstain Bears: Adventure & Fun for Everyone
 7769,1994,Little Buddha
 7770,1988,Piece of Cake
@@ -7831,7 +7828,7 @@
 7831,1988,Critters 2: The Main Course
 7832,1951,When Worlds Collide
 7833,2004,Arrested Development: Season 2
-7834,2002,Video Visits: Merida, Cancun and Belize
+7834,2002,Video Visits: Merida
 7835,1982,Zu: Warriors from the Magic Mountain
 7836,1965,King Rat
 7837,1972,Lenny Bruce Without Tears
@@ -8003,7 +8000,7 @@
 8003,2004,Harry Connick Jr.: Only You
 8004,1998,The Best of So Graham Norton
 8005,1986,Therese
-8006,1962,Hans Brinker, or the Silver Skates
+8006,1962,Hans Brinker
 8007,1964,Nothing But a Man
 8008,1998,Treasure Island
 8009,2003,Recipe for Disaster
@@ -8045,7 +8042,7 @@
 8045,2003,Open Range
 8046,1993,Menace II Society
 8047,1994,Tandem
-8048,1965,Ladies and Gentlemen, Mr. Leonard Cohen
+8048,1965,Ladies and Gentlemen
 8049,1990,Dick Tracy
 8050,1999,Joan of Arc
 8051,2001,The Curse of the Jade Scorpion
@@ -8091,7 +8088,7 @@
 8091,2002,Lord of the Rings: The Two Towers: Bonus Material
 8092,1983,The Right Stuff: Bonus Material
 8093,1953,M. Hulot's Holiday
-8094,1967,Easy Come, Easy Go
+8094,1967,Easy Come
 8095,2003,Beef
 8096,1990,Mountains of the Moon
 8097,2004,Asylum of the Damned
@@ -8105,13 +8102,13 @@
 8105,2003,The Jungle Book 2
 8106,2005,Alien Apocalypse
 8107,1987,Predator: Collector's Edition
-8108,2001,Monsters, Inc.: Bonus Material
+8108,2001,Monsters
 8109,2005,Brothers in Arms
 8110,2001,Love the Hard Way
 8111,1978,Mork & Mindy: Season 1
 8112,1958,Big Deal on Madonna Street
 8113,1994,Sweet Valley High: Season 1
-8114,1999,A Man, a Plan, a Canal, Panama: Nova
+8114,1999,A Man
 8115,2000,Virgin Fleet
 8116,2002,The Sopranos: Season 4
 8117,1982,Pink Floyd: The Wall
@@ -8185,7 +8182,7 @@
 8185,2001,Final Fantasy Unlimited
 8186,1963,The Twilight Zone: Vol. 21
 8187,1999,SpongeBob SquarePants: The Seascape Capers
-8188,1994,He's a Woman, She's a Man
+8188,1994,He's a Woman
 8189,1996,Stealing Beauty
 8190,1960,Butterfield 8
 8191,1998,Horatio Hornblower
@@ -8291,7 +8288,7 @@
 8291,1992,Lady Dragon
 8292,2004,Star Wars: Clone Wars: Vol. 1
 8293,1955,Guys and Dolls
-8294,2003,Remember Me, My Love
+8294,2003,Remember Me
 8295,2003,Holes
 8296,1980,Metropolitan Opera: G. Puccini: Manon Lescaut
 8297,1996,Beyond Silence
@@ -8335,7 +8332,7 @@
 8335,1962,I Fidanzati
 8336,1987,Married... with Children: Season 2
 8337,1990,Quigley Down Under
-8338,2004,Bill Hicks Live: Satirist, Social Critic, Stand-up Comedian
+8338,2004,Bill Hicks Live: Satirist
 8339,2000,Where the Heart Is
 8340,1987,Rendez-vous
 8341,1988,Mr. North
@@ -8407,7 +8404,7 @@
 8407,1972,Raw Meat
 8408,2002,National Geographic: Super Croc
 8409,1987,The Pick-up Artist
-8410,1933,Hallelujah, I'm a Bum
+8410,1933,Hallelujah
 8411,2004,Eminem AKA
 8412,2004,Springtime in a Small Town
 8413,2003,Girl with a Pearl Earring
@@ -8475,7 +8472,7 @@
 8475,2004,Fida
 8476,1983,Amityville 3-D
 8477,1987,Project A-ko: Love and Robots
-8478,2002,Earth, Wind & Fire: Live by Request
+8478,2002,Earth
 8479,2001,Fighting for Love
 8480,1987,Dorothy L. Sayers Mysteries: Strong Poison
 8481,1965,Samurai Assassin
@@ -8508,7 +8505,7 @@
 8508,1965,The Battle of Algiers: Bonus Material 2
 8509,1999,What Your Eyes Don't See
 8510,2005,Double Dare
-8511,1958,The Long, Hot Summer
+8511,1958,The Long
 8512,1999,The World Is Not Enough
 8513,2004,American Crime
 8514,2001,Fourplay
@@ -8554,7 +8551,7 @@
 8554,1996,Yes: Keys to Ascension
 8555,2005,The Crow: Wicked Prayer
 8556,1987,Sledge Hammer!: Season 2
-8557,2003,VeggieTales: Bible Heroes: Lions, Shepherds and Queens
+8557,2003,VeggieTales: Bible Heroes: Lions
 8558,1997,Dancehall Queen
 8559,2002,Neil Young & Crazy Horse: Rust Never Sleeps
 8560,1991,Perfect Harmony
@@ -8585,7 +8582,7 @@
 8585,1979,Mad Max
 8586,1972,Jeremiah Johnson
 8587,2004,Devo Live
-8588,1978,Satyam, Shivam, Sundaram
+8588,1978,Satyam
 8589,1997,She's So Lovely
 8590,2004,Sniper 3
 8591,1982,Fanny and Alexander (Theatrical Version)
@@ -8652,7 +8649,7 @@
 8652,1980,The Changeling
 8653,1963,The Girl Who Knew Too Much
 8654,1984,Sherlock Holmes: The Hound of the Baskervilles
-8655,1998,Blood, Guts, Bullets & Octane
+8655,1998,Blood
 8656,1993,Godzilla vs. Mechagodzilla II
 8657,2002,Bob Dylan: World Tour 1966: The Home Movies
 8658,2002,Grand Illusions: The Story of Magic
@@ -8680,14 +8677,14 @@
 8680,2004,Miles Davis: Miles Electric: A Different Kind of Blue
 8681,1992,Rebels of the Neon God
 8682,1965,Thunderball
-8683,1966,It's the Great Pumpkin, Charlie Brown
+8683,1966,It's the Great Pumpkin
 8684,1996,Unlikely Angel
 8685,1956,Written on the Wind
 8686,1944,Return of the Vampire
 8687,2002,Star Wars: Episode II: Attack of the Clones
-8688,1986,Manon of the Spring (Jean de Florette, Part II)
+8688,1986,Manon of the Spring (Jean de Florette
 8689,1981,Carbon Copy
-8690,2003,Ashtanga, NY
+8690,2003,Ashtanga
 8691,1998,Dawson's Creek: Season 1
 8692,2004,Shania Twain: Up Close and Personal
 8693,1999,Roughnecks: The Starship Troopers Chronicles: The Tesca Campaign
@@ -8730,7 +8727,7 @@
 8730,1985,Only Fools and Horses: Series 4-5 (Plus Specials)
 8731,1981,Andy Kaufman: The Midnight Special
 8732,1984,Camila
-8733,1989,Doogie Howser, M.D.: Season 1
+8733,1989,Doogie Howser
 8734,1992,Dark Harvest
 8735,1969,The Over-the-Hill Gang
 8736,1990,Tie Me Up! Tie Me Down!
@@ -8803,13 +8800,13 @@
 8803,1991,Barton Fink
 8804,2002,DIO: Evil or Divine
 8805,1953,Pickup on South Street
-8806,1966,The Good, the Bad and the Ugly
+8806,1966,The Good
 8807,2004,The Snurks
 8808,2001,Brotherhood of the Wolf
 8809,2002,Star Trek: Nemesis
 8810,2002,Hope Ranch
 8811,2003,Rites of Passage
-8812,1984,Murder, She Wrote: Season 1
+8812,1984,Murder
 8813,1980,Grown Ups
 8814,2003,Las Vegas: Season 1
 8815,1992,Chaplin: The Movie
@@ -8821,7 +8818,7 @@
 8821,1915,The Birth of a Nation
 8822,2003,Sesame Street: Elmo's World: Great Outdoors
 8823,1983,Copper Mountain
-8824,2001,Godzilla, Mothra and King Ghidorah: Giant Monsters All Out Attack
+8824,2001,Godzilla
 8825,1992,Mad About You: Season 1
 8826,1996,The Truth About Cats & Dogs
 8827,1998,Little Voice
@@ -8855,7 +8852,7 @@
 8855,1996,The Best of The Steve Harvey Show
 8856,1980,Squeeze Play
 8857,1989,Troop Beverly Hills
-8858,2003,Johnny Cash: At Town Hall Party, 1958 & 1959
+8858,2003,Johnny Cash: At Town Hall Party
 8859,1992,The Gun in Betty Lou's Handbag
 8860,1984,The Adventures of Sherlock Holmes
 8861,1960,Elmer Gantry
@@ -8868,9 +8865,9 @@
 8868,1977,Soap: Season 1
 8869,1960,The Twilight Zone: Vol. 34
 8870,1982,The Border
-8871,2001,God is Great, I'm Not
+8871,2001,God is Great
 8872,1997,In & Out
-8873,2004,Crosby, Stills & Nash: The Acoustic Concert
+8873,2004,Crosby
 8874,1981,Ticket to Heaven
 8875,1991,Dan Fogelberg: Live: Greetings from the West
 8876,2002,WWE: Rebellion 2002
@@ -8886,7 +8883,7 @@
 8886,2003,Bonjour Monsieur Shlomi
 8887,2005,Baby Einstein: Baby Wordsworth: First Words / Around the House
 8888,1997,Lewis & Clark & George
-8889,1976,Mother, Jugs and Speed
+8889,1976,Mother
 8890,1936,Fury
 8891,1995,Tokyo Fist
 8892,2004,Kim Possible: Villain Files
@@ -8896,7 +8893,7 @@
 8896,2002,Bollywood / Hollywood
 8897,1999,Friends & Lovers
 8898,1991,Soapdish
-8899,2000,Johnny Cash: The Man, His World, His Music
+8899,2000,Johnny Cash: The Man
 8900,2000,Directors: Steven Spielberg
 8901,1990,The Bonfire of the Vanities
 8902,1958,Cowboy
@@ -8905,10 +8902,10 @@
 8905,2001,Knight Hunters
 8906,1995,Without Evidence
 8907,1989,Romero
-8908,1969,Hello, Dolly!
-8909,2001,My Schoolmate, the Barbarian
+8908,1969,Hello
+8909,2001,My Schoolmate
 8910,1947,Lured
-8911,2004,Wake Up, Ron Burgundy
+8911,2004,Wake Up
 8912,1975,Lord Peter Wimsey: Five Red Herrings
 8913,1999,Tom Petty and the Heartbreakers: High Grass Dogs: Live
 8914,1978,Comes a Horseman
@@ -8962,7 +8959,7 @@
 8962,2001,Heaven: Our Eternal Home
 8963,2004,The Last King
 8964,2003,Trailer Park Boys: Season 4
-8965,2004,The Good, the Bad and the Beautiful / The Bikini Academy: Double Feature
+8965,2004,The Good
 8966,2003,Pieces of April
 8967,1978,Dead Kennedys: The Early Years Live
 8968,1975,A Dog of Flanders
@@ -9072,7 +9069,7 @@
 9072,1997,Fierce Creatures
 9073,2002,Dawg
 9074,1986,Heartbreak Ridge
-9075,1969,Go, Go, Second Time Virgin
+9075,1969,Go
 9076,1954,Samurai Trilogy 1: Musashi Miyamoto
 9077,2003,Live Forever
 9078,2003,Wheel of Time
@@ -9103,7 +9100,7 @@
 9103,1914,Tillie's Punctured Romance
 9104,2001,Echo and the Bunnymen: Live in Liverpool
 9105,2005,A Slice of Terror
-9106,1944,Murder, My Sweet
+9106,1944,Murder
 9107,1993,Handel: The Messiah: Choir of King's College
 9108,2002,Love Liza
 9109,1988,Cocoon: The Return
@@ -9364,7 +9361,7 @@
 9364,2002,No Good Deed
 9365,1997,Life According to Muriel
 9366,2003,Who Killed the Red Baron?: Nova
-9367,1987,Like Father, Like Son
+9367,1987,Like Father
 9368,1974,The Texas Chainsaw Massacre
 9369,1987,Nadine
 9370,1939,Beau Geste
@@ -9395,12 +9392,12 @@
 9395,1998,Les Miserables
 9396,1996,The Crow: City of Angels
 9397,1973,Columbo: Season 3
-9398,2004,Bobby Jones, Stroke of Genius
+9398,2004,Bobby Jones
 9399,1991,Legend of the Dragon Kings: White Dragon
 9400,1987,Allan Quatermain and the Lost City of Gold
 9401,2003,Strange Things Happen at Sundown
 9402,2000,Mr. Accident
-9403,2004,Bikini Bandits: Briefs, Shorts & Panties
+9403,2004,Bikini Bandits: Briefs
 9404,2004,WOW Gospel 2004
 9405,1998,Hoods
 9406,2001,The Best of Insomniac: Uncensored: Vol. 1
@@ -9457,7 +9454,7 @@
 9457,2004,Wacky Races: The Complete Series
 9458,2005,Kingdom of Heaven
 9459,1988,I'm Gonna Git You Sucka
-9460,2005,Lucinda Williams: Live from Austin, TX
+9460,2005,Lucinda Williams: Live from Austin
 9461,1994,Ready to Wear
 9462,1980,Half a Loaf of Kung Fu
 9463,1986,Castle in the Sky: Bonus Material
@@ -9486,7 +9483,7 @@
 9486,2004,Evanescence: Anywhere but Home
 9487,2002,Dragon Ball Z: The Return of Cooler
 9488,2000,Secret KGB JFK Assassination File
-9489,1974,Dirty Mary, Crazy Larry
+9489,1974,Dirty Mary
 9490,2004,The Pixies: Sell Out 2004: Reunion Tour
 9491,1981,The Woman Next Door
 9492,2003,3 Walls
@@ -9497,7 +9494,7 @@
 9497,1985,Moonlighting: The Pilot
 9498,2004,Lewis Black: Black on Broadway
 9499,1981,Ken Burns' America: Brooklyn Bridge
-9500,2002,20,000 Leagues Under the Sea
+9500,2002,20
 9501,2001,Lakeboat
 9502,1999,Letters From a Killer
 9503,2004,NBA Dynasty Series: Chicago Bulls 1990s
@@ -9579,7 +9576,7 @@
 9579,2004,The Hidden Fuhrer: Hitler's Sexuality
 9580,2002,Blue Gate Crossing
 9581,1976,The Jeffersons: Season 2
-9582,1976,I, Claudius
+9582,1976,I
 9583,1960,Chaudhvin Ka Chand
 9584,1997,Billy Joel: Greatest Hits: Vol. 3: The Video
 9585,1973,The Tomorrow People: Set 1
@@ -9592,7 +9589,7 @@
 9592,1998,There's Something About Mary: Special Edition
 9593,1995,Friday
 9594,2003,NASCAR: Winston Cup 2003 Year in Review
-9595,1999,My Father, My Mother, My Brothers and My Sisters
+9595,1999,My Father
 9596,1971,Straw Dogs
 9597,1965,War-Gods of the Deep
 9598,1979,Manhattan
@@ -9601,7 +9598,7 @@
 9601,1997,The Wedding Party
 9602,1981,Tower of Death
 9603,2005,Pink Floyd: Atom Heart Mother
-9604,1997,A Gun, a Car, a Blonde
+9604,1997,A Gun
 9605,2001,Armitage: Dual-Matrix
 9606,1980,Agatha Christie's The Mirror Crack'd
 9607,2003,Cromartie High School
@@ -9692,7 +9689,7 @@
 9692,2001,Okie Noodling
 9693,1935,Werewolf of London
 9694,2003,Melvin Goes to Dinner
-9695,1998,A Cool, Dry Place
+9695,1998,A Cool
 9696,2000,Fart: The Movie
 9697,2001,Love in a Cold Climate
 9698,1991,Iron Maze
@@ -9710,7 +9707,7 @@
 9710,1968,Stolen Kisses
 9711,1995,Lessons of Darkness
 9712,1964,A Shot in the Dark
-9713,1993,Blood In, Blood Out
+9713,1993,Blood In
 9714,2003,The Wiggles: Top of the Tots
 9715,1942,The Spoilers
 9716,1968,Therese and Isabelle
@@ -9736,7 +9733,7 @@
 9736,2000,Miles Davis: Live in Montreal
 9737,2001,The Powerpuff Girls: Meet the Beat-Alls
 9738,1996,Bastard out of Carolina
-9739,2003,Lucy Must Be Traded, Charlie Brown
+9739,2003,Lucy Must Be Traded
 9740,1988,Big Business
 9741,1999,The 13th Warrior
 9742,1945,The House on 92nd Street
@@ -9757,7 +9754,7 @@
 9757,1993,Homeward Bound: The Incredible Journey
 9758,1985,Colonel Redl
 9759,1998,Hush
-9760,1997,Caroline Myss, Ph.D.: Why People Don't Heal / Three Levels of Power
+9760,1997,Caroline Myss
 9761,1967,The War Wagon
 9762,1987,Jaws: The Revenge
 9763,2000,Time of Favor
@@ -9865,7 +9862,7 @@
 9865,2003,Miracles: The Complete Series
 9866,1990,Campion: Dancers in Mourning
 9867,2002,Fairly Oddparents: Scary Godparents
-9868,2004,The Magic School Bus: Bugs, Bugs, Bugs!
+9868,2004,The Magic School Bus: Bugs
 9869,1998,Occult History of the 3rd Reich #2: The SS Blood & Soil
 9870,2004,Dirty Filthy Love
 9871,2003,Curse of the Komodo
@@ -9973,7 +9970,7 @@
 9973,2004,David Bowie: A Reality Tour
 9974,1997,Fathers' Day
 9975,2002,Rub & Tug
-9976,2003,Elmo's World: Elmo Has Two! Hands, Ears & Feet
+9976,2003,Elmo's World: Elmo Has Two! Hands
 9977,1982,Honkytonk Man
 9978,2004,Balance Ball for Weight Loss
 9979,1975,The Hiding Place
@@ -10041,7 +10038,7 @@
 10041,1982,Cat People
 10042,1981,Raiders of the Lost Ark
 10043,1936,After the Thin Man
-10044,1995,To Wong Foo, Thanks for Everything! Julie Newmar
+10044,1995,To Wong Foo
 10045,1980,Little Miss Marker
 10046,2002,The Backyard
 10047,1998,Cadfael: The Pilgrim of Hate
@@ -10084,7 +10081,7 @@
 10084,1936,Mr. Deeds Goes to Town
 10085,2002,Zus & Zo
 10086,1988,Jimmy Doolittle: An American Hero
-10087,1997,Dr. Quinn, Medicine Woman: Season 6
+10087,1997,Dr. Quinn
 10088,2000,Clerks: Uncensored
 10089,1999,Soccer Dog
 10090,1992,As Time Goes By: Series 4
@@ -10094,7 +10091,7 @@
 10094,1999,Angela's Ashes
 10095,2000,Dawson's Creek: Season 4
 10096,1998,Last Days
-10097,2004,Dude, Where's the Party?
+10097,2004,Dude
 10098,2002,Love in the Time of Money
 10099,1938,Room Service / At the Circus
 10100,1993,Flesh and Bone
@@ -10220,7 +10217,7 @@
 10220,1995,Gloria Estefan: Everlasting Gloria
 10221,1991,Shattered
 10222,1953,The War of the Worlds
-10223,2004,Cheating Death, Stealing Life: The Eddie Guerrero Story
+10223,2004,Cheating Death
 10224,1999,The Worst Witch: Sorcery and Chips
 10225,1993,Groundhog Day
 10226,2002,13 Conversations About One Thing
@@ -10318,7 +10315,7 @@
 10318,2002,Dream Theater: Metropolis 2000: Scenes From New York
 10319,2004,Ray Charles: Line in Concert with the Edmonton Symphony
 10320,1950,Variety Lights
-10321,1975,Upstairs, Downstairs: Season 5
+10321,1975,Upstairs
 10322,2003,Coming Out Party
 10323,1986,The Shaolin Invincibles
 10324,1999,Slipknot: Welcome to Our Neighborhood
@@ -10366,7 +10363,7 @@
 10366,2003,Mimic 3: Sentinel
 10367,1971,Everything You Always Wanted to Know About Sex But Were Afraid to Ask
 10368,2001,Triangle
-10369,1972,Upstairs, Downstairs: Season 2
+10369,1972,Upstairs
 10370,1998,Embrace the Darkness
 10371,1998,Gods and Monsters
 10372,1950,All About Eve
@@ -10554,14 +10551,14 @@
 10554,1959,The Diary of Anne Frank
 10555,2004,Masti
 10556,1994,Destiny in Space: IMAX
-10557,1994,Good Night, Gorilla
+10557,1994,Good Night
 10558,1970,Bed and Board
 10559,1941,Citizen Kane: Bonus Material
 10560,1957,Witness for the Prosecution
 10561,2005,Ice Princess
 10562,2002,The Biggest Fan
 10563,2003,Killer Rats
-10564,1991,Truly, Madly, Deeply
+10564,1991,Truly
 10565,2002,The Peeping
 10566,2002,Hellraiser VI: Hellseeker
 10567,1999,The All New Adventures of Laurel & Hardy: For Love or Mummy
@@ -10616,7 +10613,7 @@
 10616,2001,Bob & Rose
 10617,1963,Contempt
 10618,1991,Cape Fear: Bonus Material
-10619,1996,Sgt. Kabukiman, N.Y.P.D.
+10619,1996,Sgt. Kabukiman
 10620,1940,The Philadelphia Story
 10621,1965,Live and Swingin': The Ultimate Rat Pack Collection
 10622,2000,Bless the Child
@@ -10646,7 +10643,7 @@
 10646,1985,Secret Admirer
 10647,1982,The Blue and the Gray
 10648,1988,The Kiss
-10649,1970,Count Yorga, Vampire
+10649,1970,Count Yorga
 10650,2001,Little Polar Bear
 10651,1998,Secrets of War: The Korean Conflict
 10652,1998,The Great Battles of World War II: Battle for the Beach
@@ -10673,7 +10670,7 @@
 10673,1991,Hot Shots!
 10674,1995,Dancing in the Dark
 10675,1961,Phantom Planet
-10676,1933,The Kennel Murder Case / Nancy Drew, Reporter: Double Feature
+10676,1933,The Kennel Murder Case / Nancy Drew
 10677,1976,Woyzeck
 10678,1962,Gypsy
 10679,1973,Zatoichi at Large
@@ -10687,7 +10684,7 @@
 10687,1992,Jessica: A Ghost Story
 10688,1981,Ms. 45
 10689,1981,Le Nozze di Figaro: Mozart: Drottningholm Court Theatre
-10690,1998,Kipper: Pools, Parks & Picnics
+10690,1998,Kipper: Pools
 10691,1959,They Came to Cordura
 10692,2004,Broadway: The American Musical
 10693,1969,Benny Hill: Complete and Unadulterated: The Naughty Early Years: Set 2
@@ -10779,7 +10776,6 @@
 10779,1983,The Fourth Man
 10780,2000,Signing Made Easy
 10781,2004,Airline: Season 1
-10782,NULL,Roti Kapada Aur Makaan
 10783,1940,The Mummy's Hand / The Mummy's Tomb
 10784,2003,Elf: Bonus Material
 10785,2000,U-571
@@ -10792,7 +10788,7 @@
 10792,2003,Dora the Explorer: Egg Hunt
 10793,1952,The Adventures of Ozzie and Harriet
 10794,2003,The Singing Forest
-10795,1999,Babar, King of the Elephants
+10795,1999,Babar
 10796,1969,The Oblong Box / Scream and Scream Again (Double Feature)
 10797,1936,The Three Stooges: Cops and Robbers
 10798,1927,Alfred Hitchcock: Blackmail and Easy Virtue
@@ -10836,7 +10832,7 @@
 10836,1988,Return of the Living Dead 2
 10837,1985,Shoah
 10838,2001,Transcendence
-10839,2003,Picasso: Magic, Sex, Death
+10839,2003,Picasso: Magic
 10840,2004,Rated R: Republican in Hollywood
 10841,2004,He Knew He Was Right
 10842,1999,Mariah Carey: Around the World
@@ -10857,7 +10853,7 @@
 10857,1988,The Men Who Killed Kennedy
 10858,2001,Britney Spears: Britney: The Videos
 10859,1996,Alice in Chains: Unplugged
-10860,1989,The Cook, the Thief, His Wife, and Her Lover
+10860,1989,The Cook
 10861,1994,Love Affair
 10862,1992,First Shot
 10863,2002,Hollywood Ending
@@ -10884,7 +10880,7 @@
 10884,1958,Damn Yankees
 10885,2004,Dead and Breakfast
 10886,1995,Waterworld
-10887,1980,Oh, God! Book II
+10887,1980,Oh
 10888,1990,Dil
 10889,2000,Keeping the Faith
 10890,1978,Revenge of the Pink Panther
@@ -10938,16 +10934,16 @@
 10938,1993,Ethan Frome
 10939,1997,The Soong Sisters
 10940,1968,Candy
-10941,2005,National Geographic: Guns, Germs and Steel
+10941,2005,National Geographic: Guns
 10942,1999,Sakura Diaries
 10943,2001,Ben Folds Five: Complete Sessions at West 54th
 10944,1985,Re-Animator
 10945,1997,The Land Before Time V: The Mysterious Island
 10946,1972,Pink Flamingos
 10947,2004,The Incredibles
-10948,2003,Easy Riders, Raging Bulls
+10948,2003,Easy Riders
 10949,2002,Grand Teton / Yellowstone
-10950,1966,I, A Woman
+10950,1966,I
 10951,1961,Judgment at Nuremberg
 10952,1996,Heaven's Prisoners
 10953,2003,Dangerous Liaisons (Short English Version)
@@ -10964,7 +10960,7 @@
 10964,2005,Barbie: Fairytopia
 10965,1995,Blue in the Face
 10966,2001,Last Run
-10967,1990,White Hunter, Black Heart
+10967,1990,White Hunter
 10968,2002,Gov't Mule: Rising Low
 10969,1954,Jail Bait
 10970,1986,Castle in the Sky
@@ -11080,13 +11076,13 @@
 11080,1998,The Patriot
 11081,1943,The More the Merrier
 11082,1999,VH1 Divas Live '99
-11083,2003,Goodbye, Mr. Chips
+11083,2003,Goodbye
 11084,1986,An American Tail
 11085,1977,Equus
 11086,1997,Julian Po
 11087,1998,American Steam
 11088,1992,Adventures of Batman & Robin: The Joker/Fire & Ice
-11089,2001,Monsters, Inc.
+11089,2001,Monsters
 11090,1999,Stir of Echoes
 11091,1996,3rd Rock from the Sun: Season 2
 11092,2000,Dragon Ball Z: Trunks Saga
@@ -11111,9 +11107,9 @@
 11111,1940,They Drive by Night
 11112,1987,Karajan/Mutter: Vivaldi: Four Seasons
 11113,1999,Jesus and the Shroud of Turin
-11114,1954,20,000 Leagues Under the Sea
+11114,1954,20
 11115,2000,Genesis: The Bible
-11116,2002,Live at Knebworth: Parts One, Two & Three
+11116,2002,Live at Knebworth: Parts One
 11117,2004,Miracle: Bonus Material
 11118,1965,Harum Scarum
 11119,1997,Wild America
@@ -11173,7 +11169,7 @@
 11173,2003,21 Grams
 11174,1996,The War at Home
 11175,1991,R.E.M.: This Film Is On
-11176,1989,Honey, I Shrunk the Kids
+11176,1989,Honey
 11177,1989,Worth Winning
 11178,1992,Brain Donors
 11179,1998,Secrets of War: Air Wars
@@ -11203,7 +11199,7 @@
 11203,2004,Wishbone: Hot Diggety Dawg
 11204,2002,Baby Einstein: Neighborhood Animals
 11205,1993,Inspector Morse 27: The Day of the Devil
-11206,1977,New York, New York
+11206,1977,New York
 11207,1959,Invisible Invaders / Journey to the Seventh Planet: Double Feature
 11208,1964,Gospel According to St. Matthew
 11209,1983,Risky Business
@@ -11295,7 +11291,7 @@
 11295,1997,Perfect Blue
 11296,1997,The Canterville Ghost
 11297,2004,Janet Jackson: From Janet to Damita Jo: The Videos
-11298,2004,Sesame Street: A Celebration of Me, Grover!
+11298,2004,Sesame Street: A Celebration of Me
 11299,2004,Gad Guard
 11300,2000,Out of Time
 11301,1973,The Wicker Man
@@ -11330,7 +11326,7 @@
 11330,1950,Martin & Lewis: At War with the Army
 11331,1989,In Country
 11332,1955,Blackboard Jungle
-11333,1972,Now You See Him, Now You Don't
+11333,1972,Now You See Him
 11334,1994,Cirque du Soleil: Saltimbanco
 11335,2000,Just a Question of Love
 11336,1972,Doctor Who: The Three Doctors
@@ -11350,7 +11346,7 @@
 11350,2005,Urban Legends: Bloody Mary
 11351,1997,The Haunted Lantern
 11352,1973,The Day of the Dolphin
-11353,1999,Indigo Girls: Live at the Fillmore, Denver
+11353,1999,Indigo Girls: Live at the Fillmore
 11354,1992,Mississippi Masala
 11355,1966,Alvarez Kelly
 11356,1987,Dragnet
@@ -11359,7 +11355,7 @@
 11359,1950,The Flowers of St. Francis
 11360,2004,Globe Trekker: Scotland
 11361,2004,Weezer: Video Capture Device
-11362,2000,Kids in the Hall: Same Guys, New Dresses
+11362,2000,Kids in the Hall: Same Guys
 11363,2004,Farmingville: POV
 11364,2000,Homicide: The Movie
 11365,1966,Gamera: Return of the Giant Monsters / The Magic Serpent
@@ -11402,7 +11398,7 @@
 11402,2002,Clifford: Team Clifford and Rock N' Roll Clifford
 11403,1973,Day for Night
 11404,2002,MTV: The Real World You Never Saw: Chicago
-11405,1998,Six Days, Seven Nights
+11405,1998,Six Days
 11406,1990,King of New York: Special Edition (Widescreen)
 11407,1997,Preaching to the Perverted
 11408,2002,Love and a Bullet
@@ -11580,7 +11576,7 @@
 11580,1999,Total Recall 2070
 11581,2004,National Geographic's Most Amazing Moments
 11582,1992,A Midnight Clear
-11583,1984,Another State of Mind: Social Distortion, Youth Brigade and Minor Threat
+11583,1984,Another State of Mind: Social Distortion
 11584,1991,Ernest Scared Stupid
 11585,1994,My Father the Hero
 11586,1923,Three Ages
@@ -11643,7 +11639,7 @@
 11643,2000,Pie in the Sky: The Brigid Berlin Story
 11644,1967,The Prisoner
 11645,1987,The Real Buddy Holly Story
-11646,1974,Sizzle Beach, USA
+11646,1974,Sizzle Beach
 11647,2004,Being Julia
 11648,1997,Good Burger
 11649,1999,The '60s
@@ -11685,7 +11681,7 @@
 11685,1993,The Silver Stallion
 11686,2000,Da Hip Hop Witch
 11687,1994,Street Fighter
-11688,1957,Heaven Knows, Mr. Allison
+11688,1957,Heaven Knows
 11689,1980,Ffolkes
 11690,2001,Soul Survivors
 11691,2004,Guerrilla: The Taking of Patty Hearst
@@ -11711,7 +11707,7 @@
 11711,2002,Happy Birthday
 11712,1939,The Mikado
 11713,1999,Dark Shadows
-11714,2000,Love, Honor and Obey
+11714,2000,Love
 11715,1989,Garfield and Friends: Vol. 4
 11716,2003,Batman: Mystery of the Batwoman
 11717,1997,Romy and Michele's High School Reunion
@@ -11880,7 +11876,7 @@
 11880,2000,Boys Don't Cry
 11881,1993,For Love or Money
 11882,1954,Sabrina
-11883,2005,Sesame Street: Elmo's World: Food, Water & Exercise!
+11883,2005,Sesame Street: Elmo's World: Food
 11884,1972,Scooby-Doo Meets the Harlem Globetrotters
 11885,2000,Pet Shop Boys: Somewhere
 11886,1986,Short Circuit
@@ -11914,7 +11910,7 @@
 11914,2001,The Blue Planet: Seas of Life: Tidal Seas - Coasts
 11915,1975,Rikki-Tikki-Tavi / Yankee Doodle Cricket
 11916,2001,The Mayor of Casterbridge
-11917,2002,The Magic School Bus: Creepy, Crawly Fun
+11917,2002,The Magic School Bus: Creepy
 11918,1985,Agnes of God
 11919,1995,Georgia
 11920,1978,The Serpent's Egg
@@ -11980,7 +11976,7 @@
 11980,1966,Blow Up
 11981,1994,Tony Bennett Unplugged
 11982,2001,The Josephine Baker Story
-11983,1961,One, Two, Three
+11983,1961,One
 11984,2003,NFL Films Archive Collection: Inside the Vault
 11985,1991,The Rocketeer
 11986,2005,Gunslinger's Revenge
@@ -11993,7 +11989,7 @@
 11993,2000,Angels in the Infield
 11994,1986,A Room with a View: Special Edition
 11995,1997,Love of Man
-11996,1972,Black Mama, White Mama
+11996,1972,Black Mama
 11997,2003,Baby Looney Tunes' Eggs-traordinary Adventure
 11998,1978,Convoy
 11999,2002,The Hot Chick
@@ -12028,7 +12024,7 @@
 12028,2001,Shaolin Soccer
 12029,1972,The Pigkeeper's Daughter / Sassy Sue
 12030,2000,A Bing Crosby Christmas
-12031,2002,Scotland, PA
+12031,2002,Scotland
 12032,1984,Talking Heads: Stop Making Sense
 12033,1986,Nightmaster
 12034,1980,The Shining
@@ -12206,7 +12202,7 @@
 12206,1994,Clerks: First Cut (Not Theatrical Version)
 12207,1998,Knock Off
 12208,2004,Mouse
-12209,2003,Quick Toning: Abs, Arms & Lower Body of Steel
+12209,2003,Quick Toning: Abs
 12210,1975,Grey Gardens
 12211,2005,SpongeBob SquarePants: Fear of a Krabby Patty
 12212,1987,Dolls
@@ -12215,7 +12211,7 @@
 12215,1975,Battle for the Planet of the Apes
 12216,1944,Ivan the Terrible
 12217,1994,One Arm Hero
-12218,1958,Run Silent, Run Deep
+12218,1958,Run Silent
 12219,2000,Dragon Ball Z: Vegeta Saga 1
 12220,2002,She Gets What She Wants
 12221,1983,The Outsiders
@@ -12350,7 +12346,7 @@
 12350,1994,Nicholas' Gift
 12351,2002,Murder in Portland
 12352,1989,Immediate Family
-12353,1990,DeJohnette, Hancock, Holland, Metheny: In Concert
+12353,1990,DeJohnette
 12354,1999,Genesis: IMAX
 12355,2001,A.I. Artificial Intelligence
 12356,1997,Whales: An Unforgettable Journey: IMAX
@@ -12410,7 +12406,7 @@
 12410,2000,Kya Kehna
 12411,2003,My Architect: A Son's Journey
 12412,1989,New York Stories
-12413,1993,The Wonderful, Horrible Life of Leni Riefenstahl
+12413,1993,The Wonderful
 12414,1998,Under the Sun
 12415,1989,Too Beautiful For You
 12416,1942,Sherlock Holmes and the Voice of Terror
@@ -12420,7 +12416,7 @@
 12420,1993,Khalnayak
 12421,2001,The Crusades
 12422,2004,The Murder Room
-12423,1993,Dr. Quinn, Medicine Woman: Season 1
+12423,1993,Dr. Quinn
 12424,1994,In Search of Dr. Seuss
 12425,2004,The Apprentice: Season 1
 12426,2000,Cinderelmo: Sesame Street
@@ -12507,7 +12503,7 @@
 12507,1987,Hello Kitty Goes to the Movies
 12508,1968,Chitty Chitty Bang Bang
 12509,1974,Swept Away
-12510,1999,Sesame Street: Babies, Dogs & More
+12510,1999,Sesame Street: Babies
 12511,1985,Mapp and Lucia: Series 1
 12512,1989,True Believer
 12513,1998,Star Trek: Insurrection
@@ -12528,7 +12524,7 @@
 12528,2001,Final
 12529,1998,Darkness Falls
 12530,2004,Sex and the City: Season 6: Part 2
-12531,1991,Eerie, Indiana
+12531,1991,Eerie
 12532,2004,Sonic Youth: Corporate Ghost: The Videos 1990-2002
 12533,1994,Country Life
 12534,2005,Steamboy
@@ -12583,7 +12579,7 @@
 12583,1990,After Dark My Sweet
 12584,1985,Mischief
 12585,1937,Dead End
-12586,1971,Upstairs, Downstairs: Season 1
+12586,1971,Upstairs
 12587,2001,Shackleton's Antarctic Adventure: IMAX
 12588,1992,Naked Killer
 12589,1995,Heat: Special Edition: Bonus Material
@@ -12616,7 +12612,7 @@
 12616,2003,Summer Thunder
 12617,2002,Boomtown: Season 1
 12618,1993,Guilty as Sin
-12619,1938,The Three Stooges: Healthy, Wealthy and Dumb
+12619,1938,The Three Stooges: Healthy
 12620,2003,Masked & Anonymous
 12621,1971,See No Evil
 12622,1999,The James Bond Story
@@ -12688,9 +12684,9 @@
 12688,2004,Hellraiser VII: Deader
 12689,1961,The Dick Van Dyke Show: Season 1
 12690,2002,Hero
-12691,1981,Vernon, Florida
-12692,2001,Hi, Dharma!
-12693,1972,What's Up, Doc?
+12691,1981,Vernon
+12692,2001,Hi
+12693,1972,What's Up
 12694,2005,The Interpreter
 12695,1995,Little Bear: Feel Better Little Bear
 12696,2004,Battle of the Bulge: American Experience
@@ -12712,7 +12708,7 @@
 12712,1999,Geobreeders
 12713,2005,Crusader
 12714,1978,The Great Train Robbery
-12715,2003,Great People of the Bible: Abraham, Sarah, Isaac, Jacob & Joseph
+12715,2003,Great People of the Bible: Abraham
 12716,2003,Rosemary & Thyme: Series 1
 12717,1974,Born Innocent
 12718,1994,Frasier: Season 2
@@ -12847,7 +12843,7 @@
 12847,2005,Mobile Suit Gundam SEED the Movie: The Empty Battlefield
 12848,1989,Campion: The Case of the Late Pig
 12849,1958,The Big Country
-12850,2003,Love, Sex & Eating the Bones
+12850,2003,Love
 12851,2003,Bionicle: Mask of Light: The Movie
 12852,2002,To Be and To Have
 12853,1967,Double Trouble
@@ -12877,11 +12873,11 @@
 12877,1999,Smiling Fish and Goat on Fire
 12878,2002,Frontier House
 12879,1985,Demons
-12880,2001,Mitr, My Friend
+12880,2001,Mitr
 12881,2001,Moulin Rouge
 12882,1997,Lilith Fair: A Celebration of Women in Music
 12883,1998,Love and Rage
-12884,1948,Sorry, Wrong Number
+12884,1948,Sorry
 12885,1981,Mephisto
 12886,2001,VeggieTales: Lyle the Kindly Viking
 12887,2000,Legend of the Chupacabra
@@ -12913,7 +12909,7 @@
 12913,1988,Funny Farm
 12914,2003,Dragon Ball Z: Cell Games
 12915,2003,Jay Jay the Jet Plane: Good Friends Forever
-12916,1975,Sheba, Baby
+12916,1975,Sheba
 12917,1990,Rikyu
 12918,1997,Men in Black
 12919,1970,Chisum
@@ -12973,7 +12969,7 @@
 12973,2000,Hera Pheri
 12974,1993,Benny and Joon
 12975,1997,Open Your Eyes
-12976,1968,Yours, Mine and Ours
+12976,1968,Yours
 12977,1974,Free to Be You and Me
 12978,1931,Monkey Business
 12979,2002,The Adventures of Ociee Nash
@@ -13021,7 +13017,7 @@
 13021,1999,Travel the World by Train: North America
 13022,1972,Lucio Fulci: Don't Torture a Duckling
 13023,1990,Rosencrantz and Guildenstern Are Dead
-13024,1973,Scream, Blacula, Scream!
+13024,1973,Scream
 13025,2004,Cavedweller
 13026,1998,Raped By an Angel 2: Uniform Fan
 13027,2005,WWE: The Great American Bash 2005
@@ -13101,7 +13097,7 @@
 13101,1999,Short #2: Dreams
 13102,2000,Coyote Ugly
 13103,1998,The Dinner Game
-13104,1989,Thelonious Monk: Straight, No Chaser
+13104,1989,Thelonious Monk: Straight
 13105,2000,Manilow: Live
 13106,1993,Iron Maiden: Raising Hell
 13107,1958,Touch of Evil
@@ -13148,7 +13144,7 @@
 13148,1995,Anatomy of Desire
 13149,1940,Foreign Correspondent
 13150,1996,The Odyssey of Life: The Photographer's Secrets: Nova
-13151,2002,Britney Baby, One More Time
+13151,2002,Britney Baby
 13152,2001,The Concert for New York City
 13153,2002,Wish You Were Dead
 13154,2003,The Roman Spring of Mrs. Stone
@@ -13170,7 +13166,7 @@
 13170,1986,Dragon Ball: King Piccolo Saga: Part 2
 13171,2000,Solomon and Gaenor
 13172,1999,Gen-X Cops
-13173,1989,The Toxic Avenger, Part 3
+13173,1989,The Toxic Avenger
 13174,1999,I'll Take You There
 13175,1992,Rapid Fire
 13176,2002,Respiro
@@ -13199,14 +13195,14 @@
 13199,2001,Don't Try This at Home: The Steve-O Video
 13200,1995,Night Hunter
 13201,1993,Deadful Melody
-13202,1960,The 1,000 Eyes of Dr. Mabuse
+13202,1960,The 1
 13203,2003,And Starring Pancho Villa as Himself
 13204,1998,James Taylor: Pull Over
 13205,2004,Rescue Me: Season 1
 13206,1995,Sharpe 6: Sharpe's Gold
 13207,1993,The Joy Luck Club
 13208,1994,High Crusade
-13209,1972,Brother Sun, Sister Moon
+13209,1972,Brother Sun
 13210,1992,Men Behaving Badly: Series 2
 13211,1999,Idle Hands
 13212,1984,The Company of Wolves
@@ -13228,7 +13224,7 @@
 13228,1966,Frankie and Johnny
 13229,2000,The Brak Show: Vol. 1
 13230,1950,Born Yesterday
-13231,1977,Ilsa, the Wicked Warden
+13231,1977,Ilsa
 13232,1991,Delirious
 13233,1974,Electra Glide in Blue
 13234,1997,Mortal Kombat: Annihilation
@@ -13260,7 +13256,7 @@
 13260,2001,The Best of the Improv: Vol. 4
 13261,1977,The Deep
 13262,1991,Children of the Night
-13263,2003,Motley Crue: Lewd, Crued & Tattooed
+13263,2003,Motley Crue: Lewd
 13264,1994,The Bible Collection: Abraham
 13265,1991,The Dark Wind
 13266,1995,P.D. James: A Mind to Murder
@@ -13311,7 +13307,7 @@
 13311,1989,Lock Up
 13312,2003,Anastasia
 13313,1978,Battlestar Galactica: Complete Epic Series
-13314,2001,Sedona, The Spirit of Wonder: IMAX
+13314,2001,Sedona
 13315,2001,Harry Potter and the Sorcerer's Stone: Bonus Material
 13316,2002,Hukkle
 13317,2002,The Eye
@@ -13342,7 +13338,7 @@
 13342,2003,Bulletproof Monk
 13343,2002,Big Girls Don't Cry
 13344,1985,Keith Jarrett: Standards
-13345,1978,Langrishe, Go Down
+13345,1978,Langrishe
 13346,2002,Heart: Alive in Seattle
 13347,2002,Embrace the Darkness 2
 13348,1998,Jeans: Tamil
@@ -13361,7 +13357,7 @@
 13361,1998,Life of a Gigolo
 13362,1997,The Fire That Burns
 13363,1986,Saint Seiya
-13364,2003,Jasper, Texas
+13364,2003,Jasper
 13365,2003,UFC: Ultimate Fighting Championship: Ultimate Knockouts 1 & 2
 13366,1989,For All Mankind
 13367,2002,The Mummy: Quest for the Lost Scrolls
@@ -13425,7 +13421,7 @@
 13425,1997,Israel: A Nation is Born
 13426,1962,The Beverly Hillbillies: The Ultimate Collection: Vol. 1
 13427,1997,Slayers: Excellent
-13428,1969,Dracula, Dirty Old Man / Guess What Happened to Count Dracula
+13428,1969,Dracula
 13429,1998,Getter Robo Armageddon: Vol. 1: Resurrection
 13430,2002,Moby Dick: The True Story
 13431,1974,Kora Kagaz
@@ -13479,7 +13475,7 @@
 13479,1986,Otello
 13480,2004,Barney: Now I Know My ABCs
 13481,1979,The Black Stallion
-13482,2004,Bob the Builder: Dig, Lift, Haul
+13482,2004,Bob the Builder: Dig
 13483,1964,7 Faces of Dr. Lao
 13484,1980,The Octagon
 13485,1984,City Heat
@@ -13501,7 +13497,7 @@
 13501,1985,Rocky IV
 13502,1993,The Advocate
 13503,2001,Journey: 2001
-13504,2004,House, M.D.: Season 1
+13504,2004,House
 13505,1997,The Odyssey
 13506,2003,Law & Order: Criminal Intent: Season 3
 13507,1988,Dragons of the Orient
@@ -13551,7 +13547,7 @@
 13551,1999,SLC Punk
 13552,1935,Famous Western Gunfighters: Desert Trail / Ride Ranger Ride / Roll on Texas Moon
 13553,1980,Hero at Large
-13554,1994,Car 54, Where Are You?
+13554,1994,Car 54
 13555,2003,Hollywood Homicide
 13556,1999,The West Wing: Season 2
 13557,1995,Star Trek: Deep Space Nine: Season 4
@@ -13569,7 +13565,7 @@
 13569,2003,Die Mommie Die
 13570,2002,Blackwoods
 13571,1950,The Damned Don't Cry
-13572,1959,Suddenly, Last Summer
+13572,1959,Suddenly
 13573,2002,Kids in the Hall: Tour of Duty
 13574,2005,Jiminy Glick in La La Wood
 13575,2000,The Spring
@@ -13690,7 +13686,7 @@
 13690,1953,Law and Order
 13691,1949,The Adventures of Ichabod and Mr. Toad
 13692,2003,Manchester United: Play Like Champions
-13693,2000,Perfect Murder, Perfect Town
+13693,2000,Perfect Murder
 13694,1990,Campion: Mystery Mile
 13695,2002,Black Knight
 13696,2002,Mondays in the Sun
@@ -13778,7 +13774,7 @@
 13778,1992,Rumpole of the Bailey: Series 7
 13779,2003,The Matrix: Revolutions: Bonus Material
 13780,1979,Star Blazers: Series 2: The Comet Empire
-13781,1995,Steal Big, Steal Little
+13781,1995,Steal Big
 13782,1999,38 Special: Live at Sturgis
 13783,1986,Fist of the North Star
 13784,1968,The Producers
@@ -13799,7 +13795,7 @@
 13799,1998,Legend of Mulan
 13800,1991,Cream: Strange Brew
 13801,1970,Night Gallery: Season 1
-13802,2002,Zone of the Enders: Dolores, i
+13802,2002,Zone of the Enders: Dolores
 13803,2003,Frazetta
 13804,1943,Bataan
 13805,2002,Wilbur Wants to Kill Himself
@@ -13937,7 +13933,7 @@
 13937,2002,The Short Films of David Lynch
 13938,1998,Futuresport
 13939,1975,Jacob the Liar
-13940,1969,Goodbye, Columbus
+13940,1969,Goodbye
 13941,1993,This Boy's Life
 13942,2001,Bullets of Love
 13943,1989,The Heist
@@ -13974,7 +13970,7 @@
 13974,1992,Poison Ivy
 13975,1972,Prime Cut
 13976,1999,Final Voyage
-13977,1966,To Sir, with Love
+13977,1966,To Sir
 13978,1996,The Evening Star
 13979,1965,A Patch of Blue
 13980,2002,C.S. Lewis: The Magic Never Ends
@@ -13985,7 +13981,7 @@
 13985,2000,Christina Aguilera: My Reflection
 13986,1993,Just One of the Girls
 13987,1996,Mad Dog Time
-13988,2005,Sex, Politics & Cocktails
+13988,2005,Sex
 13989,2003,Queen: Greatest Video Hits 2
 13990,1997,The House of Yes
 13991,1976,Squirm
@@ -13994,7 +13990,7 @@
 13994,2004,Rides: Season 1
 13995,2001,Violent Cop
 13996,1979,When a Stranger Calls
-13997,1993,Bodies, Rest & Motion
+13997,1993,Bodies
 13998,1962,Mr. Hobbs Takes a Vacation
 13999,1960,Toby Tyler
 14000,1986,'Allo 'Allo!: Series 3
@@ -14037,7 +14033,7 @@
 14037,1997,Burn Up Excess: Vol. 4: The Case of the Black Diamonds
 14038,2001,Goodnight Moon
 14039,1963,The Birds
-14040,1993,Faraway, So Close!
+14040,1993,Faraway
 14041,2001,Chasing Holden
 14042,2001,Mulholland Drive
 14043,2002,Shoot or Be Shot
@@ -14169,7 +14165,7 @@
 14169,1991,The Guyver
 14170,2004,French & Saunders: Back with a Vengeance
 14171,2003,Chicago: City of the Century: American Experience
-14172,1964,Kiss Me, Stupid
+14172,1964,Kiss Me
 14173,1996,Ridicule
 14174,1987,The Belly of an Architect
 14175,1980,Where the Buffalo Roam
@@ -14246,7 +14242,7 @@
 14246,1992,A Scene at the Sea
 14247,1985,Trancers
 14248,1994,D2: The Mighty Ducks
-14249,2002,10,000 Black Men Named George
+14249,2002,10
 14250,1990,Jacob's Ladder
 14251,1965,Bloody Pit of Horror
 14252,2001,The Corrs: Live in London
@@ -14261,7 +14257,7 @@
 14261,1999,Bjork: Volumen
 14262,1939,Gunga Din
 14263,1970,Cotton Comes to Harlem
-14264,2004,Spring, Summer, Fall, Winter ... and Spring
+14264,2004,Spring
 14265,1993,The Crush
 14266,2000,Cutey Honey
 14267,2000,There's Something About McConkey
@@ -14287,7 +14283,7 @@
 14287,2001,Hidden Agenda
 14288,1999,Midsomer Murders: Death's Shadow
 14289,1955,To Hell and Back
-14290,2001,Sesame Street: Elmo's World: Birthdays, Games & More
+14290,2001,Sesame Street: Elmo's World: Birthdays
 14291,1997,Judwaa
 14292,2001,Earth vs. The Spider
 14293,1965,Alphaville
@@ -14324,7 +14320,7 @@
 14324,2001,Nostradamus: His Life and Prophecies
 14325,2003,Rugrats Go Wild
 14326,1994,Children of the Corn 3: Urban Harvest
-14327,1984,Paris, Texas
+14327,1984,Paris
 14328,1992,Straight Talk
 14329,1996,Occasional Hell
 14330,2001,Fulltime Killer
@@ -14415,7 +14411,7 @@
 14415,2000,Haunted Junction
 14416,1990,Shaolin Idiot
 14417,1974,The Best of Benny Hill
-14418,1966,The Good, the Bad and the Ugly: Bonus Material
+14418,1966,The Good
 14419,1952,The Crimson Pirate
 14420,2002,Hell on Heels: The Battle of Mary Kay
 14421,1997,The Gambler
@@ -14461,7 +14457,7 @@
 14461,2003,New England Patriots: NFL Super Bowl XXXVIII Champions
 14462,1989,She Shoots Straight
 14463,1978,I Spit On Your Grave
-14464,1995,Stevie Ray Vaughan and Double Trouble: Live from Austin, Texas
+14464,1995,Stevie Ray Vaughan and Double Trouble: Live from Austin
 14465,2003,The Iceman Interviews
 14466,2004,Pokemon: Jirachi Wish Maker
 14467,2003,In the Cut
@@ -14490,7 +14486,7 @@
 14490,2005,Broadway's Lost Treasures III: The Best of the Tony Awards
 14491,1999,The Emperor and the Assassin
 14492,1994,Forever Knight: The Trilogy: Part 2
-14493,2005,Best of MADtv: Seasons 8, 9 and 10
+14493,2005,Best of MADtv: Seasons 8
 14494,1968,For Love of Ivy
 14495,1973,Hell Up in Harlem
 14496,1992,Mystery Science Theater 3000: Attack of the Giant Leeches
@@ -14505,7 +14501,7 @@
 14505,1994,The War
 14506,1983,Doctor Who: The Five Doctors
 14507,1999,Any Given Sunday
-14508,2004,Changing Rooms: Trust Me, I'm a Designer
+14508,2004,Changing Rooms: Trust Me
 14509,2002,UK/DK: A Film About Punks and Skinheads
 14510,2000,Tell Me Something
 14511,1964,Topkapi
@@ -14581,7 +14577,7 @@
 14581,2004,Magic Kitchen
 14582,2000,Best of Travels in Europe with Rick Steves: British Isles
 14583,2003,Peacemaker
-14584,1999,South Park: Bigger, Longer and Uncut
+14584,1999,South Park: Bigger
 14585,2004,Reconstruction
 14586,2000,Pandaemonium
 14587,2001,Asoka
@@ -14609,7 +14605,7 @@
 14609,2004,NFL: History of the Philadelphia Eagles
 14610,1998,Cartoon Crazys Kids' All Time Favorites
 14611,1941,Birth of the Blues / Blue Skies: Double Feature
-14612,1960,Jazz Casual: Basie, Gillespie, Coltrane
+14612,1960,Jazz Casual: Basie
 14613,2003,Valentin
 14614,2003,Gate Keepers 21
 14615,2001,Abraham and Mary Lincoln: A House Divided: American Experience
@@ -14743,7 +14739,7 @@
 14743,2004,Short Cut to Nirvana
 14744,1989,The Phantom of the Opera
 14745,1998,Dragon Ball Z: The World's Strongest
-14746,2004,New Crouching Tiger, Hidden Dragon
+14746,2004,New Crouching Tiger
 14747,1990,Creature Comforts
 14748,2000,Scooby-Doo and the Alien Invaders
 14749,1980,Heartland
@@ -14806,7 +14802,7 @@
 14806,2001,Angel: Season 3
 14807,1997,Sharpe 13: Sharpe's Justice
 14808,2004,Viva La Bam: Seasons 2 and 3
-14809,1966,Walk, Don't Run
+14809,1966,Walk
 14810,2000,Dolphins: IMAX
 14811,2000,St. Patrick: The Irish Legend
 14812,1989,Traffik
@@ -14962,7 +14958,7 @@
 14962,1999,Kiss Toledo Goodbye
 14963,1979,Norma Rae
 14964,1954,Stranger from Venus
-14965,1932,Tarzan, the Ape Man / Tarzan Escapes (Double Feature)
+14965,1932,Tarzan
 14966,1961,One Eyed Jacks
 14967,1950,Night and the City
 14968,1950,Father of the Bride
@@ -14978,7 +14974,7 @@
 14978,1967,The Dirty Dozen
 14979,1968,Rolling Stones: Sympathy for the Devil
 14980,2002,Angelina Ballerina: The Lucky Penny
-14981,1995,Cry, the Beloved Country
+14981,1995,Cry
 14982,2001,Intimacy
 14983,1967,Camelot
 14984,2004,Billy Connolly: Erect for 30 Years
@@ -15020,7 +15016,7 @@
 15020,2002,Blue Vinyl
 15021,1995,The Piano Lesson
 15022,2004,Wishbone: Paw Prints of Thieves
-15023,2005,He Say, She Say, But What Does God Say?
+15023,2005,He Say
 15024,2001,Cowboy Up
 15025,1999,Seventh Sense
 15026,1964,The Americanization of Emily
@@ -15116,10 +15112,10 @@
 15116,2004,Miracle
 15117,2001,Big Brother and the Holding Company With Janis Joplin: Nine Hundred Nights
 15118,2000,Lucky Town
-15119,2000,Play to Win: Secrets of Playing Slots, Blackjack & Craps
+15119,2000,Play to Win: Secrets of Playing Slots
 15120,2000,Voodoo Academy
 15121,2003,National Geographic: Surviving West Point
-15122,2002,Stan Lee's Mutants, Monsters & Marvels
+15122,2002,Stan Lee's Mutants
 15123,1995,Godzilla vs. Destroyah / Godzilla vs. Space Godzilla (Double Feature)
 15124,1996,Independence Day
 15125,1994,8 Seconds
@@ -15171,7 +15167,7 @@
 15171,1994,Wes Craven's New Nightmare
 15172,1999,Britney Spears: Star Baby Scrapbook
 15173,2004,10 Minute Solution: Target Toning for Beginners
-15174,1953,The Beast from 20,000 Fathoms
+15174,1953,The Beast from 20
 15175,1971,Asylum of Satan / Satan's Children
 15176,2002,Joint Security Area
 15177,1988,A Nightmare on Elm Street 4: The Dream Master
@@ -15190,7 +15186,7 @@
 15190,2000,The Sid Caesar Collection: Inside the Writer's Room
 15191,2003,Figure 17
 15192,1982,Nature: Reptiles: Snakes and Lizards
-15193,1928,Steamboat Bill, Jr.
+15193,1928,Steamboat Bill
 15194,2001,Killer Bud
 15195,1999,Dragon Ball Z: Great Saiyaman: Gohan's Secret
 15196,2002,The Pennsylvania Miners' Story
@@ -15215,7 +15211,7 @@
 15215,2003,Pollyanna
 15216,2000,Circus
 15217,2005,Baki the Grappler
-15218,1998,Bear in the Big Blue House: Shapes, Sounds & Colors with Bear
+15218,1998,Bear in the Big Blue House: Shapes
 15219,1975,Walking Tall: Part II
 15220,2001,The Cliburn: Playing on the Edge
 15221,2002,The Third Wheel
@@ -15271,7 +15267,7 @@
 15271,1998,Paul Taylor: Dancemaker
 15272,1990,Wild Orchid
 15273,1982,The Irish R.M.: Series 1
-15274,2003,Martha, Inc.
+15274,2003,Martha
 15275,1983,Harmagedon
 15276,2003,The Land Before Time X: The Great Longneck Migration
 15277,1997,Night Falls on Manhattan
@@ -15330,7 +15326,7 @@
 15330,1957,Kronos
 15331,1932,The Bela Lugosi Collection: Murders in Rue Morgue / The Black Cat / The Raven
 15332,1943,A Lady Takes a Chance
-15333,1999,Samurai X: Trust and Betrayal, Director's Cut
+15333,1999,Samurai X: Trust and Betrayal
 15334,1973,Don't Look Now
 15335,1983,Never Cry Wolf
 15336,1994,Highlander 3: The Final Dimension
@@ -15369,7 +15365,7 @@
 15369,2003,Cheerleader Ninjas
 15370,1980,The Apple
 15371,1979,Murder by Decree
-15372,1999,Now and Then, Here and There: Vol. 3: Conflict and Chaos
+15372,1999,Now and Then
 15373,2001,The One
 15374,1973,Sigmund and the Sea Monsters
 15375,1996,The Preacher's Wife
@@ -15398,11 +15394,11 @@
 15398,1993,Dragon Half
 15399,2002,100 Mile Rule
 15400,2000,Dragon Ball Z: Androids
-15401,2002,Dave Matthews Band: Live at Folsom Field Boulder, Colorado
+15401,2002,Dave Matthews Band: Live at Folsom Field Boulder
 15402,1995,Madame Butterfly
 15403,2005,Balto 3: Wings of Change
 15404,2000,Dark Days
-15405,1974,Cornbread, Earl and Me
+15405,1974,Cornbread
 15406,1991,The House of Eliott: Series 1
 15407,2000,Harold Robbins' Body Parts
 15408,1973,Schoolhouse Rock!: Special 30th Anniversary Edition: Bonus Material
@@ -15413,7 +15409,7 @@
 15413,2004,Miss Cast Away and the Island Girls
 15414,2001,The Mangler 2
 15415,1984,Thief of Hearts
-15416,2000,God, the Devil & Bob: The Complete Series
+15416,2000,God
 15417,2003,Stander
 15418,2003,Weird Al Yankovic: The Ultimate Video Collection
 15419,1998,Profiler: Season 3
@@ -15421,7 +15417,7 @@
 15421,1995,Sense and Sensibility
 15422,1985,Fletch
 15423,2003,Dragon Ball Z: Garlic Jr.
-15424,1989,sex, lies, and videotape
+15424,1989,sex
 15425,1998,The Big Lebowski
 15426,1995,Michael Jackson: Video Greatest Hits: History #2
 15427,2001,Girl from Rio
@@ -15500,7 +15496,7 @@
 15500,2001,Gilmore Girls: Season 2
 15501,1985,Dance with a Stranger
 15502,1997,Dance with the Devil
-15503,1975,Aloha, Bobby and Rose
+15503,1975,Aloha
 15504,1930,Murder!
 15505,1997,Moon Over Broadway
 15506,2001,I Love You Baby
@@ -15622,7 +15618,7 @@
 15622,1994,The Ultimate Beginner Series: Acoustic Guitar Basics
 15623,1997,Painted Lady (Masterpiece Theatre)
 15624,1996,Cosi
-15625,2002,Keep the Faith, Baby
+15625,2002,Keep the Faith
 15626,2000,Taal
 15627,1981,Excalibur
 15628,1976,Car Wash
@@ -15656,7 +15652,7 @@
 15656,1939,Bela Lugosi: The Gorilla / Nabonga
 15657,1995,Dead Man
 15658,1992,Renegade: Season 1
-15659,1962,Judy, Frank and Dean: Once in a Lifetime
+15659,1962,Judy
 15660,1999,Seducing Maarya
 15661,2002,The End Times
 15662,1984,The Killing Fields
@@ -15761,9 +15757,9 @@
 15761,1961,The Nude Set
 15762,1959,I'm All Right Jack
 15763,2004,Six: The Mark Unleashed
-15764,2003,Legally Blonde 2: Red, White & Blonde
+15764,2003,Legally Blonde 2: Red
 15765,1982,Things Are Tough All Over
-15766,1945,Objective, Burma!
+15766,1945,Objective
 15767,1979,Dukes of Hazzard: TV Favorites
 15768,2000,The Simpsons: Christmas 2
 15769,1987,Raw
@@ -15793,7 +15789,7 @@
 15793,2005,The Girl Who Shagged Me
 15794,1977,Walking Tall: The Final Chapter
 15795,1975,Smile
-15796,1968,The One and Only, Genuine, Original Family Band
+15796,1968,The One and Only
 15797,1986,Psycho III
 15798,1997,Love! Valour! Compassion!
 15799,1997,Telling Lies in America
@@ -15902,7 +15898,7 @@
 15902,2003,Blue Collar Comedy Tour: The Movie
 15903,2004,Trekkies 2
 15904,1987,Hello Kitty Saves the Day
-15905,1989,The Toxic Avenger, Part 2
+15905,1989,The Toxic Avenger
 15906,1997,Keys to Tulsa
 15907,1984,Mutant
 15908,1964,Robin and the 7 Hoods
@@ -15915,7 +15911,6 @@
 15915,1960,Danger Man: Season 1
 15916,2000,Crazy Richard & I Can't Even Think Straight
 15917,1991,Ren & Stimpy: Seasons 1 and 2
-15918,NULL,Hote Hote Pyaar Ho Gaya
 15919,2004,Hellboy
 15920,1985,L'Effrontee
 15921,1967,How to Succeed in Business Without Really Trying
@@ -15981,8 +15976,8 @@
 15981,2004,Amour de Femme
 15982,2004,RahXephon: The Motion Picture
 15983,2001,Rage Against the Machine: The Battle of Mexico City
-15984,2005,Milwaukee, Minnesota
-15985,1978,Same Time, Next Year
+15984,2005,Milwaukee
+15985,1978,Same Time
 15986,2001,The Remnant
 15987,1987,Sherlock Holmes: The Sign of Four
 15988,1985,Invasion U.S.A.
@@ -16068,9 +16063,9 @@
 16068,1989,Drugstore Cowboy
 16069,2002,Looking Through Lillian
 16070,1998,Sitcom
-16071,1998,Always Outnumbered, Always Outgunned
+16071,1998,Always Outnumbered
 16072,2002,Basic Ab Workout for Dummies
-16073,1992,Emerson, Lake & Palmer: Welcome Back
+16073,1992,Emerson
 16074,2001,Dark Shadows Reunion
 16075,1993,Dave
 16076,2003,Wishing Stairs
@@ -16096,7 +16091,7 @@
 16096,1999,Island of the Sharks: IMAX
 16097,1973,Tom Sawyer
 16098,1991,The Maigret Collection
-16099,2002,Don't Ask, Don't Tell (Attack of the Gay Space Invaders)
+16099,2002,Don't Ask
 16100,2004,Da Ali G Show: Season 2
 16101,1991,Legend of the Dragon Kings: Black Dragon
 16102,1973,Sssssss
@@ -16137,11 +16132,11 @@
 16137,1999,The Waiting Time
 16138,1980,Zombie Holocaust
 16139,1991,Father of the Bride
-16140,2001,Bellydance Fitness for Beginners: Arms, Abs, Hips, Buns & Thighs
+16140,2001,Bellydance Fitness for Beginners: Arms
 16141,2004,Big Bird in Japan
 16142,2003,Book of Days
 16143,2000,The Crimson Rivers
-16144,1984,Greystoke: The Legend of Tarzan, Lord of the Apes
+16144,1984,Greystoke: The Legend of Tarzan
 16145,1997,Losing Control
 16146,2003,The Real Cancun
 16147,1999,The Sopranos: Season 1
@@ -16215,7 +16210,7 @@
 16215,2004,The Hunting of the President
 16216,2003,Dangerous Liaisons (Long French Version)
 16217,1998,Bio Zombie
-16218,1995,Dr. Quinn, Medicine Woman: Season 4
+16218,1995,Dr. Quinn
 16219,2004,Baby for Sale
 16220,2002,L'Auberge Espagnole
 16221,2000,ECW: Extreme Evolution: Extreme Championship Wrestling
@@ -16255,7 +16250,7 @@
 16255,2000,Eminem: Hitz & Disses
 16256,1998,Earthlight
 16257,2003,Time Quest
-16258,2002,Frank McKlusky, C.I.
+16258,2002,Frank McKlusky
 16259,1973,Conquest of the Planet of the Apes
 16260,1962,That Touch of Mink
 16261,2002,Lost in La Mancha: Bonus Material
@@ -16269,7 +16264,7 @@
 16269,1969,Whatever Happened to Aunt Alice?
 16270,2004,Funky Monkey
 16271,1954,Robinson Crusoe
-16272,2000,Crouching Tiger, Hidden Dragon
+16272,2000,Crouching Tiger
 16273,2004,Into the Sun
 16274,1954,The Country Girl
 16275,1980,To Kill with Intrigue
@@ -16302,7 +16297,7 @@
 16302,1999,Family Guy: Vol. 1: Seasons 1-2
 16303,2001,Atlantis: The Lost Empire
 16304,1997,Jean Michel Jarre: Oxygene Moscow: The Portrait
-16305,1999,AFI's 100 Years, 100 Stars
+16305,1999,AFI's 100 Years
 16306,1960,Spartacus
 16307,1994,Renaissance Man
 16308,1967,A Countess from Hong Kong
@@ -16313,7 +16308,7 @@
 16313,1995,ER: Season 2
 16314,1989,Michelangelo: Self Portrait
 16315,1992,Innocent Blood
-16316,1974,Ilsa, She Wolf of the SS
+16316,1974,Ilsa
 16317,1979,Over the Edge
 16318,1979,Richard Pryor: Live in Concert
 16319,1998,El-Hazard: The Alternative World
@@ -16358,7 +16353,7 @@
 16358,2001,Venomous
 16359,2002,Auto Focus
 16360,1982,SCTV Network 90: Vol. 3
-16361,2003,Good Bye, Lenin!
+16361,2003,Good Bye
 16362,1984,Body Double
 16363,2001,The Office Special
 16364,1966,Lord Love a Duck
@@ -16382,7 +16377,7 @@
 16382,1990,Poirot: The Mysterious Affair at Styles
 16383,1995,No Quarter: Page & Plant Unledded
 16384,1993,The Fugitive
-16385,1994,Earth, Wind and Fire: Live
+16385,1994,Earth
 16386,1980,Contamination
 16387,1994,The Return of Jafar
 16388,1996,The Phantom
@@ -16413,7 +16408,7 @@
 16413,1996,Alien Chaser
 16414,1952,Kansas City Confidential
 16415,1996,The Birdcage
-16416,1999,Late August, Early September
+16416,1999,Late August
 16417,2000,Bad Girls from Valley High
 16418,1974,Alice Doesn't Live Here Anymore
 16419,2001,VeggieTales: The Ultimate Silly Song Countdown
@@ -16438,11 +16433,11 @@
 16438,1998,The Wedding Singer
 16439,1998,Dangerous Beauty
 16440,2000,It Had to Be You
-16441,1992,Honey, I Blew Up the Kid
+16441,1992,Honey
 16442,1997,Men Seeking Women
 16443,2001,The Day Reagan Was Shot
 16444,1987,Over the Top
-16445,2003,House of 1,000 Corpses
+16445,2003,House of 1
 16446,2005,Punk: Attitude
 16447,2000,Another Woman's Husband
 16448,1984,Tank
@@ -16464,7 +16459,7 @@
 16464,1997,Space Ghost Coast to Coast: Vol. 3
 16465,1998,Meet Joe Black
 16466,2000,Echo of Murder
-16467,1997,Alanis Morissette: Jagged Little Pill, Live
+16467,1997,Alanis Morissette: Jagged Little Pill
 16468,2001,Anne Frank: The Whole Story
 16469,2004,Alien vs. Predator
 16470,1995,The Cure
@@ -16551,7 +16546,7 @@
 16551,1992,The Waterdance
 16552,1995,GoldenEye
 16553,1980,Prom Night
-16554,1961,Divorce, Italian Style
+16554,1961,Divorce
 16555,2001,Midsomer Murders: Destroying Angel
 16556,2000,Book of Shadows: Blair Witch 2
 16557,1999,That's the Way I Like It
@@ -16594,7 +16589,7 @@
 16594,2000,Tom Green Show: Endangered Feces: The Very Worst of Tom Green
 16595,2001,The Avenging Fist
 16596,1961,The Parent Trap
-16597,2001,Hey, Happy!
+16597,2001,Hey
 16598,1921,The Marriage Circle
 16599,1998,Grappler Baki
 16600,2000,The Perfect Son
@@ -16645,7 +16640,7 @@
 16645,1962,The Road to Hong Kong
 16646,1996,Love Etc.
 16647,1994,Out of Ireland: Story of Emigration into America
-16648,1924,Aelita, Queen of Mars
+16648,1924,Aelita
 16649,1962,Hatari!
 16650,1999,Travel the World by Train: South America
 16651,1969,This Man Must Die
@@ -16661,7 +16656,7 @@
 16661,1969,Winning
 16662,2004,In My Country
 16663,1988,Mac and Me
-16664,1966,Follow Me, Boys!
+16664,1966,Follow Me
 16665,2004,Chronicle of the Raven
 16666,1973,Bang the Drum Slowly
 16667,1996,The Trigger Effect
@@ -16675,7 +16670,6 @@
 16675,1997,Arthur Makes the Team
 16676,1981,Wolfen
 16677,1946,Night and Day
-16678,NULL,Jimmy Hollywood
 16679,1999,P.U.N.K.S.
 16680,2001,Vacuuming Completely Nude in Paradise
 16681,2000,Juliet in Love
@@ -16710,7 +16704,7 @@
 16710,1978,Sandbaggers: Collection 1
 16711,2003,Sex and the City: Season 6: Part 1
 16712,1953,Donovan's Brain
-16713,1994,Corrina, Corrina
+16713,1994,Corrina
 16714,1995,Hamish Macbeth: Season 1
 16715,1941,You'll Never Get Rich
 16716,2003,With or Without You
@@ -16767,7 +16761,7 @@
 16767,2001,The Matrix: Revisited
 16768,1999,Jawbreaker
 16769,1992,The Perfect Husband
-16770,1999,Happy, Texas
+16770,1999,Happy
 16771,1995,Above Suspicion
 16772,1968,With Six You Get Eggroll
 16773,1991,Inspector Morse 2: The Silent World of Nicholas Quinn
@@ -16816,7 +16810,7 @@
 16816,2003,Kuch Naa Kaho
 16817,1958,The Rifleman: Collection 3
 16818,1973,A Delicate Balance
-16819,1966,Paradise, Hawaiian Style
+16819,1966,Paradise
 16820,2000,Paul Simon: You're the One: In Concert from Paris
 16821,1997,Classic Albums: The Grateful Dead: Anthem to Beauty
 16822,1996,Armitage III: Poly-Matrix
@@ -16858,7 +16852,7 @@
 16858,1990,Highlander 2: Renegade Version
 16859,2004,Agent Cody Banks 2: Destination London
 16860,1990,Law & Order: Season 1
-16861,1958,Bell, Book and Candle
+16861,1958,Bell
 16862,2001,My First Mister
 16863,1980,How to Beat the High Cost of Living
 16864,1981,Scanners
@@ -16930,7 +16924,7 @@
 16930,2002,The Tuxedo
 16931,2000,The Tigger Movie
 16932,1997,Agent Aika
-16933,1994,Shake, Rattle & Rock
+16933,1994,Shake
 16934,2004,The Wiggles: LIVE Hot Potatoes
 16935,1999,AD Police: To Protect & Serve
 16936,1997,Albino Alligator
@@ -17009,7 +17003,7 @@
 17009,1986,Quicksilver
 17010,2003,Monte Walsh
 17011,1954,Broken Lance
-17012,1960,The Three Stooges: Stop, Look and Laugh
+17012,1960,The Three Stooges: Stop
 17013,1997,Killing Mr. Griffin
 17014,1990,The First Power
 17015,2003,High Roller: The Stu Ungar Story
@@ -17098,7 +17092,7 @@
 17098,1985,X: The Unheard Music
 17099,2000,King of the Cage
 17100,2000,The Beach
-17101,1995,Good Men, Good Women
+17101,1995,Good Men
 17102,2001,Hans Christian Andersen: My Life as a Fairy Tale
 17103,2000,Animal Factory
 17104,1994,In the Army Now
@@ -17107,7 +17101,7 @@
 17107,1940,The Ghost Breakers
 17108,2004,A to Zeppelin: The Unauthorized Story of Led Zeppelin
 17109,1964,Marnie
-17110,1976,The Hot, The Cool and the Vicious
+17110,1976,The Hot
 17111,2001,Children Underground
 17112,2004,Ghost in the Shell 2: Innocence
 17113,1994,Milk Money
@@ -17164,11 +17158,11 @@
 17164,1980,Battle Beyond the Stars
 17165,2004,The Daily Show with Jon Stewart: Indecision 2004
 17166,2001,Making the Misfits
-17167,1994,Dennis Miller - Live from Washington, D.C.
+17167,1994,Dennis Miller - Live from Washington
 17168,2001,Tremors 3: Back to Perfection
 17169,2004,National Treasure
 17170,1959,The World of Apu
-17171,1988,The Chronicles of Narnia: The Lion, the Witch and the Wardrobe
+17171,1988,The Chronicles of Narnia: The Lion
 17172,2004,Mary J. Blige: Live From Los Angeles
 17173,1993,Prince: The Hits Collection
 17174,2004,Maria Full of Grace
@@ -17203,7 +17197,7 @@
 17203,1988,Big Top Pee-Wee
 17204,1998,Chairman of the Board
 17205,2005,Eminem Presents: The Anger Management Tour
-17206,1998,I Love You, Don't Touch Me
+17206,1998,I Love You
 17207,2003,Veronica Guerin
 17208,1964,Muscle Beach Party / Ski Party: Double Feature
 17209,1994,Holy Matrimony
@@ -17251,7 +17245,7 @@
 17251,2000,Bounce
 17252,2004,Sniper School
 17253,1975,The Man Who Skied Down Everest
-17254,1975,Be My Valentine, Charlie Brown
+17254,1975,Be My Valentine
 17255,1999,American Photography: A Century of Images
 17256,2000,Whitney Houston: The Greatest Hits
 17257,1932,I Am a Fugitive from a Chain Gang
@@ -17292,7 +17286,7 @@
 17292,2004,The Sea Inside
 17293,2005,The Ring Two
 17294,2000,Trois
-17295,2000,Me, Myself & Irene
+17295,2000,Me
 17296,2001,In Search of Peace: Part 1: 1948-1967
 17297,1996,Back to Back
 17298,2003,Bill Maher: Victory Begins at Home
@@ -17344,7 +17338,7 @@
 17344,1999,Creature
 17345,1963,Blood Feast
 17346,1977,The Spy Who Loved Me
-17347,2002,Read-Along: Monsters, Inc.
+17347,2002,Read-Along: Monsters
 17348,2002,Andromeda: Season 3
 17349,1999,Once and Again: Season 1
 17350,2002,Madame Sata
@@ -17416,7 +17410,7 @@
 17416,1997,Aur Pyar Ho Gaya
 17417,1999,Breakfast of Champions
 17418,1979,The Tin Drum
-17419,1974,It's the Easter Beagle, Charlie Brown
+17419,1974,It's the Easter Beagle
 17420,1984,The Razor's Edge
 17421,1986,Brotherhood of Justice
 17422,1971,How to Frame a Figg
@@ -17570,7 +17564,7 @@
 17570,2000,Strangers with Candy: Season 2
 17571,2001,In the Mood for Love: Bonus Material
 17572,2000,Bread and Roses
-17573,1981,Fort Apache, the Bronx
+17573,1981,Fort Apache
 17574,1996,Eye for an Eye
 17575,2001,Don't Tempt Me
 17576,2002,Friday Night
@@ -17594,7 +17588,7 @@
 17594,2001,The King of Queens: Season 4
 17595,2005,Winter Solstice
 17596,1973,Shaft in Africa
-17597,1969,They Shoot Horses, Don't They?
+17597,1969,They Shoot Horses
 17598,1962,The Andy Griffith Show: Season 3
 17599,2004,Art: 21: Art in the 21st Century: Seasons 1 and 2
 17600,2004,James' Journey to Jerusalem
@@ -17664,7 +17658,6 @@
 17664,2002,Pauline and Paulette
 17665,1998,Shark Skin Man and Peach Hip Girl
 17666,2000,Fleeing by Night
-17667,NULL,Eros Dance Dhamaka
 17668,1998,Secret Defense
 17669,1986,Desert Bloom
 17670,1957,Dr. Seuss: The Grinch Grinches The Cat in the Hat
@@ -17676,7 +17669,7 @@
 17676,2001,Curse of the Erotic Tiki
 17677,2000,Saiyuki
 17678,2000,Deepak Chopra: Seven Spiritual Laws & The Crystal Cave
-17679,1999,Into the Thin Air of Everest: Mountain of Dreams, Mountain of Doom
+17679,1999,Into the Thin Air of Everest: Mountain of Dreams
 17680,1995,Poirot: Hickory Dickory Dock
 17681,2000,Bread and Tulips
 17682,1998,Buffy the Vampire Slayer: Season 3
@@ -17768,5 +17761,5 @@
 17768,2000,Epoch
 17769,2003,The Company
 17770,2003,Alien Hunter
-
 17771,1966,Django
+17772,2015,Django Unchained
