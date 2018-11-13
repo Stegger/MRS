@@ -61,7 +61,7 @@ public class MovieDAO
                         //Do nothing. Optimally we would log the error.
                     }
                 }
-            }
+            }   
         }
         return allMovies;
     }

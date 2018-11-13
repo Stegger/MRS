@@ -5,11 +5,11 @@
  */
 package movierecsys.dal;
 
+import java.io.File;
 import java.io.IOException;
-import java.util.List;
-import movierecsys.be.Movie;
+import java.io.RandomAccessFile;
+import java.nio.file.Files;
 import movierecsys.be.Rating;
-import movierecsys.be.User;
 
 /**
  *
@@ -26,9 +26,36 @@ public class FileReaderTester
      */
     public static void main(String[] args) throws IOException
     {
-        RatingDAO rDao = new RatingDAO();
-        Rating rat = new Rating(17442, 2534701, -3);
-        rDao.updateRating(rat);
-        System.out.println("Success");
+        RatingDAO ratingDao = new RatingDAO();
+        Rating rat = new Rating(17742, 2631660, 3);
+        ratingDao.updateRating(rat);
     }
+
+    public static void createRafFriendlyRatingsFile() throws IOException
+    {
+        String source = "data/ratings.txt";
+        String target = "data/user_ratings";
+
+        try (RandomAccessFile raf = new RandomAccessFile(target, "rw"))
+        {
+            Files.lines(new File(source).toPath()).forEach((String t) ->
+            {
+                try
+                {
+                    String[] cols = t.split(",");
+                    int movId = Integer.parseInt(cols[0]);
+                    int userId = Integer.parseInt(cols[1]);
+                    int rating = Integer.parseInt(cols[2]);
+                    raf.writeInt(movId);
+                    raf.writeInt(userId);
+                    raf.writeInt(rating);
+                } catch (IOException ex)
+                {
+                    System.out.println(ex.getMessage());
+                    ex.printStackTrace();
+                }
+            });
+        }
+    }
+
 }

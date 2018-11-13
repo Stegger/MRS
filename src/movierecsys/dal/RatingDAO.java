@@ -18,7 +18,9 @@ import movierecsys.be.User;
 public class RatingDAO
 {
 
-    private static final String RATING_SOURCE = "data/ratings.txt";
+    private static final String RATING_SOURCE = "data/user_ratings";
+
+    private static final int RECORD_SIZE = Integer.BYTES * 3;
 
     /**
      * Persists the given rating.
@@ -40,22 +42,66 @@ public class RatingDAO
     {
         try (RandomAccessFile raf = new RandomAccessFile(RATING_SOURCE, "rw"))
         {
-            do
+            long totalRatings = raf.length();
+            long low = 0;
+            long high = totalRatings - 1;
+            while (high >= low) //Binary search of movie ID
             {
-                String line = raf.readLine();
-                Rating r = getRatingFromLine(line);
-                if (r.getMovie() == rating.getMovie() && r.getUser() == rating.getUser())
+                long pos = (high + low) / 2;
+                raf.seek(pos);
+                int movId = raf.readInt();
+
+                if (rating.getMovie() < movId) //We did not find the movie.
                 {
-                    if (rating.getRating() != r.getRating())
+                    high = pos - RECORD_SIZE; //We half our problem size to the upper half.
+                } else if (movId > rating.getMovie()) //We did not find the movie.
+                {
+                    low = pos + RECORD_SIZE; //We half our problem size (Just the lower half)
+                } else
+                {
+                    //Since user id's are unsorted we search liniarily in both direction for the user ID.
+                    boolean inRange = true;
+                    int offSet = 0;
+                    while (inRange)
                     {
-                        raf.seek(raf.getFilePointer() - line.getBytes().length);
-                        String updateLine = rating.getMovie() + "," + rating.getUser() + "," + rating.getRating() + "\n";
-                        raf.writeChars(line);
+                        raf.seek(pos + offSet);
+                        int movieID = raf.readInt();
+                        int userID = raf.readInt();
+                        if (movId == rating.getMovie() && userID == rating.getUser())
+                        {
+                            raf.writeInt(rating.getRating());
+                            return;
+                        }
+                        if (movId != rating.getMovie())
+                        {
+                            inRange = false;
+                            break;
+                        }
+                        offSet += RECORD_SIZE;
                     }
-                    return;
+                    inRange = true;
+                    offSet = 0 - RECORD_SIZE;
+                    while (inRange)
+                    {
+                        raf.seek(pos);
+                        int movieID = raf.readInt();
+                        int userID = raf.readInt();
+                        if (movId == rating.getMovie() && userID == rating.getUser())
+                        {
+                            raf.writeInt(rating.getRating());
+                            return;
+                        }
+                        if (movId != rating.getMovie())
+                        {
+                            inRange = false;
+                            break;
+                        }
+                        offSet -= RECORD_SIZE;
+                    }
                 }
-            } while (raf.getFilePointer() < raf.length());
+            }
         }
+        throw new IllegalArgumentException("Rating not found, can't update");
     }
 
     /**
