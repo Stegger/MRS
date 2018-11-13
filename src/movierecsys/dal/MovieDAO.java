@@ -36,14 +36,14 @@ public class MovieDAO
      * Gets a list of all movies in the persistence storage.
      *
      * @return List of movies.
-     * @throws java.io.IOException 
+     * @throws java.io.IOException
      */
     public List<Movie> getAllMovies() throws IOException
     {
         List<Movie> allMovies = new ArrayList<>();
         String source = "data/movie_titles.txt";
         File file = new File(source);
-        
+
         try (BufferedReader reader = new BufferedReader(new FileReader(file))) //Using a try with resources!
         {
             String line;
@@ -125,12 +125,12 @@ public class MovieDAO
      */
     private void deleteMovie(Movie movie)
     {
-        
+
     }
 
     /**
      * Updates the movie in the persistence storage to reflect the values in the
-     * given Movie object. 
+     * given Movie object.
      *
      * @param movie The updated movie.
      */
@@ -141,11 +141,11 @@ public class MovieDAO
         allMovies.removeIf((Movie t) -> t.getId() == movie.getId());
         allMovies.add(movie);
         Collections.sort(allMovies, (Movie o1, Movie o2) -> Integer.compare(o1.getId(), o2.getId()));
-        try(BufferedWriter bw = new BufferedWriter(new FileWriter(tmp)))
+        try (BufferedWriter bw = new BufferedWriter(new FileWriter(tmp)))
         {
             for (Movie mov : allMovies)
             {
-                bw.write(mov.getId()+","+mov.getYear()+","+mov.getTitle());
+                bw.write(mov.getId() + "," + mov.getYear() + "," + mov.getTitle());
                 bw.newLine();
             }
         }
