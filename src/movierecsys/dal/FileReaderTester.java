@@ -9,6 +9,9 @@ import java.io.File;
 import java.io.IOException;
 import java.io.RandomAccessFile;
 import java.nio.file.Files;
+import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import movierecsys.be.Rating;
 
 /**
@@ -26,35 +29,26 @@ public class FileReaderTester
      */
     public static void main(String[] args) throws IOException
     {
-        RatingDAO ratingDao = new RatingDAO();
-        Rating rat = new Rating(17742, 2631660, 3);
-        ratingDao.updateRating(rat);
+//        createRafFriendlyRatingsFile();
     }
 
     public static void createRafFriendlyRatingsFile() throws IOException
     {
-        String source = "data/ratings.txt";
         String target = "data/user_ratings";
+        RatingDAO ratingDao = new RatingDAO();
+        List<Rating> all = ratingDao.getAllRatings();
 
         try (RandomAccessFile raf = new RandomAccessFile(target, "rw"))
         {
-            Files.lines(new File(source).toPath()).forEach((String t) ->
+            for (Rating rating : all)
             {
-                try
-                {
-                    String[] cols = t.split(",");
-                    int movId = Integer.parseInt(cols[0]);
-                    int userId = Integer.parseInt(cols[1]);
-                    int rating = Integer.parseInt(cols[2]);
-                    raf.writeInt(movId);
-                    raf.writeInt(userId);
-                    raf.writeInt(rating);
-                } catch (IOException ex)
-                {
-                    System.out.println(ex.getMessage());
-                    ex.printStackTrace();
-                }
-            });
+                raf.writeInt(rating.getMovie());
+                raf.writeInt(rating.getUser());
+                raf.writeInt(rating.getRating());
+            }
+        } catch (IOException ex)
+        {
+            ex.printStackTrace();
         }
     }
 

@@ -5,8 +5,15 @@
  */
 package movierecsys.dal;
 
+import java.io.File;
 import java.io.IOException;
 import java.io.RandomAccessFile;
+import java.nio.ByteBuffer;
+import java.nio.ByteOrder;
+import java.nio.file.Files;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 import movierecsys.be.Rating;
 import movierecsys.be.User;
@@ -33,7 +40,7 @@ public class RatingDAO
     }
 
     /**
-     * Updates the rating to reflect the given object.
+     * Updates the rating to reflect the given object. Assumes that the source file is order by movie ID, then User ID..
      *
      * @param rating The updated rating to persist.
      * @throws java.io.IOException
@@ -69,6 +76,7 @@ public class RatingDAO
                         int userID = raf.readInt();
                         if (movId == rating.getMovie() && userID == rating.getUser())
                         {
+                            System.out.println("Found: " + movId + "," + userID);
                             raf.writeInt(rating.getRating());
                             return;
                         }
@@ -88,6 +96,7 @@ public class RatingDAO
                         int userID = raf.readInt();
                         if (movId == rating.getMovie() && userID == rating.getUser())
                         {
+                            System.out.println("Found: " + movId + "," + userID);
                             raf.writeInt(rating.getRating());
                             return;
                         }
@@ -119,10 +128,24 @@ public class RatingDAO
      *
      * @return List of all ratings.
      */
-    public List<Rating> getAllRatings()
+    public List<Rating> getAllRatings() throws IOException
     {
-        //TODO Get all rating.
-        return null;
+        List<Rating> allRatings = new ArrayList<>();
+        byte[] all = Files.readAllBytes(new File(RATING_SOURCE).toPath()); //I get all records as binary data!
+        for (int i = 0; i < all.length; i += RECORD_SIZE)
+        {
+            int movieId = ByteBuffer.wrap(all, i, Integer.BYTES).order(ByteOrder.BIG_ENDIAN).getInt();
+            int userId = ByteBuffer.wrap(all, i + Integer.BYTES, Integer.BYTES).order(ByteOrder.BIG_ENDIAN).getInt();
+            int rating = ByteBuffer.wrap(all, i + Integer.BYTES * 2, Integer.BYTES).order(ByteOrder.BIG_ENDIAN).getInt();
+            Rating r = new Rating(movieId, userId, rating);
+            allRatings.add(r);
+        }
+        Collections.sort(allRatings, (Rating o1, Rating o2) ->
+        {
+            int movieCompare = Integer.compare(o1.getMovie(), o2.getMovie());
+            return movieCompare == 0 ? Integer.compare(o1.getUser(), o2.getUser()) : movieCompare;
+        });
+        return allRatings;
     }
 
     /**
