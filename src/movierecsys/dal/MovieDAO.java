@@ -9,12 +9,19 @@ import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
+import java.nio.file.CopyOption;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.nio.file.StandardCopyOption;
 import java.nio.file.StandardOpenOption;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+import java.util.function.Predicate;
 import movierecsys.be.Movie;
 
 /**
@@ -30,7 +37,7 @@ public class MovieDAO
      * Gets a list of all movies in the persistence storage.
      *
      * @return List of movies.
-     * @throws java.io.IOException 
+     * @throws java.io.IOException
      */
     public List<Movie> getAllMovies() throws IOException
     {
@@ -122,7 +129,7 @@ public class MovieDAO
      */
     public void deleteMovie(Movie movie)
     {
-        //TODO Delete movie
+
     }
 
     /**
@@ -131,9 +138,23 @@ public class MovieDAO
      *
      * @param movie The updated movie.
      */
-    public void updateMovie(Movie movie)
+    public void updateMovie(Movie movie) throws IOException
     {
-        //TODO Update movies
+        File tmp = new File("data/tmp_movies.txt");
+        List<Movie> allMovies = getAllMovies();
+        allMovies.removeIf((Movie t) -> t.getId() == movie.getId());
+        allMovies.add(movie);
+        Collections.sort(allMovies, (Movie o1, Movie o2) -> Integer.compare(o1.getId(), o2.getId()));
+        try (BufferedWriter bw = new BufferedWriter(new FileWriter(tmp)))
+        {
+            for (Movie mov : allMovies)
+            {
+                bw.write(mov.getId() + "," + mov.getYear() + "," + mov.getTitle());
+                bw.newLine();
+            }
+        }
+        Files.copy(tmp.toPath(), new File(MOVIE_SOURCE).toPath(), StandardCopyOption.REPLACE_EXISTING);
+        Files.delete(tmp.toPath());
     }
 
     /**
