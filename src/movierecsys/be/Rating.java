@@ -18,8 +18,8 @@ public class Rating
     public static final int GOOD = 3;
     public static final int SUPER_GOOD = 5;
 
-    private final Movie movie;
-    private final User user;
+    private final int movieId;
+    private final int userId;
     private int rating;
 
     /**
@@ -30,10 +30,10 @@ public class Rating
      * @param rating The value of the rating. Only the constants of the Rating
      * class are allowed values.
      */
-    public Rating(Movie movie, User user, int rating)
+    public Rating(int movieId, int userId, int rating)
     {
-        this.movie = movie;
-        this.user = user;
+        this.movieId = movieId;
+        this.userId = userId;
         this.rating = rating;
     }
 
@@ -53,9 +53,9 @@ public class Rating
      *
      * @return A movie
      */
-    public Movie getMovie()
+    public int getMovie()
     {
-        return movie;
+        return movieId;
     }
 
     /**
@@ -63,9 +63,9 @@ public class Rating
      *
      * @return A user.
      */
-    public User getUser()
+    public int getUser()
     {
-        return user;
+        return userId;
     }
 
     /**
