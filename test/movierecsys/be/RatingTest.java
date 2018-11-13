@@ -28,7 +28,7 @@ public class RatingTest
     {
         System.out.println("Rating Constructor Illegal Rating");
         int rating = new Random().nextInt(Integer.MAX_VALUE-6)+6;
-        Rating instance = new Rating(MOVIE, USER, rating);
+        Rating instance = new Rating(MOVIE.getId(), USER.getId(), rating);
         fail("You should not be able to construct a rating with an invalid ratings value.");
     }
     
@@ -37,7 +37,7 @@ public class RatingTest
     {
         System.out.println("setRating: Legal");
         int expected = -5;
-        Rating instance = new Rating(MOVIE, USER, -3);
+        Rating instance = new Rating(MOVIE.getId(), USER.getId(), -3);
         instance.setRating(expected);
         int actual = instance.getRating();
         assertEquals(expected, actual);
@@ -51,7 +51,7 @@ public class RatingTest
     {
         System.out.println("setRating: Illegal");
         int rating = 2;
-        Rating instance = new Rating(MOVIE, USER, -3);
+        Rating instance = new Rating(MOVIE.getId(), USER.getId(), -3);
         instance.setRating(rating);
         fail("You should not be allowed to set an illegal rating");
     }
@@ -64,7 +64,7 @@ public class RatingTest
     {
         System.out.println("setRating: High Random Illegal");
         int rating = new Random().nextInt(Integer.MAX_VALUE-6)+6;
-        Rating instance = new Rating(MOVIE, USER, 1);
+        Rating instance = new Rating(MOVIE.getId(), USER.getId(), 1);
         instance.setRating(rating);
         fail("You should not be allowed to set an illegal rating");
     }
@@ -77,7 +77,7 @@ public class RatingTest
     {
         System.out.println("setRating: Low Random ILlegal");
         int rating = (new Random().nextInt(Integer.MAX_VALUE-6)+6) * -1;
-        Rating instance = new Rating(MOVIE, USER, 1);
+        Rating instance = new Rating(MOVIE.getId(), USER.getId(), 1);
         instance.setRating(rating);
         fail("You should not be allowed to set an illegal rating");
     }
@@ -89,9 +89,9 @@ public class RatingTest
     public void testGetMovie()
     {
         System.out.println("getMovie");
-        Rating instance = new Rating(MOVIE, USER, 1);
-        Movie expResult = MOVIE;
-        Movie result = instance.getMovie();
+        Rating instance = new Rating(MOVIE.getId(), USER.getId(), 1);
+        int expResult = MOVIE.getId();
+        int result = instance.getMovie();
         assertEquals(expResult, result);
     }
 
@@ -102,9 +102,9 @@ public class RatingTest
     public void testGetUser()
     {
         System.out.println("getUser");
-        Rating instance = new Rating(MOVIE, USER, 5);
-        User expResult = USER;
-        User result = instance.getUser();
+        Rating instance = new Rating(MOVIE.getId(), USER.getId(), 5);
+        int expResult = USER.getId();
+        int result = instance.getUser();
         assertEquals(expResult, result);
     }
 
@@ -115,7 +115,7 @@ public class RatingTest
     public void testGetRating()
     {
         System.out.println("getRating");
-        Rating instance = new Rating(MOVIE, USER, 3);
+        Rating instance = new Rating(MOVIE.getId(), USER.getId(), 3);
         int expResult = 3;
         int result = instance.getRating();
         assertEquals(expResult, result);

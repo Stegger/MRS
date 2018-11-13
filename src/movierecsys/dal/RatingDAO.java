@@ -40,7 +40,8 @@ public class RatingDAO
     }
 
     /**
-     * Updates the rating to reflect the given object. Assumes that the source file is order by movie ID, then User ID..
+     * Updates the rating to reflect the given object. Assumes that the source
+     * file is in order by movie ID, then User ID..
      *
      * @param rating The updated rating to persist.
      * @throws java.io.IOException
@@ -51,66 +52,37 @@ public class RatingDAO
         {
             long totalRatings = raf.length();
             long low = 0;
-            long high = totalRatings - 1;
+            long high = ((totalRatings - 1) / RECORD_SIZE) * RECORD_SIZE;
             while (high >= low) //Binary search of movie ID
             {
-                long pos = (high + low) / 2;
+                long pos = (((high + low) / 2) / RECORD_SIZE) * RECORD_SIZE;
                 raf.seek(pos);
                 int movId = raf.readInt();
+                int userId = raf.readInt();
 
                 if (rating.getMovie() < movId) //We did not find the movie.
                 {
                     high = pos - RECORD_SIZE; //We half our problem size to the upper half.
-                } else if (movId > rating.getMovie()) //We did not find the movie.
+                } else if (rating.getMovie() > movId) //We did not find the movie.
                 {
                     low = pos + RECORD_SIZE; //We half our problem size (Just the lower half)
-                } else
+                } else //We found a movie match, not to search for the user:
                 {
-                    //Since user id's are unsorted we search liniarily in both direction for the user ID.
-                    boolean inRange = true;
-                    int offSet = 0;
-                    while (inRange)
+                    if (rating.getUser() < userId) //Again we half our problem size
                     {
-                        raf.seek(pos + offSet);
-                        int movieID = raf.readInt();
-                        int userID = raf.readInt();
-                        if (movId == rating.getMovie() && userID == rating.getUser())
-                        {
-                            System.out.println("Found: " + movId + "," + userID);
-                            raf.writeInt(rating.getRating());
-                            return;
-                        }
-                        if (movId != rating.getMovie())
-                        {
-                            inRange = false;
-                            break;
-                        }
-                        offSet += RECORD_SIZE;
-                    }
-                    inRange = true;
-                    offSet = 0 - RECORD_SIZE;
-                    while (inRange)
+                        high = pos - RECORD_SIZE;
+                    } else if (rating.getUser() > userId) //Another half sized problem
                     {
-                        raf.seek(pos);
-                        int movieID = raf.readInt();
-                        int userID = raf.readInt();
-                        if (movId == rating.getMovie() && userID == rating.getUser())
-                        {
-                            System.out.println("Found: " + movId + "," + userID);
-                            raf.writeInt(rating.getRating());
-                            return;
-                        }
-                        if (movId != rating.getMovie())
-                        {
-                            inRange = false;
-                            break;
-                        }
-                        offSet -= RECORD_SIZE;
+                        low = pos + RECORD_SIZE;
+                    } else //Last option, we found the right row:
+                    {
+                        raf.write(rating.getRating()); //Remember the to reads at line 60,61. They positioned the filepointer just at the ratings part of the current record.
+                        return; //We return from the method. We are done here. The try with resources will close the connection to the file.
                     }
                 }
             }
         }
-        throw new IllegalArgumentException("Rating not found, can't update");
+        throw new IllegalArgumentException("Rating not found in file, can't update!"); //If we reach this point we have been searching for a non-present rating.
     }
 
     /**

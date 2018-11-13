@@ -11,17 +11,14 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.nio.file.CopyOption;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.StandardCopyOption;
 import java.nio.file.StandardOpenOption;
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
-import java.util.function.Predicate;
 import movierecsys.be.Movie;
 
 /**
@@ -61,7 +58,7 @@ public class MovieDAO
                         //Do nothing. Optimally we would log the error.
                     }
                 }
-            }   
+            }
         }
         return allMovies;
     }
@@ -81,7 +78,8 @@ public class MovieDAO
         int year = Integer.parseInt(arrMovie[1]);
         String title = arrMovie[2];
         // Add if commas in title, includes the rest of the string
-        for (int i = 3; i < arrMovie.length; i++) {
+        for (int i = 3; i < arrMovie.length; i++)
+        {
             title += "," + arrMovie[i];
         }
         Movie mov = new Movie(id, year, title);
@@ -163,10 +161,24 @@ public class MovieDAO
      * @param id ID of the movie.
      * @return A Movie object.
      */
-    public Movie getMovie(int id)
+    public Movie getMovie(int id) throws IOException
     {
-        //TODO Get one Movie
-        return null;
+        List<Movie> all = getAllMovies();
+        int index = Collections.binarySearch(all, new Movie(id, 0, ""), new Comparator<Movie>()
+        {
+            @Override
+            public int compare(Movie o1, Movie o2)
+            {
+                return Integer.compare(o1.getId(), o2.getId());
+            }
+        });
+        if (index >= 0)
+        {
+            return all.get(index);
+        } else
+        {
+            throw new IllegalArgumentException("No movie with ID: " + id + " is found.");
+        }
     }
 
 }

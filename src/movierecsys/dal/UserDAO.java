@@ -14,6 +14,7 @@ import movierecsys.be.User;
  */
 public class UserDAO
 {
+    private static final String USER_SOURCE = "data/users.txt";
     
     /**
      * Gets a list of all known users.
@@ -42,7 +43,7 @@ public class UserDAO
      */
     public void updateUser(User user)
     {
-        //TODO Update user.
+        //TODO Update user
     }
     
 }

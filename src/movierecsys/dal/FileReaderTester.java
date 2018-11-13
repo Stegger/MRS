@@ -29,15 +29,22 @@ public class FileReaderTester
      */
     public static void main(String[] args) throws IOException
     {
-//        createRafFriendlyRatingsFile();
+        RatingDAO ratingDao = new RatingDAO();
+        
+        List<Rating> ratings = ratingDao.getAllRatings();
+        for (Rating rating : ratings)
+        {
+            System.out.println("R: " + rating.getMovie()+ "," + rating.getUser() + "," + rating.getRating()); //Take a coffee break now...
+        }
+        
     }
-
+    
     public static void createRafFriendlyRatingsFile() throws IOException
     {
         String target = "data/user_ratings";
         RatingDAO ratingDao = new RatingDAO();
         List<Rating> all = ratingDao.getAllRatings();
-
+        
         try (RandomAccessFile raf = new RandomAccessFile(target, "rw"))
         {
             for (Rating rating : all)
@@ -51,5 +58,5 @@ public class FileReaderTester
             ex.printStackTrace();
         }
     }
-
+    
 }

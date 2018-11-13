@@ -38,24 +38,24 @@ public class MovieRecommenderTest
         User userB = new User(1, "Jeppe");
         User userC = new User(1, "Stig");
         
-        Rating rOne = new Rating(mov1, userA, 5);
-        Rating rTwo = new Rating(mov2, userA, 5);
-        Rating rThree = new Rating(mov3, userA, 5);
-        Rating rFour = new Rating(mov4, userA, -5);
-        Rating rFive = new Rating(mov5, userA, 5);
-        Rating rSix = new Rating(mov6, userA, -5);
+        Rating rOne = new Rating(mov1.getId(), userA.getId(), 5);
+        Rating rTwo = new Rating(mov2.getId(), userA.getId(), 5);
+        Rating rThree = new Rating(mov3.getId(), userA.getId(), 5);
+        Rating rFour = new Rating(mov4.getId(), userA.getId(), -5);
+        Rating rFive = new Rating(mov5.getId(), userA.getId(), 5);
+        Rating rSix = new Rating(mov6.getId(), userA.getId(), -5);
         
-        Rating r2One = new Rating(mov1, userB, 5); 
-        Rating r2Two = new Rating(mov2, userB, 1); 
-        Rating r2Three = new Rating(mov3, userB, 3); 
-        Rating r2Four = new Rating(mov4, userB, 5); 
-        Rating r2Five = new Rating(mov5, userB, -3); 
-        Rating r2Six = new Rating(mov6, userB, -3); 
+        Rating r2One = new Rating(mov1.getId(), userB.getId(), 5); 
+        Rating r2Two = new Rating(mov2.getId(), userB.getId(), 1); 
+        Rating r2Three = new Rating(mov3.getId(), userB.getId(), 3); 
+        Rating r2Four = new Rating(mov4.getId(), userB.getId(), 5); 
+        Rating r2Five = new Rating(mov5.getId(), userB.getId(), -3); 
+        Rating r2Six = new Rating(mov6.getId(), userB.getId(), -3); 
         
-        Rating r3One = new Rating(mov1, userC, 5); 
-        Rating r3Two = new Rating(mov2, userC, 1); 
-        Rating r3Three = new Rating(mov3, userC, 3); 
-        Rating r3Five = new Rating(mov5, userC, -3); 
+        Rating r3One = new Rating(mov1.getId(), userC.getId(), 5); 
+        Rating r3Two = new Rating(mov2.getId(), userC.getId(), 1); 
+        Rating r3Three = new Rating(mov3.getId(), userC.getId(), 3); 
+        Rating r3Five = new Rating(mov5.getId(), userC.getId(), -3); 
         
         List<Rating> allRatings = new ArrayList<>();
         allRatings.add(rOne);
