@@ -8,6 +8,8 @@ package movierecsys.dal;
 import java.io.IOException;
 import java.util.List;
 import movierecsys.be.Movie;
+import movierecsys.be.Rating;
+import movierecsys.be.User;
 
 /**
  *
@@ -24,14 +26,9 @@ public class FileReaderTester
      */
     public static void main(String[] args) throws IOException
     {
-        MovieDAO movieDao = new MovieDAO();
-        
-        
-        
-        
-        Movie movie = movieDao.createMovie(2015, "Django Unjained"); //Only run this once, or you will get multiple entries!
-        System.out.println(movie);
-        movie.setTitle("Django Unchained");
-        movieDao.updateMovie(movie);
+        RatingDAO rDao = new RatingDAO();
+        Rating rat = new Rating(17442, 2534701, -3);
+        rDao.updateRating(rat);
+        System.out.println("Success");
     }
 }
