@@ -12,7 +12,7 @@ import movierecsys.be.Movie;
 import movierecsys.be.Rating;
 import movierecsys.be.User;
 import movierecsys.bll.exception.MovieRecSysException;
-import movierecsys.dal.MovieDAO;
+import movierecsys.dal.file.MovieDAO;
 
 /**
  *

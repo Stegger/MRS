@@ -5,13 +5,18 @@
  */
 package movierecsys.dal;
 
-import java.io.File;
+import movierecsys.dal.file.RatingDAO;
+import movierecsys.dal.file.MovieDAO;
+import com.microsoft.sqlserver.jdbc.SQLServerDataSource;
 import java.io.IOException;
 import java.io.RandomAccessFile;
-import java.nio.file.Files;
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.ArrayList;
 import java.util.List;
-import java.util.logging.Level;
-import java.util.logging.Logger;
+import movierecsys.be.Movie;
 import movierecsys.be.Rating;
 
 /**
@@ -29,22 +34,48 @@ public class FileReaderTester
      */
     public static void main(String[] args) throws IOException
     {
-        RatingDAO ratingDao = new RatingDAO();
-        
-        List<Rating> ratings = ratingDao.getAllRatings();
-        for (Rating rating : ratings)
-        {
-            System.out.println("R: " + rating.getMovie()+ "," + rating.getUser() + "," + rating.getRating()); //Take a coffee break now...
-        }
-        
+        mitigateMovies();
+
     }
-    
+
+    public static void mitigateMovies() throws IOException
+    {
+        SQLServerDataSource ds = new SQLServerDataSource();
+        ds.setServerName("10.176.111.31");
+        ds.setDatabaseName("mrs");
+        ds.setUser("CS2018A_40");
+        ds.setPassword("CS2018A_40");
+
+        MovieDAO mvDao = new MovieDAO();
+        List<Movie> movies = mvDao.getAllMovies();
+
+        try (Connection con = ds.getConnection())
+        {
+            Statement statement = con.createStatement();
+            
+            for (Movie movie : movies)
+            {
+                String sql = "INSERT INTO Movie (id,year,title) VALUES("
+                        + movie.getId() + ","
+                        + movie.getYear() + ",'"
+                        + movie.getTitle().replace("'", "") + "');";
+                System.out.println(sql);
+                int i = statement.executeUpdate(sql);
+                // INSERT INTO Movie (id,year,title) VALUES (1,2018,Venom);
+                System.out.println("Affected row = " + i);
+            }
+        } catch (SQLException ex)
+        {
+            ex.printStackTrace();
+        }
+    }
+
     public static void createRafFriendlyRatingsFile() throws IOException
     {
         String target = "data/user_ratings";
         RatingDAO ratingDao = new RatingDAO();
         List<Rating> all = ratingDao.getAllRatings();
-        
+
         try (RandomAccessFile raf = new RandomAccessFile(target, "rw"))
         {
             for (Rating rating : all)
@@ -58,5 +89,5 @@ public class FileReaderTester
             ex.printStackTrace();
         }
     }
-    
+
 }
