@@ -24,7 +24,7 @@ public class MovieDbDao implements IMovieRepository
 {
     private DbConnectionProvider conProvider;
 
-    public MovieDbDao()
+    public MovieDbDao() throws IOException
     {
         conProvider = new DbConnectionProvider();
     }

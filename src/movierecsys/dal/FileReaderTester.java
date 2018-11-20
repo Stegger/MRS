@@ -7,7 +7,6 @@ package movierecsys.dal;
 
 import movierecsys.dal.file.RatingDAO;
 import movierecsys.dal.file.MovieDAO;
-import com.microsoft.sqlserver.jdbc.SQLServerDataSource;
 import java.io.IOException;
 import java.io.RandomAccessFile;
 import java.sql.Connection;
@@ -17,6 +16,7 @@ import java.util.List;
 import movierecsys.be.Movie;
 import movierecsys.be.Rating;
 import movierecsys.be.User;
+import movierecsys.dal.db.DbConnectionProvider;
 import movierecsys.dal.file.UserDAO;
 
 /**
@@ -39,13 +39,9 @@ public class FileReaderTester
         mitigateRatings();
     }
 
-    public static void mitigateUsers()
+    public static void mitigateUsers() throws IOException
     {
-        SQLServerDataSource ds = new SQLServerDataSource();
-        ds.setServerName("10.176.111.31");
-        ds.setDatabaseName("mrs");
-        ds.setUser("CS2018A_40");
-        ds.setPassword("CS2018A_40");
+        DbConnectionProvider ds = new DbConnectionProvider();
 
         List<User> users = new UserDAO().getAllUsers();
 
@@ -81,11 +77,7 @@ public class FileReaderTester
     public static void mitigateRatings() throws IOException
     {
         List<Rating> allRatings = new RatingDAO().getAllRatings();
-        SQLServerDataSource ds = new SQLServerDataSource();
-        ds.setServerName("10.176.111.31");
-        ds.setDatabaseName("mrs");
-        ds.setUser("CS2018A_40");
-        ds.setPassword("CS2018A_40");
+        DbConnectionProvider ds = new DbConnectionProvider();
         try (Connection con = ds.getConnection())
         {
             Statement st = con.createStatement();
@@ -122,12 +114,7 @@ public class FileReaderTester
 
     public static void mitigateMovies() throws IOException
     {
-        SQLServerDataSource ds = new SQLServerDataSource();
-        ds.setServerName("10.176.111.31");
-        ds.setDatabaseName("mrs");
-        ds.setUser("CS2018A_40");
-        ds.setPassword("CS2018A_40");
-
+        DbConnectionProvider ds = new DbConnectionProvider();
         MovieDAO mvDao = new MovieDAO();
         List<Movie> movies = mvDao.getAllMovies();
 
