@@ -35,7 +35,7 @@ public class FileReaderTester
     public static void main(String[] args) throws IOException
     {
         //mitigateMovies();
-        mitigateUsers();
+//        mitigateUsers();
         mitigateRatings();
     }
 
@@ -60,17 +60,13 @@ public class FileReaderTester
                         + user.getName() + "');";
                 statement.addBatch(sql);
                 counter++;
-                if (counter % 1000 == 0)
+                if (counter % 10000 == 0)
                 {
                     statement.executeBatch();
-                    System.out.println("Added 1000 users.");
+                    System.out.println("Added " + counter + " users.");
                 }
             }
-            if (counter % 1000 != 0)
-            {
-                statement.executeBatch();
-                System.out.println("Added final batch of users.");
-            }
+            statement.executeBatch();
         } catch (SQLException ex)
         {
             ex.printStackTrace();
@@ -94,26 +90,30 @@ public class FileReaderTester
         {
             Statement st = con.createStatement();
             int counter = 0;
+            long lastTime = System.currentTimeMillis();
+            long currentTime = System.currentTimeMillis();
             for (Rating rating : allRatings)
             {
-                String sql = "INSERT INTO Rating (movieId, userId, score) VALUES ("
+
+                String sql = "INSERT INTO Rating (movieId, userId, rating) VALUES ("
                         + rating.getMovie() + ","
                         + rating.getUser() + ","
                         + rating.getRating()
                         + ");";
                 st.addBatch(sql);
                 counter++;
-                if (counter % 1000 == 0)
+                if (counter % 10000 == 0)
                 {
+
                     st.executeBatch();
-                    System.out.println("Added 1000 ratings.");
+                    currentTime = System.currentTimeMillis();
+                    long timePerInsert = (currentTime - lastTime) / 10000;
+                    System.out.println("Millis per insert: " + timePerInsert);
+                    System.out.println("Added " + counter + " ratings.");
+                    lastTime = currentTime;
                 }
             }
-            if (counter % 1000 != 0)
-            {
-                st.executeBatch();
-                System.out.println("Added final batch of ratings.");
-            }
+            st.executeBatch();
         } catch (SQLException ex)
         {
             ex.printStackTrace();

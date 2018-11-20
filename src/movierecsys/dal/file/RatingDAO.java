@@ -109,7 +109,7 @@ public class RatingDAO implements IRatingRepository
     {
         List<Rating> allRatings = new ArrayList<>();
         byte[] all = Files.readAllBytes(new File(RATING_SOURCE).toPath()); //I get all records as binary data!
-        for (int i = 0; i < all.length; i += RECORD_SIZE)
+        for (int i = 0; i + Integer.BYTES * 3 < all.length; i += RECORD_SIZE)
         {
             int movieId = ByteBuffer.wrap(all, i, Integer.BYTES).order(ByteOrder.BIG_ENDIAN).getInt();
             int userId = ByteBuffer.wrap(all, i + Integer.BYTES, Integer.BYTES).order(ByteOrder.BIG_ENDIAN).getInt();

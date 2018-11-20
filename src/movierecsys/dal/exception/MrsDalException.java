@@ -5,6 +5,8 @@
  */
 package movierecsys.dal.exception;
 
+import java.io.IOException;
+
 /**
  *
  * @author pgn
@@ -14,6 +16,7 @@ public class MrsDalException extends Exception
 
     public MrsDalException()
     {
+        super();
     }
 
     public MrsDalException(String message)
@@ -24,6 +27,11 @@ public class MrsDalException extends Exception
     public MrsDalException(String message, Throwable cause)
     {
         super(message, cause);
+    }
+
+    public MrsDalException(String message, Exception ex)
+    {
+        super(message, ex);
     }
 
 }

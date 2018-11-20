@@ -22,6 +22,14 @@ import movierecsys.be.Movie;
  */
 public class MovieDbDao implements IMovieRepository
 {
+    private DbConnectionProvider conProvider;
+
+    public MovieDbDao()
+    {
+        conProvider = new DbConnectionProvider();
+    }
+    
+    
 
     @Override
     public Movie createMovie(int releaseYear, String title) throws IOException
@@ -38,15 +46,9 @@ public class MovieDbDao implements IMovieRepository
     @Override
     public List<Movie> getAllMovies() throws IOException
     {
-        SQLServerDataSource ds = new SQLServerDataSource();
-        ds.setServerName("10.176.111.31");
-        ds.setDatabaseName("mrs");
-        ds.setUser("CS2018A_40");
-        ds.setPassword("CS2018A_40");
-
         List<Movie> movies = new ArrayList<>();
         
-        try (Connection con = ds.getConnection())
+        try (Connection con = conProvider.getConnection())
         {
             Statement statement = con.createStatement();
             ResultSet rs = statement.executeQuery("SELECT * FROM Movie;");
