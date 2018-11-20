@@ -27,7 +27,7 @@ public class DalController implements MrsDalInterface
     private IUserRepository userRepo;
     private IRatingRepository ratingRepo;
 
-    public DalController()
+    public DalController() throws IOException
     {
         movieRepo = new MovieDbDao();
     }

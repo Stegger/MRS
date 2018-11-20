@@ -34,8 +34,8 @@ public class FileReaderTester
      */
     public static void main(String[] args) throws IOException
     {
-        //mitigateMovies();
-//        mitigateUsers();
+        mitigateMovies();
+        mitigateUsers();
         mitigateRatings();
     }
 
@@ -51,7 +51,7 @@ public class FileReaderTester
             int counter = 0;
             for (User user : users)
             {
-                String sql = "INSERT INTO User (id,name) VALUES("
+                String sql = "INSERT INTO [User] (id,name) VALUES("
                         + user.getId() + ",'"
                         + user.getName() + "');";
                 statement.addBatch(sql);
@@ -82,8 +82,6 @@ public class FileReaderTester
         {
             Statement st = con.createStatement();
             int counter = 0;
-            long lastTime = System.currentTimeMillis();
-            long currentTime = System.currentTimeMillis();
             for (Rating rating : allRatings)
             {
 
@@ -96,13 +94,8 @@ public class FileReaderTester
                 counter++;
                 if (counter % 10000 == 0)
                 {
-
                     st.executeBatch();
-                    currentTime = System.currentTimeMillis();
-                    long timePerInsert = (currentTime - lastTime) / 10000;
-                    System.out.println("Millis per insert: " + timePerInsert);
-                    System.out.println("Added " + counter + " ratings.");
-                    lastTime = currentTime;
+                    System.out.println("Inserted " + counter + " ratings.");
                 }
             }
             st.executeBatch();
@@ -121,18 +114,22 @@ public class FileReaderTester
         try (Connection con = ds.getConnection())
         {
             Statement statement = con.createStatement();
-
+            int c = 0;
             for (Movie movie : movies)
             {
                 String sql = "INSERT INTO Movie (id,year,title) VALUES("
                         + movie.getId() + ","
                         + movie.getYear() + ",'"
                         + movie.getTitle().replace("'", "") + "');";
-                System.out.println(sql);
-                int i = statement.executeUpdate(sql);
+                statement.addBatch(sql);
+                c++;
+                if (c % 1000 == 0)
+                {
+                    statement.executeBatch();
+                }
                 // INSERT INTO Movie (id,year,title) VALUES (1,2018,Venom);
-                System.out.println("Affected row = " + i);
             }
+            statement.executeBatch();
         } catch (SQLException ex)
         {
             ex.printStackTrace();
