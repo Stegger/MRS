@@ -12,7 +12,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
 import movierecsys.be.Movie;
-import movierecsys.bll.exception.MovieRecSysException;
+import movierecsys.bll.exception.MrsBllException;
 import movierecsys.gui.model.MovieModel;
 
 /**
@@ -41,7 +41,7 @@ public class MovieRecController implements Initializable
         try
         {
             movieModel = new MovieModel();
-        } catch (MovieRecSysException ex)
+        } catch (MrsBllException ex)
         {
             displayError(ex);
             System.exit(0);

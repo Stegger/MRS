@@ -6,7 +6,7 @@
 package movierecsys.be;
 
 import java.util.Random;
-import movierecsys.bll.exception.MovieRecSysException;
+import movierecsys.bll.exception.MrsBllException;
 import static org.junit.Assert.*;
 import org.junit.Test;
 
@@ -23,7 +23,7 @@ public class RatingTest
     {
     }
 
-    @Test(expected = MovieRecSysException.class)
+    @Test(expected = MrsBllException.class)
     public void testConstructor()
     {
         System.out.println("Rating Constructor Illegal Rating");
@@ -46,7 +46,7 @@ public class RatingTest
     /**
      * Test of setRating method, of class Rating, using an invalid parameter.
      */
-    @Test(expected = MovieRecSysException.class)
+    @Test(expected = MrsBllException.class)
     public void testSetRatingIllegal()
     {
         System.out.println("setRating: Illegal");
@@ -59,7 +59,7 @@ public class RatingTest
     /**
      * Test of setRating method, of class Rating, using a high invalid parameter.
      */
-    @Test(expected = MovieRecSysException.class)
+    @Test(expected = MrsBllException.class)
     public void testSetRatingHighRandomIllegal()
     {
         System.out.println("setRating: High Random Illegal");
@@ -72,7 +72,7 @@ public class RatingTest
     /**
      * Test of setRating method, of class Rating, using a low invalid parameter.
      */
-    @Test(expected = MovieRecSysException.class)
+    @Test(expected = MrsBllException.class)
     public void testSetRatingLowRandomIllegal()
     {
         System.out.println("setRating: Low Random ILlegal");

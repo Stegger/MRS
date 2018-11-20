@@ -10,7 +10,7 @@ import javafx.collections.ObservableList;
 import movierecsys.be.Movie;
 import movierecsys.bll.MRSLogicFacade;
 import movierecsys.bll.MRSManager;
-import movierecsys.bll.exception.MovieRecSysException;
+import movierecsys.bll.exception.MrsBllException;
 
 /**
  *
@@ -23,7 +23,7 @@ public class MovieModel
 
     private MRSLogicFacade logiclayer;
 
-    public MovieModel() throws MovieRecSysException
+    public MovieModel() throws MrsBllException
     {
         movies = FXCollections.observableArrayList();
         logiclayer = new MRSManager();

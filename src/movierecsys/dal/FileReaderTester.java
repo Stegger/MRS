@@ -17,6 +17,7 @@ import java.util.List;
 import movierecsys.be.Movie;
 import movierecsys.be.Rating;
 import movierecsys.be.User;
+import movierecsys.dal.file.UserDAO;
 
 /**
  *

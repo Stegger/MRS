@@ -9,12 +9,14 @@ package movierecsys.bll.exception;
  *
  * @author pgn
  */
-public class MovieRecSysException extends Exception
+public class MrsBllException extends Exception
 {
 
-    public MovieRecSysException(String message)
+    public MrsBllException(String message)
     {
         super(message);
     }
+    
+    
     
 }

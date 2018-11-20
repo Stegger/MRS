@@ -11,7 +11,7 @@ import java.util.List;
 import movierecsys.be.Movie;
 import movierecsys.be.Rating;
 import movierecsys.be.User;
-import movierecsys.bll.exception.MovieRecSysException;
+import movierecsys.bll.exception.MrsBllException;
 import movierecsys.dal.file.MovieDAO;
 
 /**
@@ -96,10 +96,10 @@ public class MRSManager implements MRSLogicFacade {
     /**
      * Gets all movies.
      * @return List of movies.
-     * @throws MovieRecSysException
+     * @throws MrsBllException
      */
     @Override
-    public List<Movie> getAllMovies() throws MovieRecSysException
+    public List<Movie> getAllMovies() throws MrsBllException
     {
         try
         {
@@ -107,7 +107,7 @@ public class MRSManager implements MRSLogicFacade {
         } catch (IOException ex)
         {
 //            Logger.getLogger(MRSManager.class.getName()).log(Level.SEVERE, null, ex); You could log an exception
-            throw new MovieRecSysException("Could not read all movies. Cause: " + ex.getMessage());
+            throw new MrsBllException("Could not read all movies. Cause: " + ex.getMessage());
         }
     }
 
