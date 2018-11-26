@@ -8,6 +8,7 @@ package movierecsys.dal.intereface;
 import java.io.IOException;
 import java.util.List;
 import movierecsys.be.Movie;
+import movierecsys.dal.exception.MrsDalException;
 
 /**
  *
@@ -24,7 +25,7 @@ public interface IMovieRepository
      * @return The object representation of the movie added to the persistence
      * storage.
      */
-    Movie createMovie(int releaseYear, String title) throws IOException;
+    Movie createMovie(int releaseYear, String title) throws MrsDalException;
 
     /**
      * Deletes a movie from the persistence storage.

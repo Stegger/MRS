@@ -7,6 +7,8 @@ package movierecsys.dal;
 
 import java.io.IOException;
 import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import movierecsys.be.Movie;
 import movierecsys.be.Rating;
 import movierecsys.be.User;
@@ -35,15 +37,7 @@ public class DalController implements MrsDalInterface
     @Override
     public Movie createMovie(int releaseYear, String title) throws MrsDalException
     {  
-        try
-        {
-            return movieRepo.createMovie(releaseYear, title);
-        } catch (IOException ex)
-        {
-            //LOG the error
-            System.out.println(ex.getMessage());
-            throw new MrsDalException("Could not create movie.", ex);
-        }
+        return movieRepo.createMovie(releaseYear, title); //LOG the error
     }
 
     @Override
@@ -55,7 +49,13 @@ public class DalController implements MrsDalInterface
     @Override
     public List<Movie> getAllMovies() throws MrsDalException
     {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        try
+        {
+            return movieRepo.getAllMovies();
+        } catch (IOException ex)
+        {
+            throw new MrsDalException("Could not get all movies", ex);
+        }
     }
 
     @Override

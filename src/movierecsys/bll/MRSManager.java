@@ -8,11 +8,15 @@ package movierecsys.bll;
 
 import java.io.IOException;
 import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import movierecsys.be.Movie;
 import movierecsys.be.Rating;
 import movierecsys.be.User;
 import movierecsys.bll.exception.MrsBllException;
-import movierecsys.dal.file.MovieDAO;
+import movierecsys.dal.DalController;
+import movierecsys.dal.MrsDalInterface;
+import movierecsys.dal.exception.MrsDalException;
 
 /**
  *
@@ -20,11 +24,17 @@ import movierecsys.dal.file.MovieDAO;
  */
 public class MRSManager implements MRSLogicFacade {
 
-    private final MovieDAO movieDAO;
+    private final MrsDalInterface dalFacade;
     
-    public MRSManager()
+    public MRSManager() throws MrsBllException
     {
-        movieDAO = new MovieDAO();
+        try
+        {
+            dalFacade = new DalController();
+        } catch (IOException ex)
+        {
+            throw new MrsBllException("Could not connect to DAL layer.");
+        }
     }
     
     @Override
@@ -54,7 +64,14 @@ public class MRSManager implements MRSLogicFacade {
     @Override
     public Movie createMovie(int year, String title)
     {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        try
+        {
+            return dalFacade.createMovie(year, title);
+        } catch (MrsDalException ex)
+        {
+            Logger.getLogger(MRSManager.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return null;
     }
 
     @Override
@@ -103,8 +120,8 @@ public class MRSManager implements MRSLogicFacade {
     {
         try
         {
-            return movieDAO.getAllMovies();
-        } catch (IOException ex)
+            return dalFacade.getAllMovies();
+        } catch (MrsDalException ex)
         {
 //            Logger.getLogger(MRSManager.class.getName()).log(Level.SEVERE, null, ex); You could log an exception
             throw new MrsBllException("Could not read all movies. Cause: " + ex.getMessage());

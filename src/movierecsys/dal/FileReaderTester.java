@@ -17,6 +17,8 @@ import movierecsys.be.Movie;
 import movierecsys.be.Rating;
 import movierecsys.be.User;
 import movierecsys.dal.db.DbConnectionProvider;
+import movierecsys.dal.db.MovieDbDao;
+import movierecsys.dal.exception.MrsDalException;
 import movierecsys.dal.file.UserDAO;
 
 /**
@@ -32,10 +34,16 @@ public class FileReaderTester
      * @param args
      * @throws IOException
      */
-    public static void main(String[] args) throws IOException
+    public static void main(String[] args) throws IOException, MrsDalException
     {
-        mitigateMovies();
-        mitigateUsers();
+//        MovieDbDao mvDao = new MovieDbDao();
+//        
+//        Movie mv = mvDao.createMovie(2018, "Mortal Engines");
+//        
+//        System.out.println("Did we get an ID? " + mv.getId());
+
+//        mitigateMovies();
+//        mitigateUsers();
         mitigateRatings();
     }
 
@@ -84,18 +92,20 @@ public class FileReaderTester
             int counter = 0;
             for (Rating rating : allRatings)
             {
-
-                String sql = "INSERT INTO Rating (movieId, userId, rating) VALUES ("
-                        + rating.getMovie() + ","
-                        + rating.getUser() + ","
-                        + rating.getRating()
-                        + ");";
-                st.addBatch(sql);
-                counter++;
-                if (counter % 10000 == 0)
+                if (rating.getMovie() <= 28)
                 {
-                    st.executeBatch();
-                    System.out.println("Inserted " + counter + " ratings.");
+                    String sql = "INSERT INTO Rating (movieId, userId, rating) VALUES ("
+                            + rating.getMovie() + ","
+                            + rating.getUser() + ","
+                            + rating.getRating()
+                            + ");";
+                    st.addBatch(sql);
+                    counter++;
+                    if (counter % 10000 == 0)
+                    {
+                        st.executeBatch();
+                        System.out.println("Inserted " + counter + " ratings.");
+                    }
                 }
             }
             st.executeBatch();

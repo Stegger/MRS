@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ListView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
@@ -34,4 +36,24 @@
          </children>
       </VBox>
    </center>
+   <right>
+      <VBox maxWidth="1.7976931348623157E308" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Create Movie" />
+            <HBox maxWidth="1.7976931348623157E308">
+               <children>
+                  <Label maxWidth="1.7976931348623157E308" text="Titel" HBox.hgrow="ALWAYS" />
+                  <TextField fx:id="txtMovieTitle" />
+               </children>
+            </HBox>
+            <HBox maxWidth="1.7976931348623157E308">
+               <children>
+                  <Label maxWidth="1.7976931348623157E308" text="Year" HBox.hgrow="ALWAYS" />
+                  <TextField fx:id="txtMovieYear" />
+               </children>
+            </HBox>
+            <Button alignment="CENTER_RIGHT" mnemonicParsing="false" onAction="#handleAddMovie" text="Add movie!" textAlignment="CENTER" />
+         </children>
+      </VBox>
+   </right>
 </BorderPane>

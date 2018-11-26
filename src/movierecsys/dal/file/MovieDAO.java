@@ -24,7 +24,10 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import movierecsys.be.Movie;
+import movierecsys.dal.exception.MrsDalException;
 
 /**
  *
@@ -101,7 +104,7 @@ public class MovieDAO implements IMovieRepository
      * storage.
      */
     @Override
-    public Movie createMovie(int releaseYear, String title) throws IOException
+    public Movie createMovie(int releaseYear, String title) throws MrsDalException
     {
         Path path = new File(MOVIE_SOURCE).toPath();
         int id = -1;
@@ -110,6 +113,9 @@ public class MovieDAO implements IMovieRepository
             id = getNextAvailableMovieID();
             bw.newLine();
             bw.write(id + "," + releaseYear + "," + title);
+        } catch (IOException ex)
+        {
+            throw new MrsDalException("Could not create Movie.", ex);
         }
         return new Movie(id, releaseYear, title);
     }

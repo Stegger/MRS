@@ -7,6 +7,7 @@ package movierecsys.gui.controller;
 
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.ListView;
@@ -35,6 +36,10 @@ public class MovieRecController implements Initializable
     private ListView<Movie> lstMovies;
 
     private MovieModel movieModel;
+    @FXML
+    private TextField txtMovieTitle;
+    @FXML
+    private TextField txtMovieYear;
 
     public MovieRecController()
     {
@@ -45,7 +50,7 @@ public class MovieRecController implements Initializable
         {
             displayError(ex);
             System.exit(0);
-        } 
+        }
     }
 
     @Override
@@ -56,6 +61,7 @@ public class MovieRecController implements Initializable
 
     /**
      * Displays errormessages to the user.
+     *
      * @param ex The Exception
      */
     private void displayError(Exception ex)
@@ -63,6 +69,14 @@ public class MovieRecController implements Initializable
         //TODO Display error properly
         System.out.println(ex.getMessage());
         ex.printStackTrace();
+    }
+
+    @FXML
+    private void handleAddMovie(ActionEvent event)
+    {
+        String title = txtMovieTitle.getText();
+        int year = Integer.parseInt(txtMovieYear.getText());
+        movieModel.createMovie(year, title);
     }
 
 }

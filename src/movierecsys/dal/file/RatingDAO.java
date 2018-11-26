@@ -79,7 +79,7 @@ public class RatingDAO implements IRatingRepository
                         low = pos + RECORD_SIZE;
                     } else //Last option, we found the right row:
                     {
-                        raf.write(rating.getRating()); //Remember the to reads at line 60,61. They positioned the filepointer just at the ratings part of the current record.
+                        raf.writeInt(rating.getRating()); //Remember the to reads at line 60,61. They positioned the filepointer just at the ratings part of the current record.
                         return; //We return from the method. We are done here. The try with resources will close the connection to the file.
                     }
                 }
