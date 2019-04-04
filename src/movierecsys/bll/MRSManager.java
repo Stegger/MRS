@@ -3,7 +3,6 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package movierecsys.bll;
 
 import java.io.IOException;
@@ -22,10 +21,11 @@ import movierecsys.dal.exception.MrsDalException;
  *
  * @author pgn
  */
-public class MRSManager implements MRSLogicFacade {
+public class MRSManager implements MRSLogicFacade
+{
 
     private final MrsDalInterface dalFacade;
-    
+
     public MRSManager() throws MrsBllException
     {
         try
@@ -36,7 +36,7 @@ public class MRSManager implements MRSLogicFacade {
             throw new MrsBllException("Could not connect to DAL layer.");
         }
     }
-    
+
     @Override
     public List<Rating> getRecommendedMovies(User user)
     {
@@ -112,6 +112,7 @@ public class MRSManager implements MRSLogicFacade {
 
     /**
      * Gets all movies.
+     *
      * @return List of movies.
      * @throws MrsBllException
      */
