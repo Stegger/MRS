@@ -115,7 +115,7 @@ public class FileReaderTester
         }
     }
 
-    public static void mitigateMovies() throws IOException
+    public static void mitigateMovies() throws IOException, MrsDalException
     {
         DbConnectionProvider ds = new DbConnectionProvider();
         MovieDAO mvDao = new MovieDAO();

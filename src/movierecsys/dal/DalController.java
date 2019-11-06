@@ -49,13 +49,7 @@ public class DalController implements MrsDalInterface
     @Override
     public List<Movie> getAllMovies() throws MrsDalException
     {
-        try
-        {
-            return movieRepo.getAllMovies();
-        } catch (IOException ex)
-        {
-            throw new MrsDalException("Could not get all movies", ex);
-        }
+        return movieRepo.getAllMovies();
     }
 
     @Override

@@ -10,6 +10,7 @@ import java.io.BufferedOutputStream;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -45,7 +46,7 @@ public class MovieDAO implements IMovieRepository
      * @throws java.io.IOException
      */
     @Override
-    public List<Movie> getAllMovies() throws IOException
+    public List<Movie> getAllMovies() throws MrsDalException
     {
         List<Movie> allMovies = new ArrayList<>();
         String source = "data/movie_titles.txt";
@@ -64,10 +65,13 @@ public class MovieDAO implements IMovieRepository
                         allMovies.add(mov);
                     } catch (Exception ex)
                     {
-                        //Do nothing. Optimally we would log the error.
+                        //Bad read. Should be logged and/or displayed
                     }
                 }
             }
+        } catch (IOException ex)
+        {
+            throw new MrsDalException("Could not read all files from disk", ex);
         }
         return allMovies;
     }
@@ -126,7 +130,7 @@ public class MovieDAO implements IMovieRepository
      * @return
      * @throws IOException
      */
-    private int getNextAvailableMovieID() throws IOException
+    private int getNextAvailableMovieID() throws MrsDalException
     {
         List<Movie> allMovies = getAllMovies();
         int highId = allMovies.get(allMovies.size() - 1).getId();
@@ -139,21 +143,26 @@ public class MovieDAO implements IMovieRepository
      * @param movie The movie to delete.
      */
     @Override
-    public void deleteMovie(Movie movie) throws IOException
+    public void deleteMovie(Movie movie) throws MrsDalException
     {
-        File file = null;
-        List<Movie> movies = null;
-        OutputStream os = Files.newOutputStream(file.toPath(), StandardOpenOption.TRUNCATE_EXISTING, StandardOpenOption.WRITE);
-        try (BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(os)))
+        try
         {
-            for (Movie mov : movies)
+            File file = null;
+            List<Movie> movies = null;
+            OutputStream os = Files.newOutputStream(file.toPath(), StandardOpenOption.TRUNCATE_EXISTING, StandardOpenOption.WRITE);
+            try (BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(os)))
             {
-                String line = mov.getId() + "," + mov.getYear() + "," + mov.getTitle();
-                bw.write(line);
-                bw.newLine();
+                for (Movie mov : movies)
+                {
+                    String line = mov.getId() + "," + mov.getYear() + "," + mov.getTitle();
+                    bw.write(line);
+                    bw.newLine();
+                }
             }
+        } catch (IOException ex)
+        {
+            throw new MrsDalException("Could not delete movie.", ex);
         }
-             
     }
 
     /**
@@ -163,32 +172,38 @@ public class MovieDAO implements IMovieRepository
      * @param movie The updated movie.
      */
     @Override
-    public void updateMovie(Movie movie) throws IOException
+    public void updateMovie(Movie movie) throws MrsDalException
     {
-        File tmp = new File("data/tmp_movies.txt");
-        List<Movie> allMovies = getAllMovies();
-        allMovies.removeIf((Movie t) -> t.getId() == movie.getId());
-        allMovies.add(movie);
-
-        Collections.sort(allMovies, new Comparator<Movie>()
+        try
         {
-            @Override
-            public int compare(Movie o1, Movie o2)
-            {
-                return Integer.compare(o1.getId(), o2.getId());
-            }
-        });
-        try (BufferedWriter bw = new BufferedWriter(new FileWriter(tmp)))
-        {
+            File tmp = new File("data/tmp_movies.txt");
+            List<Movie> allMovies = getAllMovies();
+            allMovies.removeIf((Movie t) -> t.getId() == movie.getId());
+            allMovies.add(movie);
 
-            for (Movie mov : allMovies)
+            Collections.sort(allMovies, new Comparator<Movie>()
             {
-                bw.write(mov.getId() + "," + mov.getYear() + "," + mov.getTitle());
-                bw.newLine();
+                @Override
+                public int compare(Movie o1, Movie o2)
+                {
+                    return Integer.compare(o1.getId(), o2.getId());
+                }
+            });
+            try (BufferedWriter bw = new BufferedWriter(new FileWriter(tmp)))
+            {
+
+                for (Movie mov : allMovies)
+                {
+                    bw.write(mov.getId() + "," + mov.getYear() + "," + mov.getTitle());
+                    bw.newLine();
+                }
             }
+            Files.copy(tmp.toPath(), new File(MOVIE_SOURCE).toPath(), StandardCopyOption.REPLACE_EXISTING);
+            Files.delete(tmp.toPath());
+        } catch (IOException ex)
+        {
+            throw new MrsDalException("Could not update movie.", ex);
         }
-        Files.copy(tmp.toPath(), new File(MOVIE_SOURCE).toPath(), StandardCopyOption.REPLACE_EXISTING);
-        Files.delete(tmp.toPath());
     }
 
     /**
@@ -198,7 +213,7 @@ public class MovieDAO implements IMovieRepository
      * @return A Movie object.
      */
     @Override
-    public Movie getMovie(int id) throws IOException
+    public Movie getMovie(int id) throws MrsDalException
     {
         List<Movie> all = getAllMovies();
         int index = Collections.binarySearch(all, new Movie(id, 0, ""), new Comparator<Movie>()
