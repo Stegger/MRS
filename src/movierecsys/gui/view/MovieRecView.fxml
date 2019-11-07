@@ -31,29 +31,47 @@
    <center>
       <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" BorderPane.alignment="CENTER">
          <children>
-            <TextField fx:id="txtMovieSearcjh" promptText="search movies" />
+            <TextField fx:id="txtMovieSearch" onKeyTyped="#handleSearchMovie" promptText="search movies" />
             <ListView fx:id="lstMovies" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" VBox.vgrow="ALWAYS" />
+            <Label text="With selected">
+               <VBox.margin>
+                  <Insets bottom="5.0" top="5.0" />
+               </VBox.margin>
+            </Label>
+            <HBox VBox.vgrow="ALWAYS">
+               <children>
+                  <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleUpdateMovie" text="Update" HBox.hgrow="ALWAYS" />
+                  <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleDeleteMovie" text="Delete" HBox.hgrow="ALWAYS" />
+                  <Button defaultButton="true" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleRateMovie" text="Rate" HBox.hgrow="ALWAYS" />
+               </children>
+            </HBox>
          </children>
+         <BorderPane.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" />
+         </BorderPane.margin>
       </VBox>
    </center>
    <right>
-      <VBox maxWidth="1.7976931348623157E308" BorderPane.alignment="CENTER">
+      <VBox maxWidth="1.7976931348623157E308" spacing="5.0" BorderPane.alignment="CENTER">
          <children>
             <Label text="Create Movie" />
-            <HBox maxWidth="1.7976931348623157E308">
+            <HBox maxWidth="1.7976931348623157E308" spacing="5.0">
                <children>
-                  <Label maxWidth="1.7976931348623157E308" text="Titel" HBox.hgrow="ALWAYS" />
+                  <Label contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Titel" HBox.hgrow="ALWAYS" />
                   <TextField fx:id="txtMovieTitle" />
                </children>
             </HBox>
             <HBox maxWidth="1.7976931348623157E308">
                <children>
-                  <Label maxWidth="1.7976931348623157E308" text="Year" HBox.hgrow="ALWAYS" />
+                  <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Year" HBox.hgrow="ALWAYS" />
                   <TextField fx:id="txtMovieYear" />
                </children>
             </HBox>
             <Button alignment="CENTER_RIGHT" mnemonicParsing="false" onAction="#handleAddMovie" text="Add movie!" textAlignment="CENTER" />
          </children>
+         <BorderPane.margin>
+            <Insets right="5.0" />
+         </BorderPane.margin>
       </VBox>
    </right>
 </BorderPane>

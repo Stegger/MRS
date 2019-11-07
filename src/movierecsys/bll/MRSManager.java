@@ -6,6 +6,7 @@
 package movierecsys.bll;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -56,9 +57,19 @@ public class MRSManager implements MRSLogicFacade
     }
 
     @Override
-    public List<Movie> searchMovies(String query)
+    public List<Movie> searchMovies(String query) throws MrsBllException
     {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+
+        List<Movie> allMovies = getAllMovies();
+        List<Movie> movieMatches = new ArrayList<>();
+        for (Movie movie : allMovies)
+        {
+            if (movie.getTitle().contains(query) || ("" + movie.getId()).contains(query))
+            {
+                movieMatches.add(movie);
+            }
+        }
+        return movieMatches;
     }
 
     @Override
@@ -74,16 +85,43 @@ public class MRSManager implements MRSLogicFacade
         return null;
     }
 
+    /**
+     * Updates a movie.
+     * @param movie
+     * @throws MrsBllException
+     */
     @Override
-    public void updateMovie(Movie movie)
+    public void updateMovie(Movie movie) throws MrsBllException
     {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        try
+        {
+            dalFacade.updateMovie(movie);
+        } catch (MrsDalException ex)
+        {
+            Logger.getLogger(MRSManager.class.getName()).log(Level.SEVERE, null, ex);
+            throw new MrsBllException("Could not update movie");
+        }
     }
 
+    /**
+     *
+     * @param movie
+     * @throws MrsBllException
+     */
     @Override
-    public void deleteMovie(Movie movie)
+    public void deleteMovie(Movie movie) throws MrsBllException
     {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        if (movie != null)
+        {
+            try
+            {
+                dalFacade.deleteMovie(movie);
+            } catch (MrsDalException ex)
+            {
+                Logger.getLogger(MRSManager.class.getName()).log(Level.SEVERE, null, ex);
+                throw new MrsBllException("Could not delete Message");
+            }
+        }
     }
 
     @Override

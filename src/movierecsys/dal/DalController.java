@@ -7,13 +7,11 @@ package movierecsys.dal;
 
 import java.io.IOException;
 import java.util.List;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import movierecsys.be.Movie;
 import movierecsys.be.Rating;
 import movierecsys.be.User;
-import movierecsys.dal.db.MovieDbDao;
 import movierecsys.dal.exception.MrsDalException;
+import movierecsys.dal.file.MovieDAO;
 import movierecsys.dal.intereface.IMovieRepository;
 import movierecsys.dal.intereface.IRatingRepository;
 import movierecsys.dal.intereface.IUserRepository;
@@ -24,26 +22,26 @@ import movierecsys.dal.intereface.IUserRepository;
  */
 public class DalController implements MrsDalInterface
 {
-    
+
     private IMovieRepository movieRepo;
     private IUserRepository userRepo;
     private IRatingRepository ratingRepo;
 
     public DalController() throws IOException
     {
-        movieRepo = new MovieDbDao();
+        movieRepo = new MovieDAO();
     }
 
     @Override
     public Movie createMovie(int releaseYear, String title) throws MrsDalException
-    {  
+    {
         return movieRepo.createMovie(releaseYear, title); //LOG the error
     }
 
     @Override
     public void deleteMovie(Movie movie) throws MrsDalException
     {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        movieRepo.deleteMovie(movie);
     }
 
     @Override
@@ -55,13 +53,13 @@ public class DalController implements MrsDalInterface
     @Override
     public Movie getMovie(int id) throws MrsDalException
     {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return movieRepo.getMovie(id);
     }
 
     @Override
     public void updateMovie(Movie movie) throws MrsDalException
     {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        movieRepo.updateMovie(movie);
     }
 
     @Override
@@ -111,5 +109,5 @@ public class DalController implements MrsDalInterface
     {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-    
+
 }

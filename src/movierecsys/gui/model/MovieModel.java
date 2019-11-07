@@ -5,6 +5,8 @@
  */
 package movierecsys.gui.model;
 
+import java.util.Comparator;
+import java.util.List;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import movierecsys.be.Movie;
@@ -32,6 +34,7 @@ public class MovieModel
 
     /**
      * Gets a reference to the observable list of Movies.
+     *
      * @return List of movies.
      */
     public ObservableList<Movie> getMovies()
@@ -44,11 +47,39 @@ public class MovieModel
         Movie movie = logiclayer.createMovie(year, title);
         movies.add(movie);
     }
-    
-    public void deleteMovie(Movie movie)
+
+    public void deleteMovie(Movie movie) throws MrsBllException
     {
         logiclayer.deleteMovie(movie);
         movies.remove(movie);
     }
-    
+
+    public void search(String query) throws MrsBllException
+    {
+        if (query != null && !query.isEmpty())
+        {
+            List<Movie> serchedMovies = logiclayer.searchMovies(query);
+            movies.clear();
+            movies.addAll(serchedMovies);
+        }
+    }
+
+    public void updateMovie(Movie selectedMovie) throws MrsBllException
+    {
+        logiclayer.updateMovie(selectedMovie);
+        if (movies.remove(selectedMovie))
+        {
+            movies.add(selectedMovie);
+            movies.sort(new Comparator<Movie>()
+            {
+                @Override
+                public int compare(Movie arg0, Movie arg1)
+                {
+                    return arg0.getId() - arg1.getId();
+                }
+
+            });
+        }
+    }
+
 }

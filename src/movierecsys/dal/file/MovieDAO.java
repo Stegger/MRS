@@ -6,17 +6,14 @@
 package movierecsys.dal.file;
 
 import movierecsys.dal.intereface.IMovieRepository;
-import java.io.BufferedOutputStream;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.io.OutputStreamWriter;
-import java.io.PrintWriter;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.StandardCopyOption;
@@ -25,8 +22,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import movierecsys.be.Movie;
 import movierecsys.dal.exception.MrsDalException;
 
@@ -52,7 +47,7 @@ public class MovieDAO implements IMovieRepository
         String source = "data/movie_titles.txt";
         File file = new File(source);
 
-        try (BufferedReader reader = new BufferedReader(new FileReader(file))) //Using a try with resources!
+        try ( BufferedReader reader = new BufferedReader(new FileReader(file))) //Using a try with resources!
         {
             String line;
             while ((line = reader.readLine()) != null)
@@ -112,7 +107,7 @@ public class MovieDAO implements IMovieRepository
     {
         Path path = new File(MOVIE_SOURCE).toPath();
         int id = -1;
-        try (BufferedWriter bw = Files.newBufferedWriter(path, StandardOpenOption.SYNC, StandardOpenOption.APPEND, StandardOpenOption.WRITE))
+        try ( BufferedWriter bw = Files.newBufferedWriter(path, StandardOpenOption.SYNC, StandardOpenOption.APPEND, StandardOpenOption.WRITE))
         {
             id = getNextAvailableMovieID();
             bw.newLine();
@@ -133,12 +128,28 @@ public class MovieDAO implements IMovieRepository
     private int getNextAvailableMovieID() throws MrsDalException
     {
         List<Movie> allMovies = getAllMovies();
-        int highId = allMovies.get(allMovies.size() - 1).getId();
-        return highId + 1;
+        if (allMovies == null || allMovies.isEmpty())
+        {
+            return 1;
+        }
+        allMovies.sort((Movie arg0, Movie arg1) -> arg0.getId() - arg1.getId());
+        int id = allMovies.get(0).getId();
+        for (int i = 0; i < allMovies.size(); i++)
+        {
+            if (allMovies.get(i).getId() <= id)
+            {
+                id++;
+            } else
+            {
+                return id;
+            }
+        }
+        return id;
     }
 
     /**
-     * Deletes a movie from the persistence storage.
+     * Deletes a movie from the persistence storage. Does it by overwriting the
+     * file with all movies, without adding the movie we want to delete.
      *
      * @param movie The movie to delete.
      */
@@ -147,16 +158,19 @@ public class MovieDAO implements IMovieRepository
     {
         try
         {
-            File file = null;
-            List<Movie> movies = null;
+            File file = new File(MOVIE_SOURCE);
+            List<Movie> movies = getAllMovies();
             OutputStream os = Files.newOutputStream(file.toPath(), StandardOpenOption.TRUNCATE_EXISTING, StandardOpenOption.WRITE);
-            try (BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(os)))
+            try ( BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(os)))
             {
                 for (Movie mov : movies)
                 {
-                    String line = mov.getId() + "," + mov.getYear() + "," + mov.getTitle();
-                    bw.write(line);
-                    bw.newLine();
+                    if (!mov.equals(movie))
+                    {
+                        String line = mov.getId() + "," + mov.getYear() + "," + mov.getTitle();
+                        bw.write(line);
+                        bw.newLine();
+                    }
                 }
             }
         } catch (IOException ex)
@@ -176,12 +190,13 @@ public class MovieDAO implements IMovieRepository
     {
         try
         {
-            File tmp = new File("data/tmp_movies.txt");
+            File tmp = new File(movie.hashCode() + ".txt"); //Creates a temp file for writing to.
             List<Movie> allMovies = getAllMovies();
             allMovies.removeIf((Movie t) -> t.getId() == movie.getId());
             allMovies.add(movie);
 
-            Collections.sort(allMovies, new Comparator<Movie>()
+            //I'll sort the movies by their ID's
+            allMovies.sort(new Comparator<Movie>()
             {
                 @Override
                 public int compare(Movie o1, Movie o2)
@@ -189,16 +204,18 @@ public class MovieDAO implements IMovieRepository
                     return Integer.compare(o1.getId(), o2.getId());
                 }
             });
-            try (BufferedWriter bw = new BufferedWriter(new FileWriter(tmp)))
-            {
 
+            try ( BufferedWriter bw = new BufferedWriter(new FileWriter(tmp)))
+            {
                 for (Movie mov : allMovies)
                 {
                     bw.write(mov.getId() + "," + mov.getYear() + "," + mov.getTitle());
                     bw.newLine();
                 }
             }
+            //Overwrite the movie file wit the tmp one.
             Files.copy(tmp.toPath(), new File(MOVIE_SOURCE).toPath(), StandardCopyOption.REPLACE_EXISTING);
+            //Clean up after the operation is done (Remve tmp)
             Files.delete(tmp.toPath());
         } catch (IOException ex)
         {
@@ -216,6 +233,7 @@ public class MovieDAO implements IMovieRepository
     public Movie getMovie(int id) throws MrsDalException
     {
         List<Movie> all = getAllMovies();
+
         int index = Collections.binarySearch(all, new Movie(id, 0, ""), new Comparator<Movie>()
         {
             @Override
@@ -224,6 +242,7 @@ public class MovieDAO implements IMovieRepository
                 return Integer.compare(o1.getId(), o2.getId());
             }
         });
+
         if (index >= 0)
         {
             return all.get(index);
