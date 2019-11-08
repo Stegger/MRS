@@ -57,12 +57,14 @@ public class User
         return name;
     }
 
+    /**
+     * The string representation of a User.
+     * @return 
+     */
     @Override
     public String toString()
     {
-        return "User{" + "id=" + id + ", name=" + name + '}';
+        return id + ": " + name;
     }
 
-    
-    
 }

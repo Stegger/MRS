@@ -109,4 +109,12 @@ public interface MRSLogicFacade
      */
     List<User> getAllUsers();
 
+    /**
+     * Searches for users matching the given query.
+     *
+     * @param query The query/search word.
+     * @return List of matching users.
+     */
+    List<User> searchUsers(String query);
+
 }

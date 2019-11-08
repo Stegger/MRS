@@ -53,7 +53,18 @@ public class Movie
     {
         return id + ": " + title + " (" + year + '}';
     }
-    
-    
+
+    @Override
+    public boolean equals(Object obj)
+    {
+        if (obj instanceof Movie)
+        {
+            Movie other = (Movie) obj;
+            return other.getId() == this.id;
+        } else
+        {
+            return super.equals(obj);
+        }
+    }
 
 }

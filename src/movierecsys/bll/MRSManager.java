@@ -8,12 +8,14 @@ package movierecsys.bll;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Predicate;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import movierecsys.be.Movie;
 import movierecsys.be.Rating;
 import movierecsys.be.User;
 import movierecsys.bll.exception.MrsBllException;
+import movierecsys.bll.util.MovieSearcher;
 import movierecsys.dal.DalController;
 import movierecsys.dal.MrsDalInterface;
 import movierecsys.dal.exception.MrsDalException;
@@ -59,17 +61,9 @@ public class MRSManager implements MRSLogicFacade
     @Override
     public List<Movie> searchMovies(String query) throws MrsBllException
     {
-
         List<Movie> allMovies = getAllMovies();
-        List<Movie> movieMatches = new ArrayList<>();
-        for (Movie movie : allMovies)
-        {
-            if (movie.getTitle().contains(query) || ("" + movie.getId()).contains(query))
-            {
-                movieMatches.add(movie);
-            }
-        }
-        return movieMatches;
+        allMovies = MovieSearcher.search(allMovies, query);
+        return allMovies;
     }
 
     @Override
@@ -87,6 +81,7 @@ public class MRSManager implements MRSLogicFacade
 
     /**
      * Updates a movie.
+     *
      * @param movie
      * @throws MrsBllException
      */
@@ -145,7 +140,8 @@ public class MRSManager implements MRSLogicFacade
     @Override
     public List<User> getAllUsers()
     {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        List<User> allUsers = dalFacade.getAllUsers();
+        return allUsers;
     }
 
     /**
@@ -162,9 +158,16 @@ public class MRSManager implements MRSLogicFacade
             return dalFacade.getAllMovies();
         } catch (MrsDalException ex)
         {
-//            Logger.getLogger(MRSManager.class.getName()).log(Level.SEVERE, null, ex); You could log an exception
             throw new MrsBllException("Could not read all movies. Cause: " + ex.getMessage());
         }
+    }
+
+    @Override
+    public List<User> searchUsers(String query)
+    {
+        List<User> allUsers = dalFacade.getAllUsers();
+        allUsers.removeIf((User user) -> !user.getName().toLowerCase().contains(query.toLowerCase()));
+        return allUsers;
     }
 
 }

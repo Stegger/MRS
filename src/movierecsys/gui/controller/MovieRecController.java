@@ -6,30 +6,22 @@
 package movierecsys.gui.controller;
 
 import java.net.URL;
-import java.util.Optional;
 import java.util.ResourceBundle;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-import javafx.application.Platform;
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.geometry.Insets;
-import javafx.scene.Node;
-import javafx.scene.control.ButtonBar.ButtonData;
-import javafx.scene.control.ButtonType;
-import javafx.scene.control.Dialog;
-import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
-import javafx.scene.control.PasswordField;
+import javafx.scene.control.RadioButton;
+import javafx.scene.control.SelectionMode;
 import javafx.scene.control.TextField;
-import javafx.scene.image.ImageView;
 import javafx.scene.input.KeyEvent;
-import javafx.scene.layout.GridPane;
-import javafx.util.Pair;
 import movierecsys.be.Movie;
+import movierecsys.be.User;
 import movierecsys.bll.exception.MrsBllException;
 import movierecsys.gui.model.MovieModel;
+import movierecsys.gui.model.UserModel;
 
 /**
  *
@@ -38,9 +30,9 @@ import movierecsys.gui.model.MovieModel;
 public class MovieRecController implements Initializable
 {
 
-    /**
-     * The TextField containing the query word.
-     */
+    private MovieModel movieModel;
+    private UserModel userModel;
+
     @FXML
     private ListView<Movie> lstMovies;
     @FXML
@@ -49,25 +41,80 @@ public class MovieRecController implements Initializable
     private TextField txtMovieYear;
     @FXML
     private TextField txtMovieSearch;
-    
-    private MovieModel movieModel;
-    
+    @FXML
+    private TextField txtSelectedMovieTitle;
+    @FXML
+    private TextField txtSelectedMovieYear;
+    @FXML
+    private TextField txtUserSearch;
+    @FXML
+    private ListView<User> lstUsers;
+    @FXML
+    private RadioButton radioRatingMinus5;
+    @FXML
+    private RadioButton radioRatingMinus3;
+    @FXML
+    private RadioButton radioRating1;
+    @FXML
+    private RadioButton radioRating3;
+    @FXML
+    private RadioButton radioRating5;
+    @FXML
+    private ListView<Movie> lstRecommendedMovies;
+
     public MovieRecController()
     {
         try
         {
             movieModel = new MovieModel();
+            userModel = new UserModel();
         } catch (MrsBllException ex)
         {
             displayError(ex);
             System.exit(0);
         }
     }
-    
+
     @Override
     public void initialize(URL url, ResourceBundle rb)
     {
         lstMovies.setItems(movieModel.getMovies());
+        lstUsers.setItems(userModel.getAllUsers());
+
+        setMovieSelection();
+
+        lstUsers.getSelectionModel().setSelectionMode(SelectionMode.SINGLE);
+        lstUsers.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<User>()
+        {
+            @Override
+            public void changed(ObservableValue<? extends User> arg0, User oldUser, User newUser)
+            {
+                userModel.setSelectedUser(newUser);
+                //TODO Do something about ratings for a selected user here!!!
+            }
+        });
+
+    }
+
+    /**
+     * Sets up the movie selection of the list of all movers.
+     */
+    private void setMovieSelection()
+    {
+        //I do this to receive updates when a new movie is selected from the list of all movies:
+        lstMovies.getSelectionModel().setSelectionMode(SelectionMode.SINGLE);
+        lstMovies.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<Movie>()
+        {
+            @Override
+            public void changed(ObservableValue<? extends Movie> arg0, Movie oldValue, Movie newValue)
+            {
+                if (newValue != null)
+                {
+                    txtSelectedMovieTitle.setText(newValue.getTitle());
+                    txtSelectedMovieYear.setText(newValue.getYear() + "");
+                }
+            }
+        });
     }
 
     /**
@@ -110,84 +157,27 @@ public class MovieRecController implements Initializable
             movieModel.search(query);
         } catch (MrsBllException ex)
         {
-            Logger.getLogger(MovieRecController.class.getName()).log(Level.SEVERE, null, ex);
             displayError(ex);
         }
     }
-    
+
     @FXML
     private void handleUpdateMovie(ActionEvent event)
     {
         Movie selectedMovie = lstMovies.getSelectionModel().getSelectedItem();
         if (selectedMovie != null)
         {
-            // Create the custom dialog.
-            Dialog<Pair<String, Integer>> dialog = new Dialog<>();
-            dialog.setTitle("Update movie");
-            dialog.setHeaderText("Update: " + selectedMovie);
-
-            // Set the button types.
-            ButtonType updateButton = new ButtonType("Update", ButtonData.OK_DONE);
-            dialog.getDialogPane().getButtonTypes().addAll(updateButton, ButtonType.CANCEL);
-
-            // Create the txtTitle and txtYear labels and fields.
-            GridPane grid = new GridPane();
-            grid.setHgap(10);
-            grid.setVgap(10);
-            grid.setPadding(new Insets(20, 150, 10, 10));
-            
-            TextField txtTitle = new TextField(selectedMovie.getTitle());
-            txtTitle.setPromptText("Title");
-            TextField txtYear = new TextField(Integer.toString(selectedMovie.getYear()));
-            txtYear.setPromptText("Year");
-            
-            grid.add(new Label("Title:"), 0, 0);
-            grid.add(txtTitle, 1, 0);
-            grid.add(new Label("Year:"), 0, 1);
-            grid.add(txtYear, 1, 1);
-
-            // Enable/Disable update button depending on whether a txtTitle was entered.
-            Node btnUpdate = dialog.getDialogPane().lookupButton(updateButton);
-            btnUpdate.setDisable(true);
-
-            // Do some validation (using the Java 8 lambda syntax).
-            txtTitle.textProperty().addListener((observable, oldValue, newValue) ->
+            try
             {
-                btnUpdate.setDisable(newValue.trim().isEmpty());
-            });
-            
-            dialog.getDialogPane().setContent(grid);
-
-            // Request focus on the txtTitle field by default.
-            Platform.runLater(() -> txtTitle.requestFocus());
-
-            // Convert the result to a txtTitle-txtYear-pair when the login button is clicked.
-            dialog.setResultConverter(dialogButton ->
+                String title = txtSelectedMovieTitle.getText();
+                int year = Integer.parseInt(txtSelectedMovieYear.getText());
+                selectedMovie.setTitle(title);
+                selectedMovie.setYear(year);
+                movieModel.updateMovie(selectedMovie);
+            } catch (MrsBllException ex)
             {
-                if (dialogButton == updateButton)
-                {
-                    return new Pair<>(txtTitle.getText(), Integer.parseInt(txtYear.getText()));
-                }
-                return null;
-            });
-            
-            Optional<Pair<String, Integer>> result = dialog.showAndWait();
-            
-            result.ifPresent(titleYear ->
-            {
-                try
-                {
-                    String title = titleYear.getKey();
-                    int year = titleYear.getValue();
-                    selectedMovie.setTitle(title);
-                    selectedMovie.setYear(year);
-                    movieModel.updateMovie(selectedMovie);
-                } catch (MrsBllException ex)
-                {
-                    displayError(ex);
-                    Logger.getLogger(MovieRecController.class.getName()).log(Level.SEVERE, null, ex);
-                }
-            });
+                displayError(ex);
+            }
         }
     }
 
@@ -202,11 +192,18 @@ public class MovieRecController implements Initializable
         Movie selectedMovie = lstMovies.getSelectionModel().getSelectedItem();
         movieModel.deleteMovie(selectedMovie);
     }
-    
+
     @FXML
-    private void handleRateMovie(ActionEvent event)
+    private void handleSearchUser(KeyEvent event)
     {
-        
+        String query = txtUserSearch.getText();
+        userModel.searchUser(query);
     }
-    
+
+    @FXML
+    private void handleUserRateMovie(ActionEvent event)
+    {
+        //TODO Add functionality that lets a user add a rating for a movie.
+    }
+
 }

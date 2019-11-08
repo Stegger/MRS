@@ -61,12 +61,15 @@ public class MovieDAO implements IMovieRepository
                     } catch (Exception ex)
                     {
                         //Bad read. Should be logged and/or displayed
+                        //Currently it's drowned and send to the console:
+                        System.out.println("Could not read: " + line);
+                        ex.printStackTrace();
                     }
                 }
             }
         } catch (IOException ex)
         {
-            throw new MrsDalException("Could not read all files from disk", ex);
+            throw new MrsDalException("Could not read all movies from disk", ex);
         }
         return allMovies;
     }
@@ -82,11 +85,11 @@ public class MovieDAO implements IMovieRepository
     {
         String[] arrMovie = line.split(",");
 
-        int id = Integer.parseInt(arrMovie[0]);
-        int year = Integer.parseInt(arrMovie[1]);
-        String title = arrMovie[2];
+        int id = Integer.parseInt(arrMovie[0].trim());
+        int year = Integer.parseInt(arrMovie[1].trim());
+        String title = arrMovie[2].trim();
         // Add if commas in title, includes the rest of the string
-        for (int i = 3; i < arrMovie.length; i++)
+        for (int i = 3; i < arrMovie.length; i++) //Loop will only run if the array has a length of 3+
         {
             title += "," + arrMovie[i];
         }
@@ -159,18 +162,20 @@ public class MovieDAO implements IMovieRepository
         try
         {
             File file = new File(MOVIE_SOURCE);
+            if (!file.canWrite())
+            {
+                throw new MrsDalException("Can't write to movie storage");
+            }
             List<Movie> movies = getAllMovies();
-            OutputStream os = Files.newOutputStream(file.toPath(), StandardOpenOption.TRUNCATE_EXISTING, StandardOpenOption.WRITE);
+            movies.remove(movie);
+            OutputStream os = Files.newOutputStream(file.toPath());
             try ( BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(os)))
             {
                 for (Movie mov : movies)
                 {
-                    if (!mov.equals(movie))
-                    {
-                        String line = mov.getId() + "," + mov.getYear() + "," + mov.getTitle();
-                        bw.write(line);
-                        bw.newLine();
-                    }
+                    String line = mov.getId() + "," + mov.getYear() + "," + mov.getTitle();
+                    bw.write(line);
+                    bw.newLine();
                 }
             }
         } catch (IOException ex)
