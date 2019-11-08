@@ -27,6 +27,7 @@ public class MovieModel
 
     public MovieModel() throws MrsBllException
     {
+        
         movies = FXCollections.observableArrayList();
         logiclayer = new MRSManager();
         movies.addAll(logiclayer.getAllMovies());

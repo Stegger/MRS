@@ -80,7 +80,7 @@ public class MovieRecController implements Initializable
     {
         lstMovies.setItems(movieModel.getMovies());
         lstUsers.setItems(userModel.getAllUsers());
-
+        
         setMovieSelection();
 
         lstUsers.getSelectionModel().setSelectionMode(SelectionMode.SINGLE);
