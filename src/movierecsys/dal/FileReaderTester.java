@@ -47,7 +47,7 @@ public class FileReaderTester
         mitigateRatings();
     }
 
-    public static void mitigateUsers() throws IOException
+    public static void mitigateUsers() throws IOException, MrsDalException
     {
         DbConnectionProvider ds = new DbConnectionProvider();
 

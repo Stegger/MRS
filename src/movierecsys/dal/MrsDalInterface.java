@@ -21,28 +21,28 @@ public interface MrsDalInterface
 
     Movie createMovie(int releaseYear, String title) throws MrsDalException;
 
-    void createRating(Rating rating);
+    void createRating(Rating rating) throws MrsDalException;
 
     void deleteMovie(Movie movie) throws MrsDalException;
 
-    void deleteRating(Rating rating);
+    void deleteRating(Rating rating) throws MrsDalException;
 
     List<Movie> getAllMovies() throws MrsDalException;
 
     List<Rating> getAllRatings() throws MrsDalException;
 
-    List<User> getAllUsers();
+    List<User> getAllUsers() throws MrsDalException;
 
     Movie getMovie(int id) throws MrsDalException;
 
-    List<Rating> getRatings(User user);
+    List<Rating> getRatings(User user) throws MrsDalException;
 
-    User getUser(int id);
+    User getUser(int id) throws MrsDalException;
 
     void updateMovie(Movie movie) throws MrsDalException;
 
     void updateRating(Rating rating) throws MrsDalException;
 
-    void updateUser(User user);
-    
+    void updateUser(User user) throws MrsDalException;
+
 }

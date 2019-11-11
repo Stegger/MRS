@@ -7,16 +7,13 @@ package movierecsys.dal.file;
 
 import java.io.BufferedReader;
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import movierecsys.dal.intereface.IUserRepository;
 import java.util.List;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-import movierecsys.be.Movie;
 import movierecsys.be.User;
+import movierecsys.dal.exception.MrsDalException;
 
 /**
  *
@@ -33,7 +30,7 @@ public class UserDAO implements IUserRepository
      * @return List of users.
      */
     @Override
-    public List<User> getAllUsers() 
+    public List<User> getAllUsers() throws MrsDalException
     {
         List<User> allUser = new ArrayList<>();
         File file = new File(USER_SOURCE);
@@ -41,15 +38,15 @@ public class UserDAO implements IUserRepository
         try (BufferedReader reader = new BufferedReader(new FileReader(file))) //Using a try with resources!
         {
             String line;
-            while ((line = reader.readLine()) != null)
+            while ((line = reader.readLine()) != null) //First the line is read from the file, then we check if its different from NULL
             {
-                if (!line.isEmpty())
+                if (!line.isEmpty()) //If we have an empty line in the file we will skip it
                 {
                     try
                     {
                         String[] arrUser = line.split(",");
-                        int id = Integer.parseInt(arrUser[0]);
-                        String name = arrUser[1];
+                        int id = Integer.parseInt(arrUser[0].trim());
+                        String name = arrUser[1].trim();
                         User user = new User(id, name);
                         allUser.add(user);
                     } catch (Exception ex)
@@ -60,7 +57,7 @@ public class UserDAO implements IUserRepository
             }
         } catch (IOException ex)
         {
-            Logger.getLogger(UserDAO.class.getName()).log(Level.SEVERE, null, ex);
+            throw new MrsDalException("Could not acces User file", ex);
         }
         return allUser;
     }
@@ -72,10 +69,17 @@ public class UserDAO implements IUserRepository
      * @return The User with the ID.
      */
     @Override
-    public User getUser(int id)
+    public User getUser(int id) throws MrsDalException
     {
-        //TODO Get User
-        return null;
+        List<User> allUsers = getAllUsers();
+        for (User user : allUsers)
+        {
+            if (user.getId() == id)
+            {
+                return user;
+            }
+        }
+        throw new MrsDalException("User with id " + id + " not found.");
     }
 
     /**
@@ -84,9 +88,9 @@ public class UserDAO implements IUserRepository
      * @param user The updated user.
      */
     @Override
-    public void updateUser(User user)
+    public void updateUser(User user) throws MrsDalException
     {
-        //TODO Update user
+        //TODO Do update user.
     }
 
 }

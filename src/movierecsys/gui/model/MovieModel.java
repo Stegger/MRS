@@ -22,12 +22,10 @@ public class MovieModel
 {
 
     private ObservableList<Movie> movies;
-
     private MRSLogicFacade logiclayer;
 
     public MovieModel() throws MrsBllException
-    {
-        
+    {        
         movies = FXCollections.observableArrayList();
         logiclayer = new MRSManager();
         movies.addAll(logiclayer.getAllMovies());

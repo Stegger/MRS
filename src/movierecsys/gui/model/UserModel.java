@@ -6,6 +6,10 @@
 package movierecsys.gui.model;
 
 import java.util.List;
+import javafx.beans.property.ObjectProperty;
+import javafx.beans.property.ReadOnlyObjectProperty;
+import javafx.beans.property.SimpleObjectProperty;
+import javafx.beans.value.ObservableObjectValue;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import movierecsys.be.User;
@@ -20,15 +24,23 @@ import movierecsys.bll.exception.MrsBllException;
 public class UserModel
 {
 
+    //Infrastructure component(s):
     private MRSLogicFacade facade;
 
+    //View data
     private ObservableList<User> allUsers;
+    private SimpleObjectProperty<User> selectedUser;
+
+    //Cache data
+    private List<User> cacheAllUsers;
 
     public UserModel() throws MrsBllException
     {
         facade = new MRSManager();
         allUsers = FXCollections.observableArrayList();
-        allUsers.addAll(facade.getAllUsers());
+        cacheAllUsers = facade.getAllUsers();
+        allUsers.addAll(cacheAllUsers);
+        selectedUser = new SimpleObjectProperty<>();
     }
 
     public ObservableList<User> getAllUsers()
@@ -36,7 +48,7 @@ public class UserModel
         return allUsers;
     }
 
-    public void searchUser(String query)
+    public void searchUser(String query) throws MrsBllException
     {
         if (query != null)
         {
@@ -46,16 +58,21 @@ public class UserModel
                 results = facade.searchUsers(query);
             } else
             {
-                results = facade.getAllUsers();
+                results = cacheAllUsers;
             }
             allUsers.clear();
             allUsers.addAll(results);
         }
     }
 
-    public void setSelectedUser(User newUser)
+    public ReadOnlyObjectProperty<User> getSelectedUser()
     {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return selectedUser;
+    }
+
+    public void setSelectedUser(User user)
+    {
+        selectedUser.setValue(user);
     }
 
 }

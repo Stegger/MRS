@@ -21,6 +21,7 @@ import movierecsys.be.Movie;
 import movierecsys.be.User;
 import movierecsys.bll.exception.MrsBllException;
 import movierecsys.gui.model.MovieModel;
+import movierecsys.gui.model.RatingModel;
 import movierecsys.gui.model.UserModel;
 
 /**
@@ -32,6 +33,7 @@ public class MovieRecController implements Initializable
 
     private MovieModel movieModel;
     private UserModel userModel;
+    private RatingModel ratingModel;
 
     @FXML
     private ListView<Movie> lstMovies;
@@ -80,9 +82,14 @@ public class MovieRecController implements Initializable
     {
         lstMovies.setItems(movieModel.getMovies());
         lstUsers.setItems(userModel.getAllUsers());
-        
-        setMovieSelection();
 
+        setMovieSelection();
+        setUserSelection();
+
+    }
+
+    private void setUserSelection()
+    {
         lstUsers.getSelectionModel().setSelectionMode(SelectionMode.SINGLE);
         lstUsers.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<User>()
         {
@@ -90,10 +97,8 @@ public class MovieRecController implements Initializable
             public void changed(ObservableValue<? extends User> arg0, User oldUser, User newUser)
             {
                 userModel.setSelectedUser(newUser);
-                //TODO Do something about ratings for a selected user here!!!
             }
         });
-
     }
 
     /**
@@ -196,14 +201,21 @@ public class MovieRecController implements Initializable
     @FXML
     private void handleSearchUser(KeyEvent event)
     {
-        String query = txtUserSearch.getText();
-        userModel.searchUser(query);
+        try
+        {
+            String query = txtUserSearch.getText();
+            userModel.searchUser(query);
+        } catch (MrsBllException ex)
+        {
+            displayError(ex);
+        }
     }
 
     @FXML
     private void handleUserRateMovie(ActionEvent event)
     {
-        //TODO Add functionality that lets a user add a rating for a movie.
+        int score;
+
     }
 
 }

@@ -6,9 +6,7 @@
 package movierecsys.bll;
 
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.List;
-import java.util.function.Predicate;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import movierecsys.be.Movie;
@@ -138,10 +136,17 @@ public class MRSManager implements MRSLogicFacade
     }
 
     @Override
-    public List<User> getAllUsers()
+    public List<User> getAllUsers() throws MrsBllException
     {
-        List<User> allUsers = dalFacade.getAllUsers();
-        return allUsers;
+        try
+        {
+            List<User> allUsers = dalFacade.getAllUsers();
+            return allUsers;
+        } catch (MrsDalException ex)
+        {
+            ex.printStackTrace();
+            throw new MrsBllException("Could not get all users.");
+        }
     }
 
     /**
@@ -163,11 +168,18 @@ public class MRSManager implements MRSLogicFacade
     }
 
     @Override
-    public List<User> searchUsers(String query)
+    public List<User> searchUsers(String query) throws MrsBllException
     {
-        List<User> allUsers = dalFacade.getAllUsers();
-        allUsers.removeIf((User user) -> !user.getName().toLowerCase().contains(query.toLowerCase()));
-        return allUsers;
+        try
+        {
+            List<User> allUsers = dalFacade.getAllUsers();
+            allUsers.removeIf((User user) -> !user.getName().toLowerCase().contains(query.toLowerCase()));
+            return allUsers;
+        } catch (MrsDalException ex)
+        {
+            ex.printStackTrace();
+            throw new MrsBllException("Unable to perform search for user.");
+        }
     }
 
 }

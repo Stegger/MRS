@@ -24,7 +24,7 @@ public interface MRSLogicFacade
      * @param user The current user
      * @return Users ratings.
      */
-    List<Rating> getRecommendedMovies(User user);
+    List<Rating> getRecommendedMovies(User user) throws MrsBllException;
 
     List<Movie> getAllMovies() throws MrsBllException;
 
@@ -33,7 +33,7 @@ public interface MRSLogicFacade
      *
      * @return A list of movies.
      */
-    List<Movie> getAllTimeTopRatedMovies();
+    List<Movie> getAllTimeTopRatedMovies() throws MrsBllException;
 
     /**
      * Gets a list of movies recommended for the given user.
@@ -41,7 +41,7 @@ public interface MRSLogicFacade
      * @param user The user we are recommending movies to.
      * @return List of recommended movies sorted in descending order.
      */
-    List<Movie> getMovieReccomendations(User user);
+    List<Movie> getMovieReccomendations(User user) throws MrsBllException;
 
     /**
      * Searches for all mmovies that matches the given query somehow.
@@ -100,14 +100,14 @@ public interface MRSLogicFacade
      * @param id
      * @return
      */
-    User getUserById(int id);
+    User getUserById(int id) throws MrsBllException;
 
     /**
      * Gets a list of all users in the system.
      *
      * @return
      */
-    List<User> getAllUsers();
+    List<User> getAllUsers() throws MrsBllException;
 
     /**
      * Searches for users matching the given query.
@@ -115,6 +115,6 @@ public interface MRSLogicFacade
      * @param query The query/search word.
      * @return List of matching users.
      */
-    List<User> searchUsers(String query);
+    List<User> searchUsers(String query) throws MrsBllException;
 
 }
