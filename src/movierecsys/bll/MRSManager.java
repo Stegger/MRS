@@ -65,7 +65,7 @@ public class MRSManager implements MRSLogicFacade
     }
 
     @Override
-    public Movie createMovie(int year, String title)
+    public Movie createMovie(int year, String title) throws MrsBllException
     {
         try
         {
@@ -73,8 +73,8 @@ public class MRSManager implements MRSLogicFacade
         } catch (MrsDalException ex)
         {
             Logger.getLogger(MRSManager.class.getName()).log(Level.SEVERE, null, ex);
+            throw new MrsBllException("Could not create movie.");
         }
-        return null;
     }
 
     /**

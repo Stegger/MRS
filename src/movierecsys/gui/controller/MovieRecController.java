@@ -110,8 +110,9 @@ public class MovieRecController implements Initializable
         lstMovies.getSelectionModel().setSelectionMode(SelectionMode.SINGLE);
         lstMovies.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<Movie>()
         {
+
             @Override
-            public void changed(ObservableValue<? extends Movie> arg0, Movie oldValue, Movie newValue)
+            public void changed(ObservableValue<? extends Movie> observable, Movie oldValue, Movie newValue)
             {
                 if (newValue != null)
                 {
@@ -119,7 +120,9 @@ public class MovieRecController implements Initializable
                     txtSelectedMovieYear.setText(newValue.getYear() + "");
                 }
             }
+
         });
+
     }
 
     /**
