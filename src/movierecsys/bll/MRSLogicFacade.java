@@ -59,7 +59,7 @@ public interface MRSLogicFacade
      * @param title Title of the movie
      * @return The newly created movie
      */
-    Movie createMovie(int year, String title);
+    Movie createMovie(int year, String title) throws MrsBllException;
 
     /**
      * Updated the saved version of the movie to the values in the given one.

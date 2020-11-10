@@ -117,11 +117,7 @@ public class RatingDAO implements IRatingRepository
             Rating r = new Rating(movieId, userId, rating);
             allRatings.add(r);
         }
-        Collections.sort(allRatings, (Rating o1, Rating o2) ->
-        {
-            int movieCompare = Integer.compare(o1.getMovie(), o2.getMovie());
-            return movieCompare == 0 ? Integer.compare(o1.getUser(), o2.getUser()) : movieCompare;
-        });
+        Collections.sort(allRatings, Comparator.comparingInt(Rating::getMovie).thenComparingInt(Rating::getUser));
         return allRatings;
     }
 

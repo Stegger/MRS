@@ -27,6 +27,8 @@ public class MRSManager implements MRSLogicFacade
 
     private final MrsDalInterface dalFacade;
 
+    
+
     public MRSManager() throws MrsBllException
     {
         try

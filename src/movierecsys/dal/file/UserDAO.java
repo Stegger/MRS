@@ -9,18 +9,20 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import java.nio.file.Files;
 import java.util.ArrayList;
+
 import movierecsys.dal.intereface.IUserRepository;
+
 import java.util.List;
+
 import movierecsys.be.User;
 import movierecsys.dal.exception.MrsDalException;
 
 /**
- *
  * @author pgn
  */
-public class UserDAO implements IUserRepository
-{
+public class UserDAO implements IUserRepository {
 
     private static final String USER_SOURCE = "data/users.txt";
 
@@ -30,34 +32,29 @@ public class UserDAO implements IUserRepository
      * @return List of users.
      */
     @Override
-    public List<User> getAllUsers() throws MrsDalException
-    {
+    public List<User> getAllUsers() throws MrsDalException {
         List<User> allUser = new ArrayList<>();
         File file = new File(USER_SOURCE);
+        try {
+            for (String line : Files.readAllLines(file.toPath())) {
 
-        try (BufferedReader reader = new BufferedReader(new FileReader(file))) //Using a try with resources!
-        {
-            String line;
-            while ((line = reader.readLine()) != null) //First the line is read from the file, then we check if its different from NULL
-            {
                 if (!line.isEmpty()) //If we have an empty line in the file we will skip it
                 {
-                    try
-                    {
+                    try {
                         String[] arrUser = line.split(",");
                         int id = Integer.parseInt(arrUser[0].trim());
                         String name = arrUser[1].trim();
                         User user = new User(id, name);
                         allUser.add(user);
-                    } catch (Exception ex)
-                    {
+                    } catch (Exception ex) {
                         //Do nothing. Optimally we would log the error.
                     }
                 }
             }
-        } catch (IOException ex)
-        {
-            throw new MrsDalException("Could not acces User file", ex);
+        } catch (IOException e) {
+
+            e.printStackTrace();
+            throw new MrsDalException("Could not read all users from disk.");
         }
         return allUser;
     }
@@ -69,13 +66,10 @@ public class UserDAO implements IUserRepository
      * @return The User with the ID.
      */
     @Override
-    public User getUser(int id) throws MrsDalException
-    {
+    public User getUser(int id) throws MrsDalException {
         List<User> allUsers = getAllUsers();
-        for (User user : allUsers)
-        {
-            if (user.getId() == id)
-            {
+        for (User user : allUsers) {
+            if (user.getId() == id) {
                 return user;
             }
         }
@@ -88,8 +82,7 @@ public class UserDAO implements IUserRepository
      * @param user The updated user.
      */
     @Override
-    public void updateUser(User user) throws MrsDalException
-    {
+    public void updateUser(User user) throws MrsDalException {
         //TODO Do update user.
     }
 

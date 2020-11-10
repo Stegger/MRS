@@ -5,120 +5,118 @@
  */
 package movierecsys.be;
 
-import java.util.Random;
 import movierecsys.bll.exception.MrsBllException;
-import static org.junit.Assert.*;
-import org.junit.Test;
+import org.junit.jupiter.api.*;
+
+import java.util.Random;
+
 
 /**
- *
  * @author pgn
  */
-public class RatingTest
-{
+public class RatingTest {
     private static final Movie MOVIE = new Movie(3, 1994, "Shawshank redemption");
     private static final User USER = new User(100, "Stegger");
-    
-    public RatingTest()
-    {
+
+    public RatingTest() {
     }
 
-    @Test(expected = MrsBllException.class)
-    public void testConstructor()
-    {
-        System.out.println("Rating Constructor Illegal Rating");
-        int rating = new Random().nextInt(Integer.MAX_VALUE-6)+6;
-        Rating instance = new Rating(MOVIE.getId(), USER.getId(), rating);
-        fail("You should not be able to construct a rating with an invalid ratings value.");
-    }
-    
     @Test
-    public void testSetRatingLegal()
-    {
+    public void testConstructor() {
+        Assertions.assertThrows(MrsBllException.class, () -> {
+            System.out.println("Rating Constructor Illegal Rating");
+            int rating = 42;
+            Rating instance = new Rating(MOVIE.getId(), USER.getId(), rating);
+            Assertions.fail("You should not be able to construct a rating with an invalid ratings value.");
+        });
+    }
+
+    @Test
+    public void testSetRatingLegal() {
         System.out.println("setRating: Legal");
         int expected = -5;
         Rating instance = new Rating(MOVIE.getId(), USER.getId(), -3);
         instance.setRating(expected);
         int actual = instance.getRating();
-        assertEquals(expected, actual);
+        Assertions.assertEquals(expected, actual);
     }
-    
+
     /**
      * Test of setRating method, of class Rating, using an invalid parameter.
      */
-    @Test(expected = MrsBllException.class)
-    public void testSetRatingIllegal()
-    {
-        System.out.println("setRating: Illegal");
-        int rating = 2;
-        Rating instance = new Rating(MOVIE.getId(), USER.getId(), -3);
-        instance.setRating(rating);
-        fail("You should not be allowed to set an illegal rating");
+    @Test
+    public void testSetRatingIllegal() {
+        Assertions.assertThrows(MrsBllException.class, () -> {
+            System.out.println("setRating: Illegal");
+            int rating = 2;
+            Rating instance = new Rating(MOVIE.getId(), USER.getId(), -3);
+            instance.setRating(rating);
+            Assertions.fail("You should not be allowed to set an illegal rating");
+        });
     }
-    
+
     /**
      * Test of setRating method, of class Rating, using a high invalid parameter.
      */
-    @Test(expected = MrsBllException.class)
-    public void testSetRatingHighRandomIllegal()
-    {
-        System.out.println("setRating: High Random Illegal");
-        int rating = new Random().nextInt(Integer.MAX_VALUE-6)+6;
-        Rating instance = new Rating(MOVIE.getId(), USER.getId(), 1);
-        instance.setRating(rating);
-        fail("You should not be allowed to set an illegal rating");
+    @Test
+    public void testSetRatingHighRandomIllegal() {
+        Assertions.assertThrows(MrsBllException.class, () -> {
+            System.out.println("setRating: High Random Illegal");
+            int rating = new Random().nextInt(Integer.MAX_VALUE - 6) + 6;
+            Rating instance = new Rating(MOVIE.getId(), USER.getId(), 1);
+            instance.setRating(rating);
+            Assertions.fail("You should not be allowed to set an illegal rating");
+        });
     }
-   
+
     /**
      * Test of setRating method, of class Rating, using a low invalid parameter.
      */
-    @Test(expected = MrsBllException.class)
-    public void testSetRatingLowRandomIllegal()
-    {
-        System.out.println("setRating: Low Random ILlegal");
-        int rating = (new Random().nextInt(Integer.MAX_VALUE-6)+6) * -1;
-        Rating instance = new Rating(MOVIE.getId(), USER.getId(), 1);
-        instance.setRating(rating);
-        fail("You should not be allowed to set an illegal rating");
+    @Test
+    public void testSetRatingLowRandomIllegal() {
+        Assertions.assertThrows(MrsBllException.class, () -> {
+            System.out.println("setRating: Low Random ILlegal");
+            int rating = (new Random().nextInt(Integer.MAX_VALUE - 6) + 6) * -1;
+            Rating instance = new Rating(MOVIE.getId(), USER.getId(), 1);
+            instance.setRating(rating);
+            Assertions.fail("You should not be allowed to set an illegal rating");
+        });
     }
-    
+
     /**
      * Test of getMovie method, of class Rating.
      */
     @Test
-    public void testGetMovie()
-    {
+    public void testGetMovie() {
         System.out.println("getMovie");
         Rating instance = new Rating(MOVIE.getId(), USER.getId(), 1);
         int expResult = MOVIE.getId();
         int result = instance.getMovie();
-        assertEquals(expResult, result);
+        Assertions.assertEquals(expResult, result);
     }
 
     /**
      * Test of getUser method, of class Rating.
      */
     @Test
-    public void testGetUser()
-    {
+    public void testGetUser() {
         System.out.println("getUser");
         Rating instance = new Rating(MOVIE.getId(), USER.getId(), 5);
         int expResult = USER.getId();
         int result = instance.getUser();
-        assertEquals(expResult, result);
+        Assertions.assertEquals(expResult, result);
     }
 
     /**
      * Test of getRating method, of class Rating.
      */
     @Test
-    public void testGetRating()
-    {
+    public void testGetRating() {
         System.out.println("getRating");
         Rating instance = new Rating(MOVIE.getId(), USER.getId(), 3);
         int expResult = 3;
         int result = instance.getRating();
-        assertEquals(expResult, result);
+        Assertions.assertEquals(expResult, result);
     }
-    
+
 }

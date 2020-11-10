@@ -5,13 +5,14 @@
  */
 package movierecsys.bll.util;
 
-import java.util.ArrayList;
-import java.util.List;
 import movierecsys.be.Movie;
 import movierecsys.be.Rating;
 import movierecsys.be.User;
-import static org.junit.Assert.*;
-import org.junit.Test;
+import org.junit.jupiter.api.*;
+
+import java.util.ArrayList;
+import java.util.List;
+
 
 /**
  *
@@ -80,12 +81,20 @@ public class MovieRecommenderTest
         currentUsersRatings.add(r3Two);
         currentUsersRatings.add(r3Three);
         currentUsersRatings.add(r3Five);
-        
+
+        List<Movie> allMovies = new ArrayList<>();
+        allMovies.add(mov1);
+        allMovies.add(mov2);
+        allMovies.add(mov3);
+        allMovies.add(mov4);
+        allMovies.add(mov5);
+        allMovies.add(mov6);
+
         Movie[] expected = { mov4, mov6 };
-        List<Movie> results = instance.highAverageRecommendations(allRatings, currentUsersRatings);
+        List<Movie> results = instance.highAverageRecommendations(allMovies, allRatings, currentUsersRatings);
         
-        assertNotNull(results);
-        assertArrayEquals(expected, results.toArray());
+        Assertions.assertNotNull(results);
+        Assertions.assertArrayEquals(expected, results.toArray());
     }
 
 }

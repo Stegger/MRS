@@ -7,6 +7,8 @@ package movierecsys.bll.util;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Predicate;
+
 import movierecsys.be.Movie;
 
 /**
@@ -25,14 +27,20 @@ public class MovieSearcher
      */
     public static List<Movie> search(List<Movie> searchBase, String query)
     {
-        List<Movie> results = new ArrayList<>();
-        for (Movie movie : searchBase)
+
+        //Option A:
+        List<Movie> results = new ArrayList<>(searchBase);
+        results.removeIf(movie -> !(movie.getTitle().toLowerCase().contains(query.toLowerCase()) || ("" + movie.getYear()).contains(query)));
+
+        //Option B:
+        /*for (Movie movie : searchBase)
         {
             if (movie.getTitle().toLowerCase().contains(query.toLowerCase()) || ("" + movie.getYear()).contains(query))
             {
                 results.add(movie);
             }
-        }
+        }*/
+
         return results;
     }
 

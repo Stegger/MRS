@@ -5,63 +5,60 @@
  */
 package movierecsys.bll.util;
 
+import movierecsys.be.Movie;
+import org.junit.jupiter.api.*;
+
 import java.util.ArrayList;
 import java.util.List;
-import movierecsys.be.Movie;
-import static org.junit.Assert.*;
-import org.junit.Test;
+
 
 /**
- *
  * @author pgn
  */
-public class MovieSearcherTest
-{
+public class MovieSearcherTest {
 
-    public MovieSearcherTest()
-    {
+    public MovieSearcherTest() {
     }
 
     /**
      * Test of search method, of class MovieSearcher.
      */
     @Test
-    public void testSearch()
-    {
+    public void testSearch() {
         System.out.println("search");
         List<Movie> searchBase = new ArrayList<>();
-        Movie expectedResult = new Movie(1,1994, "Shawshank Redemption");
+        Movie expectedResult = new Movie(1, 1994, "Shawshank Redemption");
         searchBase.add(expectedResult);
-        searchBase.add(new Movie(2, 2004,"I Robot"));
-        searchBase.add(new Movie(3,1999, "Pirates of Silicon Valley"));
+        searchBase.add(new Movie(2, 2004, "I Robot"));
+        searchBase.add(new Movie(3, 1999, "Pirates of Silicon Valley"));
 
         String query = "red";
         MovieSearcher instance = new MovieSearcher();
         List<Movie> result = instance.search(searchBase, query);
 
-        assertNotNull("Assert that the search method returns an object", result);
-        assertTrue("Search for \"red\" should return one result", result.size() == 1);
-        assertTrue("Search for \"red\" should return result with ID: 1", result.get(0).getId() == 1);
+        Assertions.assertNotNull(result, "Assert that the search method returns an object");
+        Assertions.assertTrue(result.size() == 1, "Search for \"red\" should return one result");
+        Assertions.assertTrue(result.get(0).getId() == 1, "Search for \"red\" should return result with ID: 1");
+
 
         query = "Red";
         result = instance.search(searchBase, query);
 
-        assertNotNull("Assert that the search method returns an object", result);
-        assertTrue("Search for \"Red\" should return one result", result.size() == 1);
-        assertTrue("Search for \"Red\" should return result with ID: 1", result.get(0).getId() == 1);
+        Assertions.assertNotNull(result, "Assert that the search method returns an object");
+        Assertions.assertTrue(result.size() == 1, "Search for \"Red\" should return one result");
+        Assertions.assertTrue(result.get(0).getId() == 1, "Search for \"Red\" should return result with ID: 1");
 
         query = "ir";
         result = instance.search(searchBase, query);
 
-        assertNotNull("Assert that the search method returns an object", result);
-        assertTrue("Search for \"ir\" should return two results", result.size() == 2);
+        Assertions.assertNotNull(result, "Assert that the search method returns an object");
+        Assertions.assertTrue(result.size() == 2, "Search for \"ir\" should return two results");
 
         query = "qwerty";
         result = instance.search(searchBase, query);
 
-        assertNotNull("Assert that the search method returns an object", result);
-        assertTrue("Assert that no results are found for search \"qwerty\"", result.isEmpty());
-
+        Assertions.assertNotNull(result, "Assert that the search method returns an object");
+        Assertions.assertTrue(result.isEmpty(), "Assert that no results are found for search \"qwerty\"");
     }
 
 }
