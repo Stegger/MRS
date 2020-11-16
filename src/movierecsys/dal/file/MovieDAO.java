@@ -55,11 +55,9 @@ public class MovieDAO implements IMovieRepository {
                     try {
                         Movie mov = stringArrayToMovie(line);
                         allMovies.add(mov);
-                    }catch (NumberFormatException nfe)
-                    {
+                    } catch (NumberFormatException nfe) {
                         System.out.println("NumberFormatException: " + line);
-                    }
-                    catch (Exception ex) {
+                    } catch (Exception ex) {
                         //Bad read. Should be logged and/or displayed
                         //Currently it's drowned and send to the console:
                         System.out.println("Could not read: " + line);
@@ -128,7 +126,7 @@ public class MovieDAO implements IMovieRepository {
         if (allMovies == null || allMovies.isEmpty()) {
             return 1;
         }
-        allMovies.sort((Movie arg0, Movie arg1) -> arg0.getId() - arg1.getId());
+        allMovies.sort(Comparator.comparingInt(Movie::getId));
         int id = allMovies.get(0).getId();
         for (int i = 0; i < allMovies.size(); i++) {
             if (allMovies.get(i).getId() <= id) {
@@ -194,7 +192,7 @@ public class MovieDAO implements IMovieRepository {
 
             //Overwrite the movie file wit the tmp one.
             Files.copy(tmp.toPath(), new File(MOVIE_SOURCE).toPath(), StandardCopyOption.REPLACE_EXISTING);
-            //Clean up after the operation is done (Remve tmp)
+            //Clean up after the operation is done (Remove tmp)
             Files.delete(tmp.toPath());
 
         } catch (IOException ex) {

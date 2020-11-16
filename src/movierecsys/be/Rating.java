@@ -78,4 +78,30 @@ public class Rating
         return rating;
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Rating)) return false;
+
+        Rating rating = (Rating) o;
+
+        if (movieId != rating.movieId) return false;
+        return userId == rating.userId;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = movieId;
+        result = 31 * result + userId;
+        return result;
+    }
+
+    @Override
+    public String toString() {
+        return "Rating{" +
+                "movieId=" + movieId +
+                ", userId=" + userId +
+                ", rating=" + rating +
+                '}';
+    }
 }

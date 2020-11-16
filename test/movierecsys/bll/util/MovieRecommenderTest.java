@@ -28,6 +28,7 @@ public class MovieRecommenderTest
     public void testHighAverageRecommender()
     {
         MovieRecommender instance = new MovieRecommender();
+
         Movie mov1 = new Movie(1, 1998, "The Big Lebowski");
         Movie mov2 = new Movie(2, 1999, "Pirates of silicon valley");
         Movie mov3 = new Movie(3, 1994, "Shawshank redemption");
@@ -36,8 +37,8 @@ public class MovieRecommenderTest
         Movie mov6 = new Movie(6, 2015, "Steve Jobs");
         
         User userA = new User(1, "Stegger");
-        User userB = new User(1, "Jeppe");
-        User userC = new User(1, "Stig");
+        User userB = new User(2, "Jeppe");
+        User userC = new User(3, "Stig");
         
         Rating rOne = new Rating(mov1.getId(), userA.getId(), 5);
         Rating rTwo = new Rating(mov2.getId(), userA.getId(), 5);

@@ -27,12 +27,11 @@ public class MovieSearcher
      */
     public static List<Movie> search(List<Movie> searchBase, String query)
     {
-
         //Option A:
-        List<Movie> results = new ArrayList<>(searchBase);
+        List<Movie> results = new ArrayList<>(searchBase); //I create a clone of the original searchBase
         results.removeIf(movie -> !(movie.getTitle().toLowerCase().contains(query.toLowerCase()) || ("" + movie.getYear()).contains(query)));
 
-        //Option B:
+        //Below is the same method with a different implementation:
         /*for (Movie movie : searchBase)
         {
             if (movie.getTitle().toLowerCase().contains(query.toLowerCase()) || ("" + movie.getYear()).contains(query))

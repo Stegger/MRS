@@ -51,6 +51,7 @@ public class MovieDbDao implements IMovieRepository
             return movie;
         } catch (SQLException ex)
         {
+            ex.printStackTrace();
             throw new MrsDalException("Could not create movie.", ex);
         } finally
         {
