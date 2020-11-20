@@ -25,7 +25,6 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="library" name="sqljdbc42" level="project" />
     <orderEntry type="module-library">
       <library>
         <CLASSES>
@@ -35,5 +34,6 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="library" name="com.microsoft.sqlserver:mssql-jdbc:9.1.0.jre15-preview" level="project" />
   </component>
 </module>

@@ -32,17 +32,17 @@ public class JDBCConnectionPool extends ObjectPool<Connection>
             return connectionProvider.getConnection();
         } catch (SQLServerException ex)
         {
-            ex.printStackTrace(); //Perfect exception handling... (NO!)
+            ex.printStackTrace(); //Perfect exception handling... (NOT!)
             return null;
         }
     }
 
     @Override
-    public boolean validate(Connection o)
+    public boolean validate(Connection con)
     {
         try
         {
-            return (!((Connection) o).isClosed());
+            return (!con.isClosed());
         } catch (SQLException e)
         {
             e.printStackTrace();
@@ -51,11 +51,11 @@ public class JDBCConnectionPool extends ObjectPool<Connection>
     }
 
     @Override
-    public void expire(Connection o)
+    public void expire(Connection con)
     {
         try
         {
-            ((Connection) o).close();
+            con.close();
         } catch (SQLException e)
         {
             e.printStackTrace();

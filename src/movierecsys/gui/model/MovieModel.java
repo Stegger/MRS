@@ -61,13 +61,7 @@ public class MovieModel {
         logiclayer.updateMovie(selectedMovie);
         if (movies.remove(selectedMovie)) {
             movies.add(selectedMovie);
-            movies.sort(new Comparator<Movie>() {
-                @Override
-                public int compare(Movie arg0, Movie arg1) {
-                    return arg0.getId() - arg1.getId();
-                }
-
-            });
+            movies.sort(Comparator.comparingInt(Movie::getId));
         }
     }
 

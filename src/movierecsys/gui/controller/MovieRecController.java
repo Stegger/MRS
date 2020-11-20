@@ -65,6 +65,7 @@ public class MovieRecController implements Initializable {
         try {
             movieModel = new MovieModel();
             userModel = new UserModel();
+            ratingModel = new RatingModel();
         } catch (MrsBllException ex) {
             displayError(ex);
             System.exit(0);
@@ -75,6 +76,7 @@ public class MovieRecController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         lstMovies.setItems(movieModel.getMovies());
         lstUsers.setItems(userModel.getAllUsers());
+        lstRecommendedMovies.setItems(ratingModel.getRecommendedMovies());
 
         setMovieSelection();
         setUserSelection();
@@ -89,6 +91,7 @@ public class MovieRecController implements Initializable {
                 userModel.setSelectedUser(newUser);
             }
         });
+        ratingModel.setUser(userModel.getSelectedUser());
     }
 
     /**
@@ -135,6 +138,8 @@ public class MovieRecController implements Initializable {
         try {
             String title = txtMovieTitle.getText().trim();
             int year = Integer.parseInt(txtMovieYear.getText().trim());
+
+
             movieModel.createMovie(year, title);
         } catch (MrsBllException mrbe) {
             displayError(mrbe);

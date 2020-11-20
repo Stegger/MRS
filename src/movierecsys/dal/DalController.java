@@ -11,6 +11,7 @@ import java.util.List;
 import movierecsys.be.Movie;
 import movierecsys.be.Rating;
 import movierecsys.be.User;
+import movierecsys.dal.db.MovieDbDao;
 import movierecsys.dal.exception.MrsDalException;
 import movierecsys.dal.file.MovieDAO;
 import movierecsys.dal.file.RatingDAO;

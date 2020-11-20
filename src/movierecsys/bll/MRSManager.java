@@ -6,75 +6,83 @@
 package movierecsys.bll;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+
 import movierecsys.be.Movie;
 import movierecsys.be.Rating;
 import movierecsys.be.User;
 import movierecsys.bll.exception.MrsBllException;
+import movierecsys.bll.util.MovieRecommender;
 import movierecsys.bll.util.MovieSearcher;
 import movierecsys.dal.DalController;
 import movierecsys.dal.MrsDalInterface;
 import movierecsys.dal.exception.MrsDalException;
+import movierecsys.dal.file.RatingDAO;
 
 /**
- *
  * @author pgn
  */
-public class MRSManager implements MRSLogicFacade
-{
+public class MRSManager implements MRSLogicFacade {
 
     private final MrsDalInterface dalFacade;
 
-    
 
-    public MRSManager() throws MrsBllException
-    {
-        try
-        {
+    public MRSManager() throws MrsBllException {
+        try {
             dalFacade = new DalController();
-        } catch (IOException ex)
-        {
+        } catch (IOException ex) {
             throw new MrsBllException("Could not connect to DAL layer.");
         }
     }
 
     @Override
-    public List<Rating> getRecommendedMovies(User user)
-    {
+    public List<Rating> getRecommendedMovies(User user) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public List<Movie> getAllTimeTopRatedMovies()
-    {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public List<Movie> getAllTimeTopRatedMovies() throws MrsBllException {
+        try {
+            MovieRecommender movieRecommender = new MovieRecommender();
+            List<Rating> userRatings = new ArrayList<>();
+            List<Rating> allRatingList = dalFacade.getAllRatings();
+            List<Movie> allMovies = dalFacade.getAllMovies();
+            return movieRecommender.highAverageRecommendations(allMovies, allRatingList, userRatings);
+        } catch (MrsDalException e) {
+            e.printStackTrace();
+            throw new MrsBllException(e.getMessage());
+        }
     }
 
     @Override
-    public List<Movie> getMovieReccomendations(User user)
-    {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public List<Movie> getMovieReccomendations(User user) throws MrsBllException {
+        try {
+            MovieRecommender movieRecommender = new MovieRecommender();
+            List<Rating> userRatings = dalFacade.getRatings(user);
+            List<Rating> allRatingList = dalFacade.getAllRatings();
+            List<Movie> allMovies = dalFacade.getAllMovies();
+            return movieRecommender.highAverageRecommendations(allMovies, allRatingList, userRatings);
+        } catch (MrsDalException e) {
+            e.printStackTrace();
+            throw new MrsBllException(e.getMessage());
+        }
     }
 
     @Override
-    public List<Movie> searchMovies(String query) throws MrsBllException
-    {
+    public List<Movie> searchMovies(String query) throws MrsBllException {
         List<Movie> allMovies = getAllMovies();
         allMovies = MovieSearcher.search(allMovies, query);
         return allMovies;
     }
 
     @Override
-    public Movie createMovie(int year, String title) throws MrsBllException
-    {
-        try
-        {
-            
+    public Movie createMovie(int year, String title) throws MrsBllException {
+        try {
             return dalFacade.createMovie(year, title);
-        } catch (MrsDalException ex)
-        {
+        } catch (MrsDalException ex) {
             Logger.getLogger(MRSManager.class.getName()).log(Level.SEVERE, null, ex);
             throw new MrsBllException("Could not create movie.");
         }
@@ -87,33 +95,25 @@ public class MRSManager implements MRSLogicFacade
      * @throws MrsBllException
      */
     @Override
-    public void updateMovie(Movie movie) throws MrsBllException
-    {
-        try
-        {
+    public void updateMovie(Movie movie) throws MrsBllException {
+        try {
             dalFacade.updateMovie(movie);
-        } catch (MrsDalException ex)
-        {
+        } catch (MrsDalException ex) {
             Logger.getLogger(MRSManager.class.getName()).log(Level.SEVERE, null, ex);
             throw new MrsBllException("Could not update movie");
         }
     }
 
     /**
-     *
      * @param movie
      * @throws MrsBllException
      */
     @Override
-    public void deleteMovie(Movie movie) throws MrsBllException
-    {
-        if (movie != null)
-        {
-            try
-            {
+    public void deleteMovie(Movie movie) throws MrsBllException {
+        if (movie != null) {
+            try {
                 dalFacade.deleteMovie(movie);
-            } catch (MrsDalException ex)
-            {
+            } catch (MrsDalException ex) {
                 Logger.getLogger(MRSManager.class.getName()).log(Level.SEVERE, null, ex);
                 throw new MrsBllException("Could not delete Message");
             }
@@ -121,32 +121,26 @@ public class MRSManager implements MRSLogicFacade
     }
 
     @Override
-    public void rateMovie(Movie movie, User user, int rating)
-    {
+    public void rateMovie(Movie movie, User user, int rating) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public User createNewUser(String name)
-    {
+    public User createNewUser(String name) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public User getUserById(int id)
-    {
+    public User getUserById(int id) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public List<User> getAllUsers() throws MrsBllException
-    {
-        try
-        {
+    public List<User> getAllUsers() throws MrsBllException {
+        try {
             List<User> allUsers = dalFacade.getAllUsers();
             return allUsers;
-        } catch (MrsDalException ex)
-        {
+        } catch (MrsDalException ex) {
             ex.printStackTrace();
             throw new MrsBllException("Could not get all users.");
         }
@@ -159,27 +153,21 @@ public class MRSManager implements MRSLogicFacade
      * @throws MrsBllException
      */
     @Override
-    public List<Movie> getAllMovies() throws MrsBllException
-    {
-        try
-        {
+    public List<Movie> getAllMovies() throws MrsBllException {
+        try {
             return dalFacade.getAllMovies();
-        } catch (MrsDalException ex)
-        {
+        } catch (MrsDalException ex) {
             throw new MrsBllException("Could not read all movies. Cause: " + ex.getMessage());
         }
     }
 
     @Override
-    public List<User> searchUsers(String query) throws MrsBllException
-    {
-        try
-        {
+    public List<User> searchUsers(String query) throws MrsBllException {
+        try {
             List<User> allUsers = dalFacade.getAllUsers();
             allUsers.removeIf((User user) -> !user.getName().toLowerCase().contains(query.toLowerCase()));
             return allUsers;
-        } catch (MrsDalException ex)
-        {
+        } catch (MrsDalException ex) {
             ex.printStackTrace();
             throw new MrsBllException("Unable to perform search for user.");
         }

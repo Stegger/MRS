@@ -4,6 +4,7 @@ import movierecsys.be.Movie;
 import movierecsys.be.Rating;
 import movierecsys.be.User;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -12,7 +13,7 @@ import java.util.function.Predicate;
 /**
  * A cache to insert into the DAL layer (Once it's fully implemented). Use it to speed up performance.
  */
-public class MovieRecCache {
+public class MovieRecCache implements Serializable {
 
     private List<Movie> movies;
     private List<User> users;

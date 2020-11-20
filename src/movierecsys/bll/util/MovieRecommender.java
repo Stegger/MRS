@@ -25,6 +25,10 @@ public class MovieRecommender {
      * @return Sorted list of movies recommended to the caller. Sorted in descending order.
      */
     public List<Movie> highAverageRecommendations(List<Movie> allMovies, List<Rating> allRatings, List<Rating> excludeRatings) {
+
+        if(excludeRatings == null) //In case of NO exclude ratings we just create an empty list:
+            excludeRatings = new ArrayList<>();
+
         List<Rating> tmpRatings = removeExcludedRatings(allRatings, excludeRatings);
         HashMap<Integer, Integer> movieScoreSums = getMovieTotalSums(tmpRatings);
         HashMap<Integer, Integer> movieRatingsCount = getMovieTotalRatingCount(tmpRatings);
@@ -80,22 +84,10 @@ public class MovieRecommender {
     private List<Movie> getSortedMovieRecommendations(List<Movie> allMovies, HashMap<Movie, Double> movieScores) {
         List<Movie> recommendations = new ArrayList<>(allMovies);
         recommendations.removeIf(movie -> !movieScores.containsKey(movie));
-
         recommendations.sort((o1, o2) -> {
-            double diff;
-            if (movieScores.containsKey(o1) && movieScores.containsKey(02)) {
-                diff = movieScores.get(o1) - movieScores.get(o2);
-            } else if (movieScores.containsKey(o1)) {
-                diff = -movieScores.get(o1);
-            } else
-                diff = movieScores.get(o2);
-
-            if (diff < 0.0)
-                return -1;
-            else if (diff > 0.0)
-                return 1;
-            else
-                return 0;
+            double one = movieScores.getOrDefault(o1, 1.0);
+            double two = movieScores.getOrDefault(o2, 1.0);
+            return Double.compare(two, one); //Sorts in descending order so highest score comes first.
         });
         return recommendations;
     }
@@ -146,6 +138,7 @@ public class MovieRecommender {
 
     /**
      * Creates a simple sorted array of movie objects from the given list of movies.
+     *
      * @param allMovies The base list of movies.
      * @return A sorted array of movies.
      */
