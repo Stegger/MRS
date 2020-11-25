@@ -49,4 +49,11 @@ public class MovieRecCache implements Serializable {
     }
 
 
+    public boolean isUpdated() {
+        return false;
+    }
+
+    public List<Movie> getAllMovies() {
+        return null;
+    }
 }

@@ -66,6 +66,8 @@ public class MovieDAO implements IMovieRepository {
                 }
             }
         } catch (IOException ex) {
+            //Log error message here:
+            ex.printStackTrace();
             throw new MrsDalException("Could not read all movies from disk", ex);
         }
         return allMovies;

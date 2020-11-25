@@ -11,6 +11,7 @@ import java.util.List;
 import movierecsys.be.Movie;
 import movierecsys.be.Rating;
 import movierecsys.be.User;
+import movierecsys.dal.cache.MovieRecCache;
 import movierecsys.dal.db.MovieDbDao;
 import movierecsys.dal.exception.MrsDalException;
 import movierecsys.dal.file.MovieDAO;
@@ -29,10 +30,14 @@ public class DalController implements MrsDalInterface {
     private IUserRepository userRepo;
     private IRatingRepository ratingRepo;
 
+    private MovieRecCache cache;
+
     public DalController() throws IOException {
-        movieRepo = new MovieDAO();
+        movieRepo = new MovieDbDao();
         userRepo = new UserDAO();
         ratingRepo = new RatingDAO();
+        cache = new MovieRecCache();
+
     }
 
     @Override
@@ -47,7 +52,15 @@ public class DalController implements MrsDalInterface {
 
     @Override
     public List<Movie> getAllMovies() throws MrsDalException {
-        return movieRepo.getAllMovies();
+        List<Movie> allMovies;
+        if(!cache.isUpdated()) {
+            allMovies = movieRepo.getAllMovies();
+            cache.setAllMovies(allMovies);
+        } else
+        {
+            allMovies = cache.getAllMovies();
+        }
+        return allMovies;
     }
 
     @Override

@@ -36,8 +36,8 @@ public class FileReaderTester {
      */
     public static void main(String[] args) throws IOException, MrsDalException {
 
-        //     mitigateMovies();
-        //     mitigateUsers();
+        mitigateMovies();
+        mitigateUsers();
         mitigateRatings();
     }
 
@@ -50,9 +50,8 @@ public class FileReaderTester {
             Statement statement = con.createStatement();
             int counter = 0;
             for (User user : users) {
-                String sql = "INSERT INTO [User] (id,name) VALUES("
-                        + user.getId() + ",'"
-                        + user.getName() + "');";
+                String sql = "INSERT INTO [User] VALUES("
+                        + "'" + user.getName() + "');";
                 statement.addBatch(sql);
                 counter++;
                 if (counter % 10000 == 0) {
@@ -107,10 +106,10 @@ public class FileReaderTester {
             Statement statement = con.createStatement();
             int c = 0;
             for (Movie movie : movies) {
-                String sql = "INSERT INTO Movie (id,year,title) VALUES("
-                        + movie.getId() + ","
-                        + movie.getYear() + ",'"
-                        + movie.getTitle().replace("'", "") + "');";
+                String sql = "INSERT INTO Movie VALUES("
+                        + "'" + movie.getTitle().replace("'", "") + "',"
+                        + movie.getYear()
+                        + ");";
                 statement.addBatch(sql);
                 c++;
                 if (c % 1000 == 0) {

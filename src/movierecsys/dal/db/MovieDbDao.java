@@ -54,7 +54,13 @@ public class MovieDbDao implements IMovieRepository {
         } catch (SQLException ex) {
             ex.printStackTrace();
             throw new MrsDalException("Could not create movie.", ex);
-        } finally {
+        }
+
+
+
+
+
+        finally {
             connectionPool.checkIn(con);// <<< Using the object pool here <<<
         }
     }
@@ -79,6 +85,7 @@ public class MovieDbDao implements IMovieRepository {
                 String title = rs.getString("title");
                 Movie movie = new Movie(id, year, title);
                 movies.add(movie);
+
             }
             return movies;
         } catch (SQLException ex)
