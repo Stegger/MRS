@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="movierecsys.gui.controller.MovieRecController">
+   <top>
+      <VBox alignment="CENTER_RIGHT" maxWidth="1.7976931348623157E308" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" maxWidth="1.7976931348623157E308" text="Movie Recommendation System" textAlignment="CENTER" VBox.vgrow="ALWAYS">
+               <font>
+                  <Font name="Book Antiqua Bold" size="30.0" />
+               </font>
+            </Label>
+         </children>
+         <padding>
+            <Insets bottom="10.0" />
+         </padding>
+         <BorderPane.margin>
+            <Insets left="5.0" right="5.0" />
+         </BorderPane.margin>
+      </VBox>
+   </top>
+   <center>
+      <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" maxWidth="1.7976931348623157E308" text="All movies">
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </Label>
+            <TextField fx:id="txtMovieSearch" onKeyTyped="#handleSearchMovie" promptText="search movies" />
+            <ListView fx:id="lstMovies" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" VBox.vgrow="ALWAYS" />
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" />
+         </BorderPane.margin>
+      </VBox>
+   </center>
+   <right>
+      <VBox maxWidth="1.7976931348623157E308" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" maxWidth="1.7976931348623157E308" text="User menu" textAlignment="CENTER">
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </Label>
+            <TextField fx:id="txtUserSearch" onKeyTyped="#handleSearchUser" promptText="Search user" />
+            <ListView fx:id="lstUsers" prefHeight="100.0" />
+            <Label text="User rate selected movie:">
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </Label>
+            <HBox alignment="CENTER" spacing="5.0">
+               <children>
+                  <Label text=":-(">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <RadioButton fx:id="radioRatingMinus5" mnemonicParsing="false" onAction="#handleUserRateMovie" textAlignment="CENTER" />
+                  <RadioButton fx:id="radioRatingMinus3" mnemonicParsing="false" onAction="#handleUserRateMovie" />
+                  <RadioButton fx:id="radioRating1" mnemonicParsing="false" onAction="#handleUserRateMovie" />
+                  <RadioButton fx:id="radioRating3" mnemonicParsing="false" onAction="#handleUserRateMovie" />
+                  <RadioButton fx:id="radioRating5" mnemonicParsing="false" onAction="#handleUserRateMovie" />
+                  <Label text=":-)" />
+               </children>
+               <padding>
+                  <Insets bottom="10.0" top="10.0" />
+               </padding>
+            </HBox>
+            <Label maxWidth="1.7976931348623157E308" text="Movie recommendations:">
+               <VBox.margin>
+                  <Insets bottom="5.0" top="5.0" />
+               </VBox.margin>
+            </Label>
+            <ListView fx:id="lstRecommendedMovies" prefHeight="200.0" />
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="5.0" right="5.0" />
+         </BorderPane.margin>
+      </VBox>
+   </right>
+   <left>
+      <VBox spacing="5.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" maxWidth="1.7976931348623157E308" text="Create Movie" />
+            <HBox maxWidth="1.7976931348623157E308" spacing="5.0">
+               <children>
+                  <Label contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Titel" HBox.hgrow="ALWAYS" />
+                  <TextField fx:id="txtMovieTitle" promptText="Enter new movie title" />
+               </children>
+            </HBox>
+            <HBox maxWidth="1.7976931348623157E308">
+               <children>
+                  <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Year" HBox.hgrow="ALWAYS" />
+                  <TextField fx:id="txtMovieYear" promptText="Enter new movie year" />
+               </children>
+            </HBox>
+            <Button alignment="CENTER_RIGHT" mnemonicParsing="false" onAction="#handleAddMovie" text="Add movie!" textAlignment="CENTER" />
+            <Separator prefWidth="200.0" />
+            <Label alignment="CENTER" maxWidth="1.7976931348623157E308" text="Selected Movie:" />
+            <HBox spacing="5.0">
+               <children>
+                  <Label text="Titel" />
+                  <TextField fx:id="txtSelectedMovieTitle" promptText="Selected movie title" />
+               </children>
+            </HBox>
+            <HBox spacing="5.0">
+               <children>
+                  <Label text="Year" />
+                  <TextField fx:id="txtSelectedMovieYear" promptText="Selected movie year" />
+               </children>
+            </HBox>
+            <HBox>
+               <children>
+                  <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleUpdateMovie" text="Update" HBox.hgrow="ALWAYS" />
+                  <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleDeleteMovie" text="Delete" HBox.hgrow="ALWAYS" />
+               </children>
+            </HBox>
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="5.0" left="5.0" />
+         </BorderPane.margin>
+      </VBox>
+   </left>
+</BorderPane>
